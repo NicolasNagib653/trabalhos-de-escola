@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cadastro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="shortcut icon" href="favicon_io/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-lg nav2 tamanho">
+      <div class="container-fluid tamanho">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/novas/manga_na_estante.png" alt="" class="logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-l3g-0" id="cor">
+        <li class="nav-item">
+          <a class="nav-link active cor" aria-current="page" href="index.html"><span>Home</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre.html"><span>Sobre</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="loja.html"><span>Loja</span></a>
+        </li>
+         
+        <li class="nav-item">
+          <a class="nav-link" href="contato.html"><span>Contato</span></a>
+        </li>
+        
+        </ul>
+        <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Procurar" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+        </form>
+        <a href="form.html"><img src="img/novas/usuario.png" class="img2"></a>
+      </div>
+      </div>
+    </nav>
+  
+    <form class="row g-3 needs-validation" novalidate>
+        <div class="formulario">
+
+        <div class="centro">
+          <h1>Cadastro</h1>
+                <div class="col-md-4 cads">
+            
+                  <input type="text" class="form-control" id="validationCustom01" placeholder="Nome" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4 cads">
+            
+                  <input type="text" class="form-control" id="validationCustom02" placeholder="Sobrenome" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4  cads">
+            
+                  <div class="input-group has-validation">
+                    
+                    <input type="text" class="form-control" id="validationCustomUsername"  placeholder="Nome usuário" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 cads">
+            
+                  <input type="text" class="form-control" id="validationCustom03" placeholder="Cidade" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid city.
+                  </div>
+                </div>
+                <div class="col-md-3 cads">
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Selecione um estado</option>
+                    <option>AC</option>
+                    <option>AL</option>
+                    <option>AP</option>
+                    <option>AM</option>
+                    <option>BA</option>
+                    <option>CE</option>
+                    <option>DF</option>
+                    <option>ES</option>
+                    <option>GO</option>
+                    <option>MA</option>
+                    <option>MT</option>
+                    <option>MS</option>
+                    <option>MG</option>
+                    <option>PA</option>
+                    <option>PB</option>
+                    <option>PR</option>
+                    <option>PE</option>
+                    <option>PI</option>
+                    <option>RJ</option>
+                    <option>RN</option>
+                    <option>RS</option>
+                    <option>RO</option>
+                    <option>RR</option>
+                    <option>SC</option>
+                    <option>SP</option>
+                    <option>SE</option>
+                    <option>TO</OPtion>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-12 botao">
+              <button class="btn btn-primary botom"><a href="index.html">Finalizar</a></button>
+        </div>
+                </div>
+         
+                </div>
+        </div>
+    </div>
+      </form>
+    	<script src="bootstrap53/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

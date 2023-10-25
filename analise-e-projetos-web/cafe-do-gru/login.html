@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style4.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        header{
+        background-color: black;
+        margin: 0 0 10px 0;
+        padding: 10px 4%;
+        color: #ffd763;
+     }
+     @media (max-width: 800px){
+     .list-nav{
+       background-color: black;
+       height: 62vh;
+     }
+    }
+     header ul li a{
+        color: #ffd763;
+     }
+     
+     .login{
+        color:#ffd763 !important;
+        font-family: 'Dosis';
+        font-size: 20px;
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        align-items: center;
+     }
+     .show-password {
+    cursor: pointer;
+}
+main{
+    display: flex;
+}
+     form{
+      flex-grow: 1;
+      text-align: left;
+     }
+     form p{
+      color: gray;
+      font-size: 14px;
+     }
+     form a, form span{
+      font-size: 14px;
+      color:#ffd763;
+     }
+     footer{
+      bottom: 0;
+     }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="barra-de-navegacao">
+    
+            <div class="flex">
+    
+              
+              <nav class="nav">
+                <a href="#" class="logo"><img src="img/logogru2-semfundo.png" alt="" style="width:100px;"></a>
+                <div class="mobile-menu">
+  
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+  
+                </div>
+                  <ul class="list-nav" id="nav-list">
+                    <li><a href="index.html">Ínicio</a></li>
+                    <li><a href="sobre-nós.html">Sobre</a></li> 
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Contato</a></li>
+                  </ul>
+              </nav>
+    
+                <div class="login">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">
+                        <span>Login</span>
+                        <img src="img/login-sem-fundo.png" alt="" style="width: 54px;"></a>
+                      </div>  
+    
+            </div>
+    
+        </div>
+      </header>
+    <form>
+        <div class="forms">
+            <h1>Login</h1>
+            <div class="input">
+                <input type="text" name="e-mail" id="nome" placeholder="Nome de usuário">
+            </div>
+            <div class="input" style="    display: flex;flex-direction:row;align-items: center;">
+              <input type="password" name="senha" id="senha" placeholder="Senha" style="   margin-bottom: 10px; margin-left: 16px; margin-right: -28px;">
+                <i class="bi bi-eye" id="btn-senha" onclick="mostrarSenha()" style="color: gray; cursor: pointer;"></i>
+          </div>
+          <p>Ao enviar você concorda com os nossos <strong>termos</strong></p>
+            <input type="submit" value="enviar" onclick="logar(); return false">
+            <input type="reset" value="Limpar">
+        </div>
+        <a href="cadastro.html">Criar conta</a><span>/</span>
+        <a href="#">Esqueci minha senha</a>
+    </form>
+   
+    <script src="JS/mostrar-senha.js"></script>
+    <script src="JS/nav-dropdown.js"></script>
+    <script>
+
+        function logar(){
+            var login = document.getElementById('nome').value;
+            var senha = document.getElementById('senha').value;
+
+            if(login = "Nicolas" && senha == "Nagib"){
+                location.href = "index.html";
+                alert('Login realizado com sucesso');
+            }else{
+            if(login = "Pedro" && senha == "Pedro"){
+                location.href = "index.html";
+                alert('Login realizado com sucesso');
+            }else{
+            if(login = "Tia Gui" && senha == "incrível"){
+                location.href = "index.html";
+                alert('Login realizado com sucesso');
+            }
+            else{
+                alert("Usuario ou senha incorretos");
+            }}}
+        }
+       
+        
+    </script>
+</body>
+</html>

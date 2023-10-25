@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(57, 63, 70);
+    overflow-x: hidden;
+}
+h1{
+    text-align: center;
+}
+.formulario{
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    text-align: center;
+    background-color: rgb(33, 37, 41);
+    width: 60rem;
+    font-family: 'Patua One', cursive;
+    border-radius: 20px;
+    color: #ffffff;
+    min-width: 55rem;
+    max-width: 65rem;
+    margin-top: 200px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.cads{
+    margin: 20px;
+    width: 40rem;
+}
+.centro{
+    margin: auto;
+}
+.botao{
+    padding-bottom: 10px;
+}
+.botom{
+    background-color: #198742;
+    border: none;
+}

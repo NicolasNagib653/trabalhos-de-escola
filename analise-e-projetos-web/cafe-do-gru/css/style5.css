@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800&display=swap');
+@font-face {
+    font-family: 'corbert';
+    src: url('../fontes/corbert/Corbert-Regular.ttf');
+}
+@font-face {
+    font-family: 'equal_sans';
+    src: url('../fontes/equal_sans_demo/EqualSans_Demo.ttf');
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-01: #ffd55E;
+    --cor-02: #4F241B;
+    --cor-03: #120D0A;
+    --fonte-titulo: 'corbert', sans-serif;
+    --fonte-subtitulo: 'equal_sans', sans-serif;
+    --fonte-padrao: 'dosis',sans-serif;
+}
+h1, h3, h4, h5{
+    font-family: var(--fonte-titulo);
+}
+h4, h5{
+    font-weight: 500;
+}
+p, li{
+    font-family: var(--fonte-padrao);
+}
+
+.cardapio{
+    display: flex;
+    flex-wrap: wrap;
+}
+main > h1{
+    text-align: center;
+    margin: 130px 0 20px 0 ;
+}
+section{
+    width: 49.3vw;
+    background-image: none !important;
+}
+section li{
+    list-style: none;
+}
+section > div{
+    padding: 10px;
+    display: flex;
+    height: 100px;
+}
+.card{
+    padding: 0px 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+.card-texto{
+    display: flex;
+    width: 40vw;
+    justify-content: space-between;
+}
+section img{
+    
+    width: 70px;
+}
+.expressos{
+    padding: 0 0 0 8px;
+}
+.expressos h3{
+    font-size: 16px;
+    height: 21px;
+
+}
+.flex-collum{
+    display: flex;
+    flex-direction: column;
+}
+.flex-collum h4 {
+    width: 69.4px;
+}
+.flex-collum > .card-texto {
+    height: 15px;
+    font-size: 14px;
+}
+.tematicos, .bebidasQuentes{
+    border: solid 1px gray;
+    border-right: 0;
+}
+.mocha{
+    padding: 0px 0 0 8px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.bebidasFrias, .salgados{
+    border-bottom: solid 1px gray;
+    border-left: solid 1px gray;
+}
+.bebidasFrias > div{
+    height: 105px;
+}
+section > h3{
+    margin: 10px;
+    border-bottom: solid black 2px;
+    padding: 0 20px 0 0;
+    display: inline;
+}
+.doces{
+    width: 100vw;
+}
+.adicionais{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--cor-02);
+    color: var(--cor-01);
+    height: 186px !important;
+}
+.adicionais h5{
+    font-weight: bolder;
+    font-size: 15px;
+}
+.adicione, .substitua{
+    flex-direction: column;
+}
+.adicionais ul{
+    width: 386px;
+    display: flex;
+    gap: 0 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+.adicionais li{
+    width: 77.4px;
+    max-height: 20px;
+    font-weight: 400;
+    font-size: 15px;
+}
+@media(max-width: 890px){
+    section{
+        width: 100vw;
+    }
+    .doces .adicionais,.salgados .adicionais{
+        display: block;
+    }
+    .adicionais{
+        height: 128px;
+    }
+    .card-texto{
+        width: 70vw;
+    }
+    .substitua ul{
+        width: 261px;
+    }
+    .p{
+        min-width: 0 !important;
+        max-width: 40px !important;
+    }
+    .card-texto p, .mocha p{
+        font-size: 14px;
+        max-width: 240px;
+        min-width: 240px;
+    }
+}
+@media(max-width: 667px){
+
+.adicionais{
+    height: 211px;
+}
+}

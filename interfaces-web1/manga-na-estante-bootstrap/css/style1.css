@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Patua+One&display=swap');
+:root{
+    border: 0;
+    margin: 0;
+}
+body{
+    background-color:rgb(57, 63, 70);
+    overflow-x: hidden;
+}
+.nav2{
+    background-color: rgb(33, 37, 41);
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
+}
+.dropdown-menu{
+    width: 160px;
+}
+.tamanho{
+    padding: 0;
+    padding-right: 8px;
+}
+.cor,a{
+    color: white;
+}
+span{
+    color: white;
+}
+.mouse:hover{
+    background-color: rgb(57, 63, 70);
+}
+#center{
+    margin: auto;
+}
+.dropdown-toggle::after{
+ color: white;
+}
+.img{
+    width: 160px;
+    height: 230px;
+    margin: auto;
+}
+.img2{
+    margin-left: 6px;
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.cards{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Patua One', cursive;
+    gap: 20px;
+}
+.link2{
+    color: white;
+    text-decoration: none;
+}
+h2{
+
+    color:white;
+    font-family: 'Patua One', cursive;
+    text-align: center;
+    min-width: 170px;
+}
+.card{
+    min-width: 170px;
+}
+.card-text{
+    color: rgb(25,135,84)
+}
+.margem{
+    margin: 0 200px;
+}
+.rodape{
+    max-width: 4000px;
+    min-width: 900px;
+    background-color:rgb(33, 37, 41);
+}
+ul{
+    color: white;
+}
+.center{
+   text-align: center;
+   display: block;
+}
+.center2{
+    padding-bottom: 1.5rem;
+}
+.fonte{
+    font-family: 'Patua One', cursive;
+}
+.row{
+    justify-content: space-evenly;
+}
+@media (max-width: 800px){
+    .cards{
+        columns: 2;
+    }
+    .card{
+        font-size: 1rem;
+
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    h5{
+        font-size: 1.1rem;
+    }
+    .card > img{
+        width:  140px;
+        height: 190px;
+    }
+}
+/*
+.card-header{
+    font-weight: bold;
+}
+*/

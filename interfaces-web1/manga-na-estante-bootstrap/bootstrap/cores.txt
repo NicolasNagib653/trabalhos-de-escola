@@ -1,0 +1,5 @@
+#3E4459 - azul escuro
+#A3BAD9 - azul claro
+#F2BF91 - amarelo
+#D9B5A0 - bege
+#BF705E - terracota

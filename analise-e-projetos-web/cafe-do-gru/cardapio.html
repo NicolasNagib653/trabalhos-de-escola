@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style5.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style3.css">
+    <link rel="stylesheet" href="css/style5.css">
+    <title>Cardápio</title>
+    <style>
+    html{
+        overflow-x: hidden;
+    }
+         header{
+        background-color: black;
+        margin: 0 0 10px 0;
+        padding: 10px 4%;
+        color: #ffd763 !important;
+     }
+     header ul li a{
+        color: #ffd763;
+     }
+     nav{
+        display: flex;
+        align-items: center;
+     }
+     ul li > .list-nav{
+        display: flex;
+        align-items: center;
+     }
+     nav{
+         width: 100vw;
+     }
+     @media (max-width: 800px){
+     .list-nav{
+       background-color: black;
+       margin: 124px 0 0 0;
+       height: 81vh;
+     }
+    }
+     header ul li a{
+        color: #ffd763;
+        display: flex;
+        align-items: center;
+     }
+     
+     .login{
+        color:#ffd763 !important;
+        font-family: 'Dosis';
+        font-size: 20px;
+        display: flex;
+        color: white;
+        flex-wrap: wrap;
+        align-items: center;
+     }
+     footer{
+    width: 100%;
+    min-width: 0;
+    padding: 16px;
+    bottom: 0 ;
+    position: static;
+    background-color: black;
+    color: white;
+}
+.rodape{
+     display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.rodape img{
+    width: 16px;
+    margin-right: 2px;
+}
+footer li{
+    list-style: none;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+.direitos{
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="barra-de-navegacao">
+  
+            <div class="flex">
+  
+              
+              <nav class="nav">
+                <a href="index.html" class="logo"><img src="img/logogru2-semfundo.png" alt="" style="width:100px;"></a>
+                <div class="mobile-menu">
+  
+                  <div class="line1"></div>
+                  <div class="line2"></div>
+                  <div class="line3"></div>
+  
+                </div>
+                  <ul class="list-nav" id="nav-list">
+                    <li><a href="index.html">Ínicio</a></li>
+                    <li><a href="sobre-nós.html">Sobre</a></li> 
+                    <li><a href="#">Cardápio</a></li>
+                    <li><a href="#">Contato</a></li>
+                  </ul>
+              </nav>
+  
+                <div class="login">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">
+                        <span>Login</span>
+                        <img src="img/login-sem-fundo.png" alt="" style="width: 54px;"></a>
+                      </div>  
+  
+            </div>
+  
+        </div>
+      </header>
+    <main>
+        <h1>Cardápio</h1>
+        <div class="cardapio">
+            <section class="tematicos">
+                <h1>Comidas temáticas</h1>
+                <div>
+                    <img src="img/mocha-ama-512.jpeg" alt="">
+                    <div class="card">
+                        <h4>Café dos Amarelinhos</h4>
+                        <div class="card-texto">
+                            <p>Expresso, leite vaporizado amarelo e calda de caramelo com essência de baunilha.</p>
+                            <p class="p">R$14,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/cafe-cong-512.jpeg" alt="">
+                    <div class="card">
+                        <h4>Café Congelante</h4>
+                        <div class="card-texto">
+                            <p>Café expresso e leite azul com gelo.</p>
+                            <p class="p">R$15,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/milkshake-512.jpeg">
+                    <div class="card">
+                        <h4>Milkshake das Meninas</h4>
+                        <div class="card-texto">
+                            <p>Sorvete de creme, calda de morango, Chantilly e granulado colorido.</p>
+                            <p class="p">R$17,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/waffle-das-meninas-512.jpeg" alt="">
+                    <div class="card">
+                        <h4>Waffle das Meninas</h4>
+                        <div class="card-texto">
+                            <p>Waffle tradicional com calda de chocolate, Chantilly e granulado colorido.</p>
+                            <p class="p">R$15,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/waffle-minion2-512.jpeg" alt="">
+                    <div class="card">
+                        <h4>Waffle dos Minions</h4>
+                        <div class="card-texto">
+                            <p>Waffle tradicional com banana e calda de chocolate</p>
+                            <p class="p">R$15,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="adicionais">
+                    <div class="adicione">
+                            <h5>Adicione:</h5>
+                        <ul>
+                            <li>Nutella</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                            <li>Geleia</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Doce de leite</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                            <li>Chantilly</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Sorvete</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Manteiga</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Requeijão</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                        </ul>
+                    </div>
+                <div class="substitua">
+                    <h5>Substitua:</h5>
+                        <ul>
+                            <li>Leite Vegetal</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Leite Zero Lactose</li>
+                            <li class="valorAdicional">R$ 3,50</li>
+                        </ul>
+                </div>
+                </div>
+            </section>
+            <section class="bebidasQuentes">
+                <h1>Bebidas Quentes</h1>
+                <div>
+                    <img src="img/cafe-expresso.jpg" alt="">
+                    <div class="expressos">
+                        <h3>Expressos</h3>
+                        <div class="flex-collum">
+                            <div class="card-texto">
+                                <h4>Ristretto</h4><p class="p">20ml</p><p class="p">R$4,50</p>
+                            </div>
+                            <div class="card-texto">
+                                <h4>Pequeno</h4><p class="p">40ml</p><p class="p">R$4,50</p>
+                            </div>
+                            <div class="card-texto">
+                                <h4>Duplo</h4><p class="p">80ml</p><p class="p">R$6,90</p>
+                            </div>
+                        </div>
+                </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/cafezinho.png" alt="">
+                    <div class="card">
+                        <h4>Latte</h4>
+                        <div class="card-texto">
+                            <p>Expresso pequeno e leite vaporizado.</p>
+                            <p class="p">R$11,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/mocha.png" alt="">
+                    <div class="card mocha">
+                        <h4>Mocha</h4>
+                        <p>Sabores: Caramelo, Chocolate, Morango e Paçoquita.</p>
+                        <div class="card-texto">
+                            <p>Expressos pequeno, leite vaporizado e calda do sabor escolhido.</p>
+                            <p class="p">R$14,90</p>
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/chocolate quente.jpeg" alt="">
+                    <div class="card">
+                        <h4>Chocolate Quente</h4>
+                        <div class="card-texto">
+                            <p>Chocolate quente cremoso</p>
+                            <p class="p">R$14,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/chai-late.jpeg" alt="">
+                    <div class="card">
+                        <h4>Chai Latte</h4>
+                        <div class="card-texto">
+                            <p>Bebida com especiarias: canela, mel, cardamomo, gengibre e chá preto</p>
+                            <p class="p">R$14,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="adicionais">
+                    <div class="adicione">
+                            <h5>Adicione:</h5>
+                        <ul>
+                            <li>Chantilly</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                            <li>Borda nutella</li>
+                             <li class="valorAdicional">R$ 5,90</li>
+                            <li>Borda doce de leite</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                        </ul>
+                    </div>
+                    <div class="substitua">
+                        <h5>Substitua:</h5>
+                        <ul>
+                            <li>Leite Vegetal</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Leite Zero Lactose</li>
+                            <li class="valorAdicional">R$ 3,50</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+            </section>
+            <section class="bebidasFrias">
+                <h1>Bebidas Frias</h1>
+            
+                    <h3>Cafés Gelados</h3>
+                
+                <div style="margin-top: 38px;">
+                    <img src="img/iced-coffe.jpeg" alt="">
+                        <div class="card">
+                            <h4>Iced Coffee</h4>
+                            <div class="card-texto">
+                                <p>Café expresso com gelo.</p>
+                                <p class="p">R$13,90</p>
+                            </div>
+                        </div>
+                </div>
+                    <div>
+                        <img src="img/cappuccino-cara.jpeg" alt="">
+                        <div class="card">
+                            <h4>Cappuccino Caramelo</h4>
+                            <div class="card-texto">
+                                <p>Café expresso, leite, syrup de caramelo e chantilly.</p>
+                                <p class="p">R$18,90</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/cappuccino-choco.jpeg" alt="">
+                        <div class="card">
+                            <h4>Cappuccino Chocolate</h4>
+                            <div class="card-texto">
+                                <p>Café expresso, leite, chocolate e chantilly.</p>
+                                <p class="p">R$18,90</p>
+                            </div>
+                        </div>
+                    </div>
+                <hr>
+                <div>
+                    <img src="img/milkshake2.jpeg" alt="">
+                    <div class="card">
+                        <h4>Milkshake</h4>
+                        <p>Sabores: Ovomaltine, Morango, Chocolate</p>
+                        <div class="card-texto">
+                            <p>Sorvete, leite, chantilly e calda de sabor escolhido.</p>
+                            <p class="p">R$20,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <img src="img/affogatto.jpeg" alt="">
+                    <div class="card">
+                        <h4>Afogatto</h4>
+                        <div class="card-texto">
+                            <p>Sorvete e café expresso servidos em uma taça.</p>
+                            <p class="p">R$20,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div style="    margin: 0 0 4px 0;">
+                    <img src="img/frappuuccino.jpeg" alt="">
+                    <div class="card">
+                        <h4>Frappuccino</h4>
+                        <p>Sabores: Caramelo, Chocolate e Morango</p>
+                        <div class="card-texto">
+                            <p>Café expresso, leite, sorvete, gelo, chantilly e calda do sabor escolhido</p>
+                            <p class="p">R$18,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="adicionais">
+                    <div class="adicione">
+                            <h5>Adicione:</h5>
+                        <ul>
+                            <li>Chantilly</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                            <li>Borda nutella</li>
+                             <li class="valorAdicional">R$ 5,90</li>
+                            <li>Borda doce de leite</li>
+                            <li class="valorAdicional">R$ 5,90</li>
+                        </ul>
+                    </div>
+                    <div class="substitua">
+                        <h5>Substitua:</h5>
+                        <ul>
+                            <li>Leite Vegetal</li>
+                            <li class="valorAdicional">R$ 4,50</li>
+                            <li>Leite Zero Lactose</li>
+                            <li class="valorAdicional">R$ 3,50</li>
+                        </ul>
+                    </div>
+            </section>
+            <section class="salgados">
+                <h1>Salgados</h1>
+                <h3>Waffles</h3>
+                <p style="margin: 10px 0 0 10px">Waffle com 4 fatias</p>
+                <p style="margin: 0 0 0 10px">01 acompanhamento a escolha: <br>
+                Requeijão, manteiga, Nutella, geleia, mel ou doce de leite.</p>
+                    <div>
+                        <img src="img/affogatto.jpeg" alt="">
+                        <div class="card">
+                            <div class="card-texto">
+                                <h4>Waffle de Pão de Queijo</h4>
+                                <p class="p">R$21,80</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="img/affogatto.jpeg" alt="">
+                            <div class="card-texto">
+                                <h4>Waffle Tradicional</h4>
+                                <p class="p">R$18,80</p>
+                            </div>
+                    </div>
+                <hr>
+                <div>
+                    <div class="card">
+                        <h4>Pão de Queijo</h4>
+                        <div class="card-texto">
+                            <p>Unidade</p>
+                            <p class="p">R$6,50</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="card">
+                        <h4>Tostex</h4>
+                        <div class="card-texto">
+                            <p>Pão de miga, muçarela e requijão.</p>
+                            <p class="p">R$14,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="card">
+                        <h4>Misto Quente</h4>
+                        <div class="card-texto">
+                            <p>Pão de miga, presunto, muçarela e requijão</p>
+                            <p class="p">R$15,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="card">
+                        <h4>Torta de Frango</h4>
+                        <div class="card-texto">
+                            <p>Unidade. Contém ervilha e milho.</p>
+                            <p class="p">R$10,90</p>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="adicionais">
+                    
+                        <h5>Adicione:</h5>
+                    
+                    <ul>
+                        <li>Nutella</li>
+                         <li class="valorAdicional">R$ 5,90</li>
+                        <li>Geleia</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                        <li>Doce de leite</li>
+                        <li class="valorAdicional">R$ 5,90</li>
+                        <li>Manteiga</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                        <li>Requeijão</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                    </ul>
+                    
+            </section>
+            <section class="doces">
+                <h1>Doces</h1>
+                <div>
+                    <h4>Bolo</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Waffle</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Cookie</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Brownie</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Cinnamon roll</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Iced brownie</h4>
+                </div>
+                <hr>
+                <div>
+                    <h4>Iced brownie nutella</h4>
+                </div>
+                <hr>
+                <div class="adicionais">
+                    
+                        <h5>Adicione:</h5>
+                    
+                    <ul>
+                        <li>Nutella</li>
+                         <li class="valorAdicional">R$ 5,90</li>
+                        <li>Geleia</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                        <li>Doce de Leite</li>
+                        <li class="valorAdicional">R$ 5,90</li>
+                        <li>Sorvete</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                        <li>Manteiga</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                        <li>Requeijão</li>
+                        <li class="valorAdicional">R$ 4,50</li>
+                    </ul>
+                    
+            </section>
+        </div>
+        <hr>
+    </main>
+
+    <footer>
+        <div class="rodape">
+          <div>
+                <h4>Fale conosco</h4>
+                <p>Email: cafeteria_do_gru@gmail.com</p>
+                <p>Tel: (12) 4002-8922</p>
+              </div>
+              <div>
+                <h4>Redes sociais</h4>
+                <ul>
+                  <li><a href="#"><img src="img/face.png" >Facebook</a></li>
+                  <li><a href="#"><img src="img/insta.png">Instagram</a></li>
+                  <li><a href="#"><img src="img/linkdin.png">LinkedIn</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="direitos">
+              <p>© Copyright 2023 Cafeteria do Gru - Todos os direitos reservados</p>
+            </div>
+          </footer>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        </body>
+        <script src="JS/carrossel.js"></script>
+        <script src="JS/nav-dropdown.js"></script>
+</html>
