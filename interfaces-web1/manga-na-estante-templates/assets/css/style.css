@@ -26,3 +26,20 @@ img.mais-vendidos{
     background-size: cover;
     image-rendering: cover;
 }
+
+.row{
+    margin: auto;
+}
+
+.row > .col-lg-6{
+    min-width: 471px;
+}
+
+@media screen and (max-width: 768px) {
+
+    iframe{
+        width: 434px;
+        
+    }
+    
+}

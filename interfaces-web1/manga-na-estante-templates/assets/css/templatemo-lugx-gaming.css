@@ -142,11 +142,11 @@ body {
 }
 
 .section-heading h2 {
-  font-size: 36px;
+  font-size: 50px;
   font-weight: 700;
   text-transform: capitalize;
   margin-top: 20px;
-  line-height: 44px;
+  line-height: 60px;
 }
 
 .section-heading h2 em {
@@ -1501,10 +1501,11 @@ Contact PAge Style
   background-color: #f7f7f7;
   border-radius: 25px;
   padding: 60px;
+  height: 891px;
 }
 
 .contact-page .left-text .section-heading {
-  margin-bottom: 50px;
+  margin-bottom: 90px;
 }
 
 .contact-page .left-text p {
@@ -1515,7 +1516,7 @@ Contact PAge Style
   display: block;
   font-size: 16px;
   color: #aaaaaa;
-  font-size: 300;
+  font-size: 20px;
   margin-bottom: 30px;
 }
 
@@ -1525,7 +1526,7 @@ Contact PAge Style
 
 .contact-page .left-text ul li span {
   display: block;
-  font-size: 14px;
+  font-size: 19px;
   font-weight: 600;
   color: #4a4a4a;
   margin-bottom: 5px;
@@ -1541,12 +1542,12 @@ Contact PAge Style
 
 .contact-page .right-content form input {
   width: 100%;
-  height: 50px;
+  height: 60px;
   border-radius: 25px;
   padding: 0px 20px;
   background-color: #f7f7f7;
   border: 1px solid #e7e7e7;
-  font-size: 14px;
+  font-size: 18px;
   color: #4a4a4a;
   margin-bottom: 30px;
 }
@@ -1558,7 +1559,7 @@ Contact PAge Style
   padding: 20px 20px;
   background-color: #f7f7f7;
   border: 1px solid #e7e7e7;
-  font-size: 14px;
+  font-size: 18px;
   color: #4a4a4a;
   margin-bottom: 30px;
 }
