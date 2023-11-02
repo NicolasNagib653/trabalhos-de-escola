@@ -1595,6 +1595,7 @@ body {
 
 @media (max-width: 767px) {
   .header-area {
+    width: 100vw;
     top: 0;
   }
   .main-banner .right-image span.offer {

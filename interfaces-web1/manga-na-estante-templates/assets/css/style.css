@@ -1,4 +1,22 @@
-    .bi{
+
+body, html{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    margin-bottom: -15px;
+}
+  
+/* pontos de interrupção típicos do dispositivo
+----------------------------
+tela pequena: até 600px
+celular: 600px até 768px
+tablet: 768px até 992px
+área de trabalho: 992px até 1200px
+grandes telas: acima de 1200px
+*/  
+  
+.bi{
     text-align: center;
     vertical-align: middle;
     display: inline-flex;
@@ -31,15 +49,61 @@ img.mais-vendidos{
     margin: auto;
 }
 
-.row > .col-lg-6{
-    min-width: 471px;
+
+.item{
+    margin: auto;
 }
+
+
+
+
 
 @media screen and (max-width: 768px) {
 
+    
+        /* Pagina principal */
+    .main-banner{
+        border-radius: 0 0 80px 80px;
+    }
+
+    .img{
+        width: 100% !important;
+    }
+
+    .section-heading h2{
+        font-size: 40px;
+    }
+
+    .most-played{
+        border-radius: 80px;
+    }
+
+    .most-played .item .down-content {
+        border-radius: 20px;
+    }
+
+    footer{
+        border-radius: 80px 80px 0px 0px !important;
+    }
+
+    /* Loja */
+
+   
+
+    /* Sobre */
+
+    .page-heading{
+        border-radius: 0 0 80px 80px !important;
+    }
+
+    /* Contato */
     iframe{
-        width: 434px;
+        width: 80vw;
         
+    }
+
+    .contact-page .left-text ul li{
+        word-wrap: break-word;
     }
     
 }
