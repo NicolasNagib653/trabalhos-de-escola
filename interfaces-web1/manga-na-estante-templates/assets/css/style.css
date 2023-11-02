@@ -54,10 +54,24 @@ img.mais-vendidos{
     margin: auto;
 }
 
+.most-played div.col-lg-2{
+    width: 26% !important;
+}
+@media screen and (max-width:600px) {
 
+    .row .row{
+        flex-direction: column;
+    }
 
+    .ft{
+        width: 70vw !important;
+        border-radius: 0 !important;
+    }
 
-
+    .ft2{
+        width: 80vw;
+    }
+}
 @media screen and (max-width: 768px) {
 
     
@@ -77,6 +91,7 @@ img.mais-vendidos{
 
     .section-heading h2{
         font-size: 40px;
+        overflow-wrap: break-word;
     }
 
     .most-played{
@@ -90,6 +105,14 @@ img.mais-vendidos{
     footer{
         border-radius: 80px 80px 0px 0px !important;
     }
+
+
+    @media screen and (min-width:600px) and (max-width:768px){
+        .most-played div.col-lg-2{
+            width: 70% !important;
+        }
+    }
+
 
     /* Loja */
 
