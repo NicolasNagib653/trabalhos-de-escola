@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+.page-heading h3{
+    font-size: 2.3em;
+}
+
+.page-heading p{
+    width: 80%;
+    margin: auto;
+}
+
 section{
     width: 100vw;
 
@@ -61,4 +70,53 @@ div.cartao-texto button:hover{
 
 footer{
     margin: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width:992px) {
+    
+    section > div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    div.cartao{
+        width: 40%;
+    }
+
+    div.parte-superior img{
+        height: 457px;
+    }
+
+    div.parte-superior img:nth-child(6){
+        height: 540px;
+    }
+}
+
+@media screen and (min-width: 993px) {
+    .page-heading h3{
+    font-size: 48px;
+    }
+
+    .page-heading p{
+        font-size: 18px;
+        width: 80%;
+        margin: auto;
+    }
+
+    section > div{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1px;
+    }
+    div.cartao{
+        width: 25%;
+    }
+
+    div.parte-superior img{
+        height: 534px;
+    }
+
+    div.parte-superior img:nth-child(6){
+        height: 540px;
+    }
 }
