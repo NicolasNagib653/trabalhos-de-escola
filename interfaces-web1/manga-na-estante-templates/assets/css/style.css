@@ -70,6 +70,11 @@ img.mais-vendidos{
         width: 100% !important;
     }
 
+    .trending .item .thumb{
+        display: flex;
+        justify-content: center;
+    }
+
     .section-heading h2{
         font-size: 40px;
     }
