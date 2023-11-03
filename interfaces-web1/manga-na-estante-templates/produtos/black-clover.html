@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <title>Lugx Gaming - Product Detail</title>
+    <title>Black Clover</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap core CSS -->
     <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -55,11 +56,11 @@ https://templatemo.com/tm-589-lugx-gaming
                     <!-- ***** Logo End ***** -->
                     <!-- ***** Menu Start ***** -->
                     <ul class="nav">
-                      <li><a href="index.html">Início</a></li>
-                      <li><a href="shop.html">Loja</a></li>
-                      <li><a href="product-details.html">Sobre</a></li>
-                      <li><a href="contact.html">Contato</a></li>
-                      <li><a href="cadastro.html">Cadastrar-se</a></li>
+                      <li><a href="../index.html">Início</a></li>
+                      <li><a href="../shop.html">Loja</a></li>
+                      <li><a href="../product-details.html">Sobre</a></li>
+                      <li><a href="../contact.html">Contato</a></li>
+                      <li><a href="../cadastro.html">Cadastrar-se</a></li>
                   </ul>   
                     <a class='menu-trigger'>
                         <span>Menu</span>
@@ -87,7 +88,7 @@ https://templatemo.com/tm-589-lugx-gaming
       <div class="row">
         <div class="col-lg-6">
           <div class="left-image">
-            <img src="../img/black cover300.jpg" alt="">
+            <img src="../img/mangas/black-clover.jpg" alt="">
           </div>
         </div>
         <div class="col-lg-6 align-self-center">
@@ -97,8 +98,8 @@ https://templatemo.com/tm-589-lugx-gaming
           
        
             <button onclick="icompra.innerHTML = Number(icompra.value) - Number(1)"><i>-</i></button>
-            <output name="compra" id="icompra">0</output>
-              <button onclick="icompra.innerHTML = Number(icompra.value) + Number(100)">+</button>
+            <output name="compra" id="icompra"></output>
+              <button onclick="icompra.innerHTML = Number(icompra.value) + Number(1)">+</button>
             <button type="submit"><i class="fa fa-shopping-bag"></i>Adicionar ao carrinho</button>
           <ul>
             <li><span>Gênero:</span> Ação, Magia, Samurai</li>
@@ -160,12 +161,10 @@ https://templatemo.com/tm-589-lugx-gaming
 
   <script>
     var compra = document.getElementById("icompra")
-    while(compra < 0){
-      if(!Math.sign(event.key)){
-        compra.value === 1
-        
-      }}
-      
+    if(compra.value = -1){
+      compra == 0;
+    }
+
       console.log(compra.value)
   </script>
 
