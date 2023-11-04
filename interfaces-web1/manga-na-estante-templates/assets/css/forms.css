@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{
+body{
     overflow: hidden;
 }
 main{
@@ -11,7 +11,7 @@ main{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 10px;
+    margin-top: 40px;
     background-color: rgb(0, 0, 0);
     padding: 10px;
     border-radius: 10px;
@@ -128,6 +128,9 @@ label{
 }
 
 @media screen and (min-width:778px) and (max-width: 992px){
+    body{
+        overflow-y: scroll;
+    }
     section#cadastro{
     width: 60vw;
     }
@@ -148,8 +151,17 @@ label{
     }
 }
 @media screen and (min-width:993px) {
+    body{
+        overflow-y: scroll;
+    }
+
+    .header-area{
+        top: 0;
+        background-color: #111111;
+    }
+
     section#cadastro{
-        margin-top: 30px;
+        margin-top: 50px;
         width: 600px;
     }
     section#cadastro > h1{
