@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+.header-area{
+    background-color: #111111 !important;
+    border-radius: 0;
+    height: 85px!important;
+    position: fixed!important;
+    top: 0!important;
+    padding: 10px 0;
+}
+
+main{
+    margin: 85px 0;
+    text-transform: uppercase;
+}
+
+p{
+    color: white;
+}
+
+section#user-area{
+    display: flex;
+    align-items: center;
+    background-color: #111111;
+    padding: 40px 0 40px 30px;
+    gap: 15px;
+
+}
+
+section#user-area i.bi{
+    height: 70px;
+    width: 70px;
+}
+
+section#user-area i.bi::before{
+    font-size: 70px;
+}
+
+section#compras{
+    background-color: #111111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 20px 0;
+    padding: 10px;
+}
+
+section#compras > div.minhas-compras{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+
+}
+
+section#compras > hr{
+    width: 100%;
+    margin:10px 0 30px;
+}
+
+section#compras i.bi{
+    height: 50px;
+    width: 50px;
+}
+
+section#compras i.bi::before{
+    font-size: 50px;
+}
+
+section#compras > div{
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    font-size: 20px;
+    text-align: center;
+}
+section#compras > div > i{
+    font-size: 50px;
+}
+section#compras > div > h4{
+    font-size: 18px;
+}
+
+section#carteira{
+    background-color: #111111;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin: 20px 0;
+    padding: 10px;
+}
+
+section#carteira > div.minha-carteira{
+    display: flex;
+    width: 100%;
+    background-color: transparent;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+
+}
+
+section#carteira > hr{
+    width: 100%;
+    margin:10px 0 30px;
+}
+
+section#carteira > div{
+    padding: 20px;
+    width: 150px;
+    border-radius: 20px;
+    background-color: #1e1e1e;
+    font-size: 20px;
+    text-align: center;
+}
+section#carteira > div > i{
+    font-size: 50px;
+}
+section#carteira > div > h4{
+    font-size: 18px;
+}
+section > div:hover{
+    color: #;
+}
+
+
+
+
+
+
+footer{
+    margin: 0 !important;
+}
+

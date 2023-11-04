@@ -55,6 +55,53 @@
 		}
 	}
 
+	const elem2 = document.querySelector('.pagina2');
+
+	if (elem2) {
+		const rdn_events_list = new Isotope(elem2, {
+			itemSelector: '.trending-items',
+			layoutMode: 'masonry'
+		});
+		if (filtersElem) {
+			filtersElem.addEventListener('click', function(event) {
+				if (!matchesSelector(event.target, 'a')) {
+					return;
+				}
+				const filterValue = event.target.getAttribute('data-filter');
+				rdn_events_list.arrange({
+					filter: filterValue
+				});
+				filtersElem.querySelector('.is_active').classList.remove('is_active');
+				event.target.classList.add('is_active');
+				event.preventDefault();
+			});
+		}
+	}
+
+	const elem3 = document.querySelector('.pagina3');
+
+
+	if (elem3) {
+		const rdn_events_list = new Isotope(elem3, {
+			itemSelector: '.trending-items',
+			layoutMode: 'masonry'
+		});
+		if (filtersElem) {
+			filtersElem.addEventListener('click', function(event) {
+				if (!matchesSelector(event.target, 'a')) {
+					return;
+				}
+				const filterValue = event.target.getAttribute('data-filter');
+				rdn_events_list.arrange({
+					filter: filterValue
+				});
+				filtersElem.querySelector('.is_active').classList.remove('is_active');
+				event.target.classList.add('is_active');
+				event.preventDefault();
+			});
+		}
+	}
+
 
 	// Menu Dropdown Toggle
 	if($('.menu-trigger').length){

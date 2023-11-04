@@ -853,10 +853,10 @@ Trending Style
 .trending .item span.price {
   text-align: right;
   position: absolute;
-  right: 20px;
+  right: 0px;
   top: 20px;
   border-radius: 10px;
-  background-color: black;
+  background-color: #00000063;
   font-size: 17px;
   text-transform: uppercase;
   font-weight: 600;

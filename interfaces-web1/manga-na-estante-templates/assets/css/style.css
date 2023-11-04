@@ -34,8 +34,8 @@ img.mais-vendidos{
 }
 .item > .thumb > a > img{
     background-color: black;
-    width: 206px !important;
-    height: 291px;
+    width: 166px  !important;
+    height: 241px;
 }
 .thumb .img{
     width: 100%;
@@ -64,8 +64,8 @@ img.mais-vendidos{
     }
 
     .ft{
-        width: 70vw !important;
-        border-radius: 0 !important;
+        width: 270px !important;
+        border-radius: 10px !important;
     }
 
     .ft2{
@@ -86,7 +86,11 @@ img.mais-vendidos{
 
     .trending .item .thumb{
         display: flex;
-        justify-content: center;
+        justify-content: start;
+    }
+
+    .trending .item .thumb{
+        overflow: visible;
     }
 
     .section-heading h2{
@@ -108,8 +112,19 @@ img.mais-vendidos{
 
 
     @media screen and (min-width:600px) and (max-width:768px){
+        .programas>*{
+            width: 50%;
+        }
         .most-played div.col-lg-2{
             width: 70% !important;
+        }
+        .item > .thumb > a > img{
+            width: 206px;
+        }
+        .itens-recomendados{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
@@ -134,4 +149,18 @@ img.mais-vendidos{
         word-wrap: break-word;
     }
     
+}
+@media screen and (min-width:769px) {
+    .item > .thumb > a > img{
+        width: 206px !important;
+    }
+    img.mais-vendidos{
+        height: 321px !important;
+    }
+    .itens-recomendados{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
 }
