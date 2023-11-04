@@ -88,7 +88,7 @@ https://templatemo.com/tm-589-lugx-gaming
                         <label for="inome">Insira seu nome:</label>
                     </div>
                     <div class="campo">
-                        <input type="text" name="cpf" id="icpf" placeholder="" required>
+                        <input type="text" name="cpf" id="icpf" minlength="14" maxlength="14" placeholder="" required>
                         <label for="icpf">Insira seu CPF:</label>
                     </div>
                     <div class="campo">
@@ -96,15 +96,16 @@ https://templatemo.com/tm-589-lugx-gaming
                         <label for="iemail">Insira seu e-mail:</label>
                     </div>
                     <div class="campo">
-                        <input type="password" name="senha" id="isenha" placeholder="" required autocomplete="current-password">
+                        <input type="password" name="senha" id="isenha" minlength="8" placeholder="" required autocomplete="current-password">
                         <label for="isenha">Insira sua senha:</label>
                     </div>
                     <div class="campo">
-                        <input type="password" name="consenha" id="iconsenha" placeholder="" required autocomplete="current-password">
+                        <input type="password" name="consenha" id="iconsenha" minlength="8" placeholder="" required autocomplete="current-password">
                         <label for="iconsenha">Confirmar a senha:</label>
                     </div>
                     <div class="campo">
                         <input type="date" name="data" id="idata" required autocomplete="bday-day">
+                        <input type="text" id="idade" style="display: none;">
                         <label for="idata" style="display: none;">Data</label>
                     </div>
             
@@ -123,6 +124,9 @@ https://templatemo.com/tm-589-lugx-gaming
   <script src="assets/js/owl-carousel.js"></script>
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script src="assets/js/script.js"></script>
+
+  
 
   </body>
 </html>

@@ -1,0 +1,8 @@
+
+.trending-box .item{
+    max-height: 398px !important;
+}
+
+.item > .thumb > a > img{
+    height: 301px;
+}
