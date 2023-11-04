@@ -1,24 +1,29 @@
 @charset "UTF-8";
 
-.header-area{
+html,
+body {
+    min-height: 100vh;
+}
+
+.header-area {
     background-color: #111111 !important;
     border-radius: 0;
-    height: 85px!important;
-    position: fixed!important;
-    top: 0!important;
+    height: 85px !important;
+    position: fixed !important;
+    top: 0 !important;
     padding: 10px 0;
 }
 
-main{
+main {
     margin: 85px 0;
     text-transform: uppercase;
 }
 
-p{
+p {
     color: white;
 }
 
-section#user-area{
+section#user-area {
     display: flex;
     align-items: center;
     background-color: #111111;
@@ -27,17 +32,18 @@ section#user-area{
 
 }
 
-section#user-area i.bi{
+section#user-area i.bi {
     height: 70px;
     width: 70px;
 }
 
-section#user-area i.bi::before{
+section#user-area i.bi::before {
     font-size: 70px;
 }
 
-section#compras{
+section#compras {
     background-color: #111111;
+    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -46,7 +52,7 @@ section#compras{
     padding: 10px;
 }
 
-section#compras > div.minhas-compras{
+section#compras>div.minhas-compras {
     display: flex;
     width: 100%;
     background-color: transparent;
@@ -57,21 +63,21 @@ section#compras > div.minhas-compras{
 
 }
 
-section#compras > hr{
+section#compras>hr {
     width: 100%;
-    margin:10px 0 30px;
+    margin: 10px 0 30px;
 }
 
-section#compras i.bi{
+section#compras i.bi {
     height: 50px;
     width: 50px;
 }
 
-section#compras i.bi::before{
+section#compras i.bi::before {
     font-size: 50px;
 }
 
-section#compras > div{
+section#compras>div {
     padding: 20px;
     width: 150px;
     border-radius: 20px;
@@ -79,15 +85,18 @@ section#compras > div{
     font-size: 20px;
     text-align: center;
 }
-section#compras > div > i{
+
+section#compras>div>i {
     font-size: 50px;
 }
-section#compras > div > h4{
+
+section#compras>div>h4 {
     font-size: 18px;
 }
 
-section#carteira{
+section#carteira {
     background-color: #111111;
+    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -96,7 +105,7 @@ section#carteira{
     padding: 10px;
 }
 
-section#carteira > div.minha-carteira{
+section#carteira>div.minha-carteira {
     display: flex;
     width: 100%;
     background-color: transparent;
@@ -107,12 +116,12 @@ section#carteira > div.minha-carteira{
 
 }
 
-section#carteira > hr{
+section#carteira>hr {
     width: 100%;
-    margin:10px 0 30px;
+    margin: 10px 0 30px;
 }
 
-section#carteira > div{
+section#carteira>div {
     padding: 20px;
     width: 150px;
     border-radius: 20px;
@@ -120,22 +129,77 @@ section#carteira > div{
     font-size: 20px;
     text-align: center;
 }
-section#carteira > div > i{
+
+section#carteira>div>i {
     font-size: 50px;
 }
-section#carteira > div > h4{
+
+section#carteira>div>h4 {
     font-size: 18px;
 }
-section > div:hover{
-    color: #;
+
+section>div.bloco {
+    transition: .3s ease-in-out all;
 }
 
+section>div.bloco>h4 {
+    transition: .3s ease-in-out all;
+}
 
+section>div.bloco:hover {
+    color: #0071f8 !important;
+}
 
+section>div.bloco:hover>h4 {
+    color: #0071f8 !important;
+}
 
-
-
-footer{
+footer {
     margin: 0 !important;
 }
 
+@media screen and (max-width: 470px) {
+
+    section#carteira,
+    section#compras {
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    section>div.bloco {
+        width: 230px !important;
+        height: 200px;
+    }
+
+    section>div.bloco i {
+        font-size: 60px !important;
+    }
+
+    section>div.bloco h4 {
+        font-size: 1.3em !important;
+    }
+
+    section>div.bloco span {
+        display: block;
+    }
+}
+
+@media screen and (min-width:992px) {
+    section>div.bloco {
+        width: 300px !important;
+        height: 200px;
+    }
+
+    section>div.bloco i {
+        font-size: 70px !important;
+    }
+
+    section>div.bloco h4 {
+        font-size: 1.4em !important;
+    }
+
+
+}
