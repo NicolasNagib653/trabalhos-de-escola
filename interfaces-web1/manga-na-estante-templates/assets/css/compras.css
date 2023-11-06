@@ -5,14 +5,15 @@ body {
     min-height: 100vh;
 }
 
-span.pontos{
+span.pontos {
     display: none;
 }
 
-.nav > li:nth-child(5):hover span.nome{
+.nav>li:nth-child(5):hover span.nome {
     display: none;
 }
-.nav > li:last-child:hover span.pontos{
+
+.nav>li:last-child:hover span.pontos {
     display: block;
 }
 
@@ -92,7 +93,6 @@ section#compras>div {
     padding: 20px;
     width: 150px;
     border-radius: 20px;
-    background-color: #1e1e1e;
     font-size: 20px;
     text-align: center;
 }
@@ -136,7 +136,6 @@ section#carteira>div {
     padding: 20px;
     width: 150px;
     border-radius: 20px;
-    background-color: #1e1e1e;
     font-size: 20px;
     text-align: center;
 }
@@ -153,15 +152,13 @@ section>div.bloco {
     transition: .3s ease-in-out all;
 }
 
-section>div.bloco>h4 {
+section>div.bloco h4 {
     transition: .3s ease-in-out all;
 }
 
-section>div.bloco:hover {
-    color: #0071f8 !important;
-}
 
-section>div.bloco:hover>h4 {
+
+.bloco h4:hover {
     color: #0071f8 !important;
 }
 
@@ -182,7 +179,6 @@ footer {
 @media screen and (min-width:768px) and (max-width:992px) {
     section>div.bloco {
         width: 230px !important;
-        height: 200px;
     }
 
     section>div.bloco i {
@@ -196,12 +192,35 @@ footer {
     section>div.bloco span {
         display: block;
     }
+    .col-lg-2 {
+        background-color: #1e1e1e;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px #00000057;
+        margin: auto;
+        flex: 0 0 auto;
+        width: 82%;
+        height: 421px;
+
+    }
+
+    .bloco * {
+        overflow: hidden;
+    }
+
+    .down-content {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .down-content>.category {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width:992px) {
     section>div.bloco {
         width: 300px !important;
-        height: 200px;
     }
 
     section>div.bloco i {
@@ -209,8 +228,32 @@ footer {
     }
 
     section>div.bloco h4 {
-        font-size: 1.4em !important;
+        font-size: 0.9em !important;
     }
 
+    .col-lg-2 {
+        background-color: #1e1e1e;
+        border: 1px solid black;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px #00000057;
+        margin: auto;
+        flex: 0 0 auto;
+        width: 82%;
+        height: 421px;
+
+    }
+
+    .bloco * {
+        overflow: hidden;
+    }
+
+    .down-content {
+        text-align: left;
+        padding: 10px;
+    }
+
+    .down-content>.category {
+        font-size: 16px;
+    }
 
 }
