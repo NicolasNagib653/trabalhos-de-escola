@@ -36,7 +36,7 @@ div.parte-superior{
     border-bottom: 0;
     border-radius: 10px 10px 0 0;
     overflow: auto;
-
+    width: 270px;
 }
 
 div.parte-inferior{
@@ -86,14 +86,15 @@ footer{
     section > div{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     div.cartao{
-        width: 40%;
+        width: 100%;
     }
 
     div.parte-superior img{
-        height: 457px;
+        height: 391px;
     }
 
     div.parte-superior img:nth-child(6){
@@ -123,7 +124,7 @@ footer{
         column-gap: 42px;
     }
     div.cartao{
-        width: 30%;
+        width: 100%;
     }
 
 
@@ -163,11 +164,15 @@ footer{
         display: flex;
         flex-wrap: wrap;
         column-gap: 100px;
+        justify-content: center;
     }
-    div.cartao{
+    div.bloco{
         width: 21%;
     }
 
+    div.cartao {
+        width: 308px;
+    }
 
     div.parte-superior img{
         height: 432px;

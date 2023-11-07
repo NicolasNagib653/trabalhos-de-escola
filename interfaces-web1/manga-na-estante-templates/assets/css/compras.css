@@ -55,7 +55,7 @@ section#user-area i.bi::before {
 
 section#compras {
     background-color: #111111;
-    border-radius: 20px;
+    border-radius: 0px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -73,6 +73,28 @@ section#compras>div.minhas-compras {
     padding-left: 0;
     gap: 20px;
 
+}
+.col-lg-2 {
+    background-color: #1e1e1e;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #00000057;
+    margin: auto;
+    flex: 0 0 auto;
+    width: 219px;
+    height: 421px;
+
+}
+.ft2 {
+    width: 100%;
+}
+.thumb .img{
+    border-radius: 10px 10px 0 0;
+}
+
+.down-content{
+    text-align: initial;
+    padding: 10px;
 }
 
 section#compras>hr {
@@ -168,17 +190,8 @@ footer {
 
 @media screen and (max-width: 470px) {
 
-    section#carteira,
-    section#compras {
-        justify-content: center;
-        column-gap: 40px;
-        row-gap: 20px;
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:992px) {
     section>div.bloco {
-        width: 230px !important;
+        width: 100% !important;
     }
 
     section>div.bloco i {
@@ -186,7 +199,33 @@ footer {
     }
 
     section>div.bloco h4 {
-        font-size: 1.3em !important;
+        font-size: 1em !important;
+    }
+    section#carteira,
+    section#compras {
+        justify-content: center;
+        column-gap: 40px;
+        row-gap: 20px;
+    }
+}
+@media screen and (min-width:471px) and (max-width:992px) {
+    section>div.bloco {
+        width: 50% !important;
+    }
+
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+    section>div.bloco {
+        width: 50% !important;
+    }
+
+    section>div.bloco i {
+        font-size: 60px !important;
+    }
+
+    section>div.bloco h4 {
+        font-size: 1em !important;
     }
 
     section>div.bloco span {
@@ -199,7 +238,7 @@ footer {
         box-shadow: 1px 1px 5px #00000057;
         margin: auto;
         flex: 0 0 auto;
-        width: 82%;
+        width: 219px;
         height: 421px;
 
     }
