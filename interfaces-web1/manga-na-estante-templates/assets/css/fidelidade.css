@@ -28,7 +28,7 @@ div.cartao{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
     border-radius: 10px;
     margin: 30px auto;
-    width: 50vw;
+    width: 270px;
 }
 
 div.parte-superior{
@@ -36,7 +36,7 @@ div.parte-superior{
     border-bottom: 0;
     border-radius: 10px 10px 0 0;
     overflow: auto;
-    width: 270px;
+    width: 100%;
 }
 
 div.parte-inferior{
@@ -122,6 +122,7 @@ footer{
         display: flex;
         flex-wrap: wrap;
         column-gap: 42px;
+        justify-content: space-around;
     }
     div.cartao{
         width: 100%;

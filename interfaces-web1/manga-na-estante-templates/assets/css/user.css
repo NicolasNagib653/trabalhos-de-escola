@@ -54,7 +54,6 @@ section#user-area i.bi::before {
 
 section#compras {
     background-color: #111111;
-    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -107,7 +106,6 @@ section#compras>div>h4 {
 
 section#carteira {
     background-color: #111111;
-    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
