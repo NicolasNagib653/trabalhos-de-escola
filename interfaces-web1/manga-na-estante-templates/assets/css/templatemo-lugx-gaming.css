@@ -554,7 +554,6 @@ Header Style
 @media (max-width: 767px) {
   .background-header .main-nav {
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
-    border-radius: 0px 0px 25px 25px;
     width: 100%;
   }
 
@@ -589,6 +588,12 @@ Header Style
   .header-area .main-nav .nav {
     height: auto;
     flex-basis: 100%;
+    width: 100vw !important;
+    border-radius: 0 !important;
+  
+  }
+  .header-area .col-12{
+    padding: 0;
   }
 
   .header-area .main-nav .logo {
@@ -629,7 +634,6 @@ Header Style
 
   .header-area {
     background-color: transparent;
-    padding: 0px 15px;
     height: 80px;
     box-shadow: none;
     text-align: center;
@@ -668,11 +672,11 @@ Header Style
   }
 
   .header-area.header-sticky .nav {
-    margin-top: 100px !important;
+    margin-top: 85px !important;
   }
 
   .background-header.header-sticky .nav {
-    margin-top: 80px !important;
+    margin-top: 70px !important;
   }
 
   .header-area .main-nav .nav li {
@@ -1196,7 +1200,6 @@ Page Header Style
 
 .page-heading {
   background-image: url(../images/page-heading-bg.jpg);
-  border-radius: 0px 0px 150px 150px;
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1305,7 +1308,7 @@ Shop Page Style
 }
 
 .trending-box .item .down-content {
-  padding: 25px;
+  padding: 15px;
 }
 
 .trending-box .item .down-content span.category {

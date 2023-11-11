@@ -1,9 +1,29 @@
 @charset "UTF-8";
 
+.header-area.header-sticky .nav {
+    margin-top: 35px !important;
+  }
+
+  .background-header.header-sticky .nav {
+    margin-top: 30px !important;
+  }
+.nav{
+    display: block;
+    width: 100vw;
+    border-radius: 0;
+}
+.imagem{
+    margin: auto;
+    width: 70%;
+}
+.single-product p{
+    color: white;
+}
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 50px;
 }
 .compra{
     display: flex;
