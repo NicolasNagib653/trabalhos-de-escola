@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.compra{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+input[type="number"]{
+    width: 60%;
+    text-align: center;
+    padding: 6px;
+    border-radius: 20px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+.addsub{
+    background-color: #308fff;
+    padding: 6px;
+    border-radius: 20px;
+    width: 10%;
+}
+
+.container > button{
+    width: 85%;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #308fff;
+}

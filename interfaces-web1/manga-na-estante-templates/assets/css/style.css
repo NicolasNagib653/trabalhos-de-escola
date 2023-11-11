@@ -55,7 +55,8 @@ img.mais-vendidos{
 }
 
 .most-played div.col-lg-2{
-    width: 26% !important;
+    width: 28% !important;
+    padding: 0;
 }
 @media screen and (max-width:600px) {
 

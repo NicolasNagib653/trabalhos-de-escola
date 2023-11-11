@@ -57,15 +57,15 @@ main{
     background: transparent;
 }
 
-.campo input:focus~label,.campo input:not(:placeholder-shown)~label{
-  transform:translateY(-120%) scale(.75)
+.campo input:focus~label{
+  transform:translateY(-120%) scale(.75) !important;
 }
 
 .campo:focus-within::before{
 transform:scaleX(1)
 }
 
-.campo input:focus~label,.campo input:not(:placeholder-shown)~label{
+.campo input:not(:placeholder-shown)~label{
 transform:translateY(-120%) scale(.75)
 }
 

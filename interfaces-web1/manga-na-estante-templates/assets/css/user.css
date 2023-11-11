@@ -5,6 +5,17 @@ body {
     min-height: 100vh;
 }
 
+span.pontos{
+    display: none;
+}
+
+.nav > li:nth-child(5):hover span.nome{
+    display: none;
+}
+.nav > li:last-child:hover span.pontos{
+    display: block;
+}
+
 .header-area {
     background-color: #111111 !important;
     border-radius: 0;
@@ -43,7 +54,6 @@ section#user-area i.bi::before {
 
 section#compras {
     background-color: #111111;
-    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -96,7 +106,6 @@ section#compras>div>h4 {
 
 section#carteira {
     background-color: #111111;
-    border-radius: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

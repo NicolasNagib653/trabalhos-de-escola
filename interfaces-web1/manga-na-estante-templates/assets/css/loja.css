@@ -5,4 +5,5 @@
 
 .item > .thumb > a > img{
     height: 301px;
+    width: 100% !important;
 }

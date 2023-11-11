@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+
+
+
+
 .page-heading h3{
     font-size: 2.3em;
 }
@@ -24,7 +28,7 @@ div.cartao{
     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
     border-radius: 10px;
     margin: 30px auto;
-    width: 50vw;
+    width: 270px;
 }
 
 div.parte-superior{
@@ -32,7 +36,7 @@ div.parte-superior{
     border-bottom: 0;
     border-radius: 10px 10px 0 0;
     overflow: auto;
-
+    width: 100%;
 }
 
 div.parte-inferior{
@@ -82,14 +86,15 @@ footer{
     section > div{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
 
     div.cartao{
-        width: 40%;
+        width: 100%;
     }
 
     div.parte-superior img{
-        height: 457px;
+        height: 391px;
     }
 
     div.parte-superior img:nth-child(6){
@@ -117,9 +122,10 @@ footer{
         display: flex;
         flex-wrap: wrap;
         column-gap: 42px;
+        justify-content: space-around;
     }
     div.cartao{
-        width: 30%;
+        width: 100%;
     }
 
 
@@ -158,12 +164,16 @@ footer{
     section > div{
         display: flex;
         flex-wrap: wrap;
-        column-gap: 42px;
+        column-gap: 100px;
+        justify-content: center;
     }
-    div.cartao{
-        width: 23%;
+    div.bloco{
+        width: 21%;
     }
 
+    div.cartao {
+        width: 308px;
+    }
 
     div.parte-superior img{
         height: 432px;
