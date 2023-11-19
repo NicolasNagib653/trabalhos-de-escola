@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <title>Eventos em JavaScript</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#senha{
+    display: block;
+    color: #ffd763;
+    background-color: black;
+    box-shadow: 0px 0px 0px gray;
+    border: solid 1px gray;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 10px 0 ;
+    width: 100%;
+    height: 30px;
+}
+
+#senha[type = text], #senha[type=password]{
+    border: 0;
+    border-radius: 0;
+    border-bottom: solid 1px gray;
+}
+#senha[type = text]:hover, #senha[type=password]:hover{
+    transform: none;
+    background-color: rgba(66, 64, 64, 0.589);
+}
+#senha::placeholder{
+    color: #ffd763;
+}
+body > div{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+body > div > *{
+    padding: 5px;
+}
+.bloco{
+    background-color: black;
+    color: #ffd763;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Exemplo primeiro site</h1>
+        <h4>Evento onclick</h4>
+            <div class="input" style=" display: flex;flex-direction:row;align-items: center;">
+                <input type="password" required name="senha" id="senha" autocomplete="off" placeholder="Criar senha" style="   margin-bottom: 10px;margin-right: -28px;">
+                <i class="bi bi-eye" id="btn-senha" onclick="mostrarSenha()" style="color: gray; cursor: pointer;"></i>
+            </div>
+    </div>
+
+    <div>
+        <h1>Exemplo segundo site</h1>
+        <h4>Evento onmousemove</h4>
+        <div class="bloco" onmousemove="myMoveFunction()">
+            <p>onmousemove</p>
+            <p id="demo1">Mouse over me!</p>
+          </div>
+    </div>
+      
+
+    <div>
+        <h1>Exemplo terceiro site</h1>
+        <h3>Evento keypress</h3>
+        <h1 style="color:rgb(0, 0, 0)">GeekforGeeks</h1>
+        <p>Press any key inside the input field.</p>
+        <input type="text" id="inputField" style="background-color:rgb(0, 0, 0)">
+    </div>
+        
+   
+
+    <script>
+        function mostrarSenha(){
+    var inputPass    = document.getElementById('senha');
+    var btnShowPass  = document.getElementById('btn-senha');
+
+    if(inputPass.type === 'password')
+    {
+      inputPass.setAttribute('type', 'text');
+      btnShowPass.classList.replace('bi-eye','bi-eye-slash');
+    }
+    else{
+      inputPass.setAttribute('type', 'password')
+      btnShowPass.classList.replace('bi-eye-slash','bi-eye')
+    }
+  }
+
+    </script>
+    <script>
+        let z = 0;
+
+function myMoveFunction() {
+  document.getElementById("demo1").innerHTML = z+=1;
+}
+    </script>
+    <script>
+        document.getElementById(
+            "inputField").addEventListener("keypress", GFGFun);
+        function GFGFun() {
+            document.getElementById(
+                "inputField").style.backgroundColor =
+                "yellow";
+        }
+
+    </script>
+</body>
+</html>
