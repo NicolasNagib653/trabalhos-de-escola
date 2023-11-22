@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+*{
+    font-family: 'Pixelify Sans', sans-serif;
+    color: black;
+}
+html{
+    font-size: 62.5%;  
+}
+body{
+    background: #ceffff no-repeat url("../img/virus1.png") center center;
+    background-size: 100px;  
+}
+fieldset{
+    margin: 0;
+    border: 0;
+    background-color: #ceffff;
+    display: flex;
+    flex-wrap: wrap;  
+}
+fieldset h4{
+    font-size: 7rem;
+    width: 100%;
+    letter-spacing: 2px;
+}
+img{
+    height: 25rem;
+    width: 25rem;
+}
+.alternativas{
+    width: 85%;
+    background-color: #6BF2F2;
+    padding: 15px 0;
+    font-size: 6rem;
+    cursor: pointer;
+    text-align: center;
+    border: 5px solid black;
+    margin: 5px auto;
+    transition: .3s ease-in-out all;
+}
+.alternativas:hover{
+    background-color: #027373;
+    color: white;
+    transform: scale(1.01);
+}
+.alternativas:hover a{
+    color: white;
+}
+a{
+    font-size: 6rem;
+    text-decoration: none;
+    transition: .3s ease-in-out all;
+    
+}
+a:hover{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    .alternativas{
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+    .alternativas{
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+    .alternativas{
+        width: 49%;
+    }
+}

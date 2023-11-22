@@ -4,18 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 1</title>
 </head>
 <body>
     <main>
+        
         <fieldset>
             <h4>1- Qual a vacina que serve como mensageira para o sistema imunológico</h4>
-            <a href="../falha.html">DNA</a>
-            <a href="../falha.html">Vírus inativado</a>
-            <a href="../falha.html">Vírus atenuado</a>
-            <a href="pag002.html">RNA</a>
+            <div class="alternativas" onclick="falha()">DNA</div>
+            <div class="alternativas" onclick="falha()">Vírus inativado</div>
+            <div class="alternativas" onclick="falha()">Vírus atenuado</div>
+            <div class="alternativas" onclick="proximo()">RNA</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo() {
+            location.href = 'pag002.html'        
+        }
+    </script>
 </body>
 </html>

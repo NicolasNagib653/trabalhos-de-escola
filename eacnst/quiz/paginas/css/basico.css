@@ -9,6 +9,3 @@ a{
 a:hover{
     cursor: text;
 }
-fieldset > a:hover{
-    cursor: pointer;
-}

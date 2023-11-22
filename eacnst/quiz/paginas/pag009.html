@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 9</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4><a href="pag010.html">&radic;9</a>-Qual das questões anteriores falava sobre a imunidade adaptativa?</h4>
-            <a href="../falha.html">3,5</a>
-            <a href="pag010.html">6</a>
-            <a href="../falha.html">1</a>
-            <a href="../falha.html">7</a>
+            <h4><span onclick="proximo()">&radic;9</span>-Qual das questões anteriores falava sobre a imunidade adaptativa?</h4>
+            <div class="alternativas" onclick="falha()">3,5</div>
+            <div class="alternativas" onclick="falha()">6</div>
+            <div class="alternativas" onclick="falha()">1</div>
+            <div class="alternativas" onclick="falha()">7</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag010.html'        
+        }
+    </script>
 </body>
 </html>

@@ -4,16 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 8</title>
+    <style>
+        span{
+            position: absolute;
+            z-index: 3;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>8-A imunidade adquirida é uma respos<a href="pag009.html">t</a>a específica. Qual dos linfócitos atuam na imunidade celular?</h4>
-            <a href="../falha.html">Linfócitos B</a>
-            <a href="../falha.html">Linfocitos T</a>
+            <h4>8-A imunidade adquirida é uma resposta específica. Qual dos linfócitos atuam na imunidade celular?</h4>
+            <div class="alternativas" onclick="falha()">Linfócitos B</a></div>
+            <div class="alternativas" onclick="falha()">Linfócitos<a href="pag009.html"> T</a></div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag009.html'        
+        }
+    </script>
 </body>
 </html>

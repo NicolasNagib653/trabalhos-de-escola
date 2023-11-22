@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 7</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>7-<a href="pag008.html">Todas</a> vacinas a baixo são essenciais para o desenvolvimento da imunidade dos seres humanos, qual delas é a mais importante?</h4>
-            <a href="../falha.html">Febre amarela</a>
-            <a href="../falha.html">Gripe</a>
-            <a href="../falha.html">Hepatite A & B</a>
-            <a href="../falha.html">HPV</a>
+            <h4>7-<span onclick="proximo()">Todas</span> vacinas a baixo são essenciais para o desenvolvimento da imunidade dos seres humanos, qual delas é a mais importante?</h4>
+            <div class="alternativas" onclick="falha()">Febre amarela</div>
+            <div class="alternativas" onclick="falha()">Gripe</div>
+            <div class="alternativas" onclick="falha()">Hepatite A & B</div>
+            <div class="alternativas" onclick="falha()">HPV</div>
         </fieldset>
     </main>
+    
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag008.html'        
+        }
+    </script>
 </body>
 </html>

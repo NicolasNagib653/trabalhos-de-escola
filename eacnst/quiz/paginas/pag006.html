@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 6</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>6-Sabendo que U pode ser calculado pelo produto de R e I é correto afirmar:</h4>
-            <a href="pag007.html">“U” é inversamente proporcional a “R”</a>
-            <a href="../falha.html">“R” diretamente proporcional a “U”</a>
-            <a href="../falha.html">“I” é igual a “R”</a>
-            <a href="../falha.html">“U” não existe</a>
+            <h4>6-Quem foi que inventou a vacina?</h4>
+            <div class="alternativas" onclick="proximo()">Edward jenner</div>
+            <div class="alternativas" onclick="falha()">Nicolas nagib</div>
+            <div class="alternativas" onclick="falha()">Edwar jenner</div>
+            <div class="alternativas" onclick="falha()">Fisher guallhing</div>
         </fieldset>
     </main>
+    
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag007.html'        
+        }
+    </script>
 </body>
 </html>

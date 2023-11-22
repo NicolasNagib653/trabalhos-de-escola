@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 5</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>5-Qual o nome do <a href="../falha.html">cotonete</a> utilizado no teste de COVID-19?</h4>
-            <a href="../falha.html">Bastonetes</a>
-            <a href="../falha.html">Limpador de ouvido</a>
-            <a href="pag006.html">Swab</a>
-            <a href="../falha.html">Orkut</a>
+            <h4>5-Qual o nome do <span onclick="falha()">cotonete</span> utilizado no teste de COVID-19?</h4>
+            <div class="alternativas" onclick="falha()">Bastonetes</div>
+            <div class="alternativas" onclick="falha()">Limpador de ouvido</div>
+            <div class="alternativas" onclick="proximo()">Swab</div>
+            <div class="alternativas" onclick="falha()">orkut</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo() {
+            location.href = 'pag006.html'        
+        }
+    </script>
 </body>
 </html>

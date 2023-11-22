@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 10</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>Pergunta</h4>
-            <a href="../falha.html">A</a>
-            <a href="../falha.html">B</a>
-            <a href="../falha.html">C</a>
-            <a href="pag011.html">D</a>
+            <h4>10-Quais são as vacinas que devem ser tomadas durante a adolescência?</h4>
+            <div class="alternativas" onclick="falha()">Hepatite A, Febre Amarela, Triplice viral e HFV.</div>
+            <div class="alternativas" onclick="falha()">Hepatite A, Febre Amarela, Tríplice virol e HPV.</div>
+            <div class="alternativas" onclick="falha()">Hepatite B, Febre Amarela, Triplice viral e HPV.</div>
+            <div class="alternativas" onclick="proximo()">Hepatite B, Febre Amarela, Tríplice viral e HPV.</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag011.html'        
+        }
+    </script>
 </body>
 </html>

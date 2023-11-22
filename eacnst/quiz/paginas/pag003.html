@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 3</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4><a href="pag004.html">3</a>-Qual a linha de defesa em que a imunidade é adaptativa?</h4>
-            <a href="../falha.html">Primeira linha</a>
-            <a href="../falha.html">Segunda linha</a>
-            <a href="../falha.html">Quarta linha</a>
-            <a href="../falha.html">Nenhuma das anteriores</a>
+            <h4><span onclick="proximo()">3</span>-Qual a linha de defesa em que a imunidade é adaptativa?</h4>
+            <div class="alternativas" onclick="falha()">Primeira linha</div>
+            <div class="alternativas" onclick="falha()">Segunda linha</div>
+            <div class="alternativas" onclick="falha()">Quarta linha</div>
+            <div class="alternativas" onclick="falha()">Nenhuma das anteriores</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo() {
+            location.href = 'pag004.html'        
+        }
+    </script>
 </body>
 </html>

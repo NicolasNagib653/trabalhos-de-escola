@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 14</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>Pergunta</h4>
-            <a href="../falha.html">A</a>
-            <a href="pag015.html">B</a>
-            <a href="../falha.html">C</a>
-            <a href="../falha.html">D</a>
+            <h4>14-Qual vacina o SUS não fornece?</h4>
+            <div class="alternativas" onclick="falha()">Tríplice Viral</div>
+            <div class="alternativas" onclick="proximo()">neumocócica</div>
+            <div class="alternativas" onclick="falha()">Tetraviral</div>
+            <div class="alternativas" onclick="falha()">DTP</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag015.html'        
+        }
+    </script>
 </body>
 </html>

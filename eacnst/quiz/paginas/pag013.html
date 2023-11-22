@@ -4,18 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/basico.css">
+    <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 13</title>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>Pergunta</h4>
-            <a href="../falha.html">A</a>
-            <a href="../falha.html">B</a>
-            <a href="../falha.html">C</a>
-            <a href="pag014.html">D</a>
+            <h4>13-Qual dos exemplos a seguir é considerado imunidade humoral:</h4>
+            <div class="alternativas" onclick="proximo()">Rejeição de transplantes (em parte)</div>
+            <div class="alternativas" onclick="falha()">Rejeição de transplantes (total)</div>
+            <div class="alternativas" onclick="falha()">Rejeição de implantes (total)</div>
+            <div class="alternativas" onclick="falha()">Rejeição de implantes (em parte)</div>
         </fieldset>
     </main>
+
+    <script>
+        function falha() {
+            location.href = '../falha.html'
+        }
+        function proximo(params) {
+            location.href = 'pag014.html'        
+        }
+    </script>
 </body>
 </html>
