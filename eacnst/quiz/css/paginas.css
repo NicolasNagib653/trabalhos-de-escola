@@ -18,7 +18,7 @@ fieldset{
     flex-wrap: wrap;  
 }
 fieldset h4{
-    font-size: 7rem;
+    font-size: 4rem;
     width: 100%;
     letter-spacing: 2px;
 }
@@ -30,7 +30,7 @@ img{
     width: 85%;
     background-color: #6BF2F2;
     padding: 15px 0;
-    font-size: 6rem;
+    font-size: 3rem;
     cursor: pointer;
     text-align: center;
     border: 5px solid black;
@@ -59,16 +59,25 @@ a:hover{
     .alternativas{
         width: 49%;
     }
+
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     .alternativas{
         width: 49%;
+        font-size: 6rem;
+    }
+    fieldset h4{
+        font-size: 7rem;
     }
 }
 
 @media screen and (min-width: 1201px) {
     .alternativas{
         width: 49%;
+        font-size: 6rem;
+    }
+    fieldset h4{
+        font-size: 7rem;
     }
 }
