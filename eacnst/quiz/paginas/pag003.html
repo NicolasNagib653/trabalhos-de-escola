@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 3</title>
+    <style>
+        /* 
+        #afcdea
+        #98c3ed
+        #6aa9e9
+        #4a9ae9
+        #318CE7
+        */
+        body{
+            background: #d1e7fc;
+        }
+        fieldset{
+            background: #d1e7fc;
+        }
+        .alternativas{
+            background: #afcdea;
+        }
+        .alternativas:hover{
+            background: #74889b;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
             <h4><span onclick="proximo()">3</span>-Qual a linha de defesa em que a imunidade é adaptativa?</h4>
-            <div class="alternativas" onclick="falha()">Primeira linha</div>
             <div class="alternativas" onclick="falha()">Segunda linha</div>
-            <div class="alternativas" onclick="falha()">Quarta linha</div>
             <div class="alternativas" onclick="falha()">Nenhuma das anteriores</div>
+            <div class="alternativas" onclick="falha()">Quarta linha</div>
+            <div class="alternativas" onclick="falha()">Primeira linha</div>
         </fieldset>
     </main>
 

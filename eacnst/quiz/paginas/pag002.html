@@ -6,14 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 2</title>
+    <style>
+        /* 
+        #57bd9e
+        #2ca880
+        #00986c
+        #008d62
+        #008259
+        */
+        body{
+            background: #aefae3;
+        }
+        fieldset{
+            background: #aefae3;
+        }
+        .alternativas{
+            background: #57bd9e;
+        }
+        .alternativas:hover{
+            background: #418d76;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
             <h4>2-Sabendo que U pode ser calculado pelo produto de R e I é correto afirmar:</h4>
-            <div class="alternativas" onclick="proximo()">“U” é inversamente proporcional a “R”</a></div>
-            <div class="alternativas" onclick="falha()">“R” diretamente proporcional a “U”</a></div>
             <div class="alternativas" onclick="falha()">“I” é igual a “R”</a></div>
+            <div class="alternativas" onclick="falha()">“R” diretamente proporcional a “U”</a></div>
+            <div class="alternativas" onclick="proximo()">“U” é inversamente proporcional a “R”</a></div>
             <div class="alternativas" onclick="falha()">“U” não existe</a></div>
         </fieldset>
     </main>

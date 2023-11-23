@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 15</title>
+    <style>
+        /* 
+        #afcdea
+        #98c3ed
+        #6aa9e9
+        #4a9ae9
+        #318CE7
+        */
+        body{
+            background: #d1e7fc;
+        }
+        fieldset{
+            background: #d1e7fc;
+        }
+        .alternativas{
+            background: #318CE7;
+        }
+        .alternativas:hover{
+            background: #225e9b;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>15-Qual a questão saiu de ordem?</h4>
-            <div class="alternativas" onclick="proximo()">11</div>
-            <div class="alternativas" onclick="falha()">24</div>
+            <h4>15-Qual a questão que saiu de ordem?</h4>
             <div class="alternativas" onclick="falha()">12</div>
+            <div class="alternativas" onclick="falha()">24</div>
             <div class="alternativas" onclick="falha()">7</div>
+            <div class="alternativas" onclick="proximo()">11</div>
         </fieldset>
     </main>
 

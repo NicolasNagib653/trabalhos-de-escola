@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 13</title>
+    <style>
+        /* 
+        #fc1707
+        #cf1105
+        #a30b04
+        #760602
+        #4a0000
+        */
+        body{
+            background: #ffcea0;
+        }
+        fieldset{
+            background: #ffcea0;
+        }
+        .alternativas{
+            background: #4a0000;
+        }
+        .alternativas:hover{
+            background: #2b0000;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
             <h4>13-Qual dos exemplos a seguir é considerado imunidade humoral:</h4>
-            <div class="alternativas" onclick="proximo()">Rejeição de transplantes (em parte)</div>
-            <div class="alternativas" onclick="falha()">Rejeição de transplantes (total)</div>
             <div class="alternativas" onclick="falha()">Rejeição de implantes (total)</div>
+            <div class="alternativas" onclick="falha()">Rejeição de transplantes (total)</div>
             <div class="alternativas" onclick="falha()">Rejeição de implantes (em parte)</div>
+            <div class="alternativas" onclick="proximo()">Rejeição de transplantes (em parte)</div>
         </fieldset>
     </main>
 

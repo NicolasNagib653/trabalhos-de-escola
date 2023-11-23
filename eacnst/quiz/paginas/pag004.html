@@ -6,11 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 4</title>
+    <style>
+        /* 
+        #fc1707
+        #cf1105
+        #a30b04
+        #760602
+        #4a0000
+        */
+        body{
+            background: #ffcea0;
+        }
+        fieldset{
+            background: #ffcea0;
+        }
+        .alternativas{
+            background: #cf1105;
+        }
+        .alternativas:hover{
+            background: #af0f04;
+        }
+    </style>
 </head>
 <body>
     <main>
         <fieldset>
-            <h4>4-<span onclick="proximo()">Antigamente</span> ocorreu uma revolta por conta das vacinas, quando ela ocorreu??</h4>
+            <h4>4-No <span onclick="proximo()">passado </span>ocorreu uma revolta por conta das vacinas, quando ela ocorreu?</h4>
             <div class="alternativas" onclick="falha()">1903</div>
             <div class="alternativas" onclick="falha()">1994</div>
             <div class="alternativas" onclick="falha()">1907</div>
