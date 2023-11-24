@@ -5,6 +5,7 @@
 }
 html{
     font-size: 62.5%;  
+    overflow-x: hidden;
 }
 body{
     background: #ceffff no-repeat url("../img/virus1.png") center center;
@@ -15,10 +16,12 @@ fieldset{
     border: 0;
     background-color: #ceffff;
     display: flex;
-    flex-wrap: wrap;  
+    flex-wrap: wrap;
 }
 fieldset h4{
-    font-size: 4rem;
+    overflow-wrap: break-word;
+    max-width: 90vw;
+    font-size: 3.873rem;
     width: 100%;
     letter-spacing: 2px;
 }
@@ -59,12 +62,14 @@ a:hover{
     .alternativas{
         width: 49%;
     }
-
 }
 
 @media screen and (min-width: 993px) and (max-width: 1200px) {
     .alternativas{
         width: 49%;
+        font-size: 6rem;
+    }
+    .alternativas a{
         font-size: 6rem;
     }
     fieldset h4{
@@ -78,6 +83,9 @@ a:hover{
 @media screen and (min-width: 1201px) {
     .alternativas{
         width: 49%;
+        font-size: 6rem;
+    }
+    .alternativas a{
         font-size: 6rem;
     }
     fieldset h4{

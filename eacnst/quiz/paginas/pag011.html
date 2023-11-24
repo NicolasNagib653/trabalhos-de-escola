@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 11</title>
+    <style>
+        /* 
+        #57bd9e
+        #2ca880
+        #00986c
+        #008d62
+        #008259
+        */
+        body{
+            background: #aefae3;
+        }
+        fieldset{
+            background: #aefae3;
+        }
+        .alternativas{
+            background: #008d62;
+        }
+        .alternativas:hover{
+            background: #005a3f;
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <fieldset>
             <h4>11000- Qual o número dessa questão?</h4>
-            <div class="alternativas" onclick="falha()">12</div>
             <div class="alternativas" onclick="falha()">13</div>
-            <div class="alternativas" onclick="falha()">17</div>
+            <div class="alternativas" onclick="falha()">12</div>
             <div class="alternativas" onclick="proximo()">24</div>
+            <div class="alternativas" onclick="falha()">11</div>
         </fieldset>
     </main>
 
@@ -26,5 +47,6 @@
             location.href = 'pag012.html'        
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>

@@ -6,20 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 1</title>
+    <style>
+        /* 
+        #fc1707
+        #cf1105
+        #a30b04
+        #760602
+        #4a0000
+        */
+        body{
+            background: #ffcea0;
+        }
+        fieldset{
+            background: #ffcea0;
+        }
+        .alternativas{
+            background: #fc1707;
+        }
+        .alternativas:hover{
+            background: #be1206;
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         
         <fieldset>
-            <h4>1- Qual a vacina que serve como mensageira para o sistema imunológico</h4>
-            <div class="alternativas" onclick="falha()">DNA</div>
+            <h4>1- Qual a vacina que serve como mensageira para o sistema imunológico?</h4>
             <div class="alternativas" onclick="falha()">Vírus inativado</div>
-            <div class="alternativas" onclick="falha()">Vírus atenuado</div>
             <div class="alternativas" onclick="proximo()">RNA</div>
+            <div class="alternativas" onclick="falha()">Vírus atenuado</div>
+            <div class="alternativas" onclick="falha()">DNA</div>
         </fieldset>
     </main>
 
     <script>
+        // getRandomInt(0,5)
+        // function getRandomInt(min, max) {
+        // min = Math.ceil(min);
+        // max = Math.floor(max);
+        // console.log(Math.floor(Math.random() * (max - min) + min))
+        // return Math.floor(Math.random() * (max - min) + min);
+        // }
+
+       
         function falha() {
             location.href = '../falha.html'
         }
@@ -27,5 +57,6 @@
             location.href = 'pag002.html'        
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>

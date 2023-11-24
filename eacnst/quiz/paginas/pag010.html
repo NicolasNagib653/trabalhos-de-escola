@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 10</title>
+    <style>
+        /* 
+        #fc1707
+        #cf1105
+        #a30b04
+        #760602
+        #4a0000
+        */
+        body{
+            background: #ffcea0;
+        }
+        fieldset{
+            background: #ffcea0;
+        }
+        .alternativas{
+            background: #760602;
+        }
+        .alternativas:hover{
+            background: #4d0401;
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <fieldset>
             <h4>10-Quais são as vacinas que devem ser tomadas durante a adolescência?</h4>
-            <div class="alternativas" onclick="falha()">Hepatite A, Febre Amarela, Triplice viral e HFV.</div>
             <div class="alternativas" onclick="falha()">Hepatite A, Febre Amarela, Tríplice virol e HPV.</div>
-            <div class="alternativas" onclick="falha()">Hepatite B, Febre Amarela, Triplice viral e HPV.</div>
             <div class="alternativas" onclick="proximo()">Hepatite B, Febre Amarela, Tríplice viral e HPV.</div>
+            <div class="alternativas" onclick="falha()">Hepatite B, Febre Amarela, Triplice viral e HPV.</div>
+            <div class="alternativas" onclick="falha()">Hepatite A, Febre Amarela, Triplice viral e HFV.</div>
         </fieldset>
     </main>
 
@@ -26,5 +47,6 @@
             location.href = 'pag011.html'        
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>

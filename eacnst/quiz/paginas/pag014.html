@@ -6,15 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 14</title>
+    <style>
+        /* 
+        #57bd9e
+        #2ca880
+        #00986c
+        #008d62
+        #008259
+        */
+        body{
+            background: #aefae3;
+        }
+        fieldset{
+            background: #aefae3;
+        }
+        .alternativas{
+            background: #008259;
+        }
+        .alternativas:hover{
+            background: rgb(0, 46, 32);
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <fieldset>
             <h4>14-Qual vacina o SUS não fornece?</h4>
-            <div class="alternativas" onclick="falha()">Tríplice Viral</div>
-            <div class="alternativas" onclick="proximo()">Meningo B</div>
-            <div class="alternativas" onclick="falha()">Tetraviral</div>
             <div class="alternativas" onclick="falha()">DTP</div>
+            <div class="alternativas" onclick="falha()">Tríplice Viral</div>
+            <div class="alternativas" onclick="falha()">Tetraviral</div>
+            <div class="alternativas" onclick="proximo()">Meningo B</div>
         </fieldset>
     </main>
 
@@ -26,5 +47,6 @@
             location.href = 'pag015.html'        
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>

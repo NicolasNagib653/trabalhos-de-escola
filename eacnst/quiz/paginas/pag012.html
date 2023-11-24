@@ -6,12 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 12</title>
+    <style>
+        /* 
+        #afcdea
+        #98c3ed
+        #6aa9e9
+        #4a9ae9
+        #318CE7
+        */
+        body{
+            background: #d1e7fc;
+        }
+        fieldset{
+            background: #d1e7fc;
+        }
+        .alternativas{
+            background: #4a9ae9;
+        }
+        .alternativas:hover{
+            background: #336aa1;
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <fieldset>
             <h4>1<span onclick="proximo()">2</span>-Quanto é 1+1?</h4>
-            <div class="alternativas" onclick="falha()">2</div>
+            <div class="alternativas" onclick="falha()">-2</div>
             <div class="alternativas" onclick="falha()">11</div>
             <div class="alternativas" onclick="falha()">10</div>
             <div class="alternativas" onclick="falha()">12</div>
@@ -26,5 +47,6 @@
             location.href = 'pag013.html'
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>

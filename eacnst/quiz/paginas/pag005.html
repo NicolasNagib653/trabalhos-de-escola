@@ -6,17 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/paginas.css">
     <title>Quiz- pergunta 5</title>
+    <style>
+        /* 
+        #57bd9e
+        #2ca880
+        #00986c
+        #008d62
+        #008259
+        */
+        body{
+            background: #aefae3;
+        }
+        fieldset{
+            background: #aefae3;
+        }
+        .alternativas{
+            background: #2ca880;
+        }
+        .alternativas:hover{
+            background: rgb(41, 88, 74);
+        }
+    </style>
 </head>
-<body>
+<body onload="load()">
     <main>
         <fieldset>
             <h4>5-Qual o nome do <span onclick="falha()">cotonete</span> utilizado no teste de COVID-19?</h4>
-            <div class="alternativas" onclick="falha()">Bastonetes</div>
-            <div class="alternativas" onclick="falha()">Limpador de ouvido</div>
+            <div class="alternativas" onclick="falha()">Orkut</div>
             <div class="alternativas" onclick="proximo()">Swab</div>
-            <div class="alternativas" onclick="falha()">orkut</div>
+            <div class="alternativas" onclick="falha()">Limpador de ouvido</div>
+            <div class="alternativas" onclick="falha()">Bastonetes</div>
         </fieldset>
     </main>
+
+   
 
     <script>
         function falha() {
@@ -26,5 +49,6 @@
             location.href = 'pag006.html'        
         }
     </script>
+    <script src="../js/load.js"></script>
 </body>
 </html>
