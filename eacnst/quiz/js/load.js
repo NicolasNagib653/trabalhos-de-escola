@@ -1,7 +1,7 @@
 function load(){
     window.addEventListener('beforeunload', function(event) {
       
-       history.replaceState("index.html")
+       location.href = 'index.html'
        console.log("ola")
       });
       
