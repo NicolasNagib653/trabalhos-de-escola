@@ -1,0 +1,371 @@
+@charset "UTF-8";
+  
+:root{
+  font-family: Arial, Helvetica, sans-serif;
+  --cor01: #384001;
+  --cor02: #618C03;
+  --cor03: #97BF04;
+  --cor04: #d9ca828f;
+  --cor05: #f2bb05;
+}
+
+
+html,body{
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor04);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+header{
+  background-color: var(--cor01);
+}
+
+
+header a{
+  color: black;
+  text-decoration: none;
+}
+
+
+header a:hover{
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  transition: all ease-in-out .3s;
+}
+
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+div.pesquisa > i{
+  position: absolute;
+  padding: 2px 0 2px 5px;
+}
+
+
+i{
+  font-size: 30px;
+  color: #ffedd3;
+}
+
+
+div#navegacao{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+
+.pesquisa{
+  align-items: center;
+}
+
+
+.pesquisa input{
+  height: 28px;
+  width: 12.5vw;
+  border-radius: 10px;
+  border: 1px solid var(--cor03);
+  color: #ffedab;
+  background-color: var(--cor04);
+}
+
+
+.pesquisa input:focus{
+  border: none;
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+  
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--cor05);
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--cor05);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.slide{
+  position: relative;
+  height: 50vh
+}
+
+.arrow-left, .arrow-right{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+.arrow-right{
+  right: 0;
+  left: auto;
+}
+
+.item{
+  overflow: auto;
+  display: none;
+  height: 100%;
+  transition: ease-in-out .5s;
+}
+
+.current-item{
+  display: block;
+}
+
+.carrossel{
+  background-color: red;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carrossel img{
+  width: 100%;
+  height: 100%;
+ 
+}
+
+main .caixa1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+}
+
+main .caixa2{
+  margin: 20px 10px;
+  background: no-repeat url(../img/auau-triste.jpg) bottom right;
+  background-size: cover;
+  background-attachment: fixed;
+  gap: 15px;
+  padding: 15px 5px;
+  position: relative;
+}
+
+.mascara{
+  background-color: #3840013d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.card{
+  margin: 0 40px;
+  width: 450px;
+  color: white;
+  z-index: 1;
+  position: relative;
+}
+
+.card p{
+  text-align: justify;
+  text-indent: 1px;
+}
+
+.foto{
+  width: 40%;
+  height: 300px;
+  background-color: aliceblue;
+}
+
+
+
+footer{
+  background-color: var(--cor01);
+  color: #ffedab;
+  margin-top: 20px;
+  width: 99vw;
+  position: absolute;
+}
+
+footer ul{
+  list-style: none;
+}
+
+footer span{
+  font-size: 20px;
+}
+
+footer a{
+  color: #ffedd3;
+  text-decoration: none;
+}
+
+
+footer div.grid{
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+}
+
+footer ul.flex{
+  justify-content: center;
+  gap: 20px
+}
+
+footer ul.flex img{
+  height: 40px;
+  filter: invert(1);
+}
+
+
+/* Quem somos?*/
+
+/* section{
+  width: 60vw;
+  margin: auto;
+}
+
+
+.quemsomos p{
+  text-align: justify;
+}
+ */
+
+/* Parcerias */
+
+/* .parcerias p{
+  text-align: justify;
+  text-indent: 10px;
+}
+ */
+
+/* Botoes UIverse */
+
+.btn-cadastro{
+  height: 2.8em;
+  width: 2.8em;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid var(--cor02);
+  outline: none;
+  color: var(--cor02);
+  cursor: pointer;
+  font-size: 17px;
+}
+
+
+.btn-cadastro{
+  background: var(--cor02);
+  color: #ffffff;
+  transition: 600ms all ease-in-out;
+}
+
+
+.btn-cadastro:hover{
+  border: var(--cor05);
+  background-color: var(--cor05);
+  animation: squeeze3124 0.9s both;
+}
+
+
+.btn-cadastro:hover i{
+  color: black;
+}
+
+
+@keyframes squeeze3124 {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+
+  30% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+
+  40% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+
+  50% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+
+  65% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+
+  75% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+}
