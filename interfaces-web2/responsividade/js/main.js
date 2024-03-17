@@ -1,5 +1,5 @@
 
-// let width  = window.innerWidth
+let width  = window.innerWidth
 // var imagem = document.getElementsByClassName('imagem_carrossel')
 // if(width < 900){
 //     imagem[0].setAttribute('src', 'img/Banner_1_900-450.png')
@@ -48,3 +48,17 @@ const nav        = document.querySelector("#hamburguer")
 
 hamburguer.addEventListener("click", ()=>
 nav.classList.toggle("active"))
+
+if(width > 780){
+    function unwrap(element) {
+        const fragment = document.createDocumentFragment();
+        while (element.firstChild) {
+            const child = element.removeChild(element.firstChild);
+            fragment.appendChild(child);
+        }
+        element.parentNode.replaceChild(fragment, element);
+    }
+    
+    // Uso:
+    unwrap(nav);
+}

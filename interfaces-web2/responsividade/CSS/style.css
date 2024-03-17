@@ -28,6 +28,10 @@ header{
     background-color: var(--cor01);
 }
 
+nav > .flex{
+  width: 100%;
+  align-items: center;
+}
 
 div#navegacao{
     list-style: none;
@@ -136,6 +140,149 @@ input[type="search"] ~ i{
 }
   
 
+/* medias queries */
+
+@media ((min-width: 780px) and (max-width: 1200px)) {
+.hamburguer{
+  display: none;
+}
+#hamburguer{
+  display: flex !important;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .flex{
+  width: auto !important;
+
+}
+
+div.pesquisa > i{
+  position: absolute;
+  padding: 2px 0 2px 5px;
+}
+
+
+i{
+  font-size: 30px;
+  color: #ffedd3;
+}
+
+
+div#navegacao{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pesquisa{
+  align-items: center;
+  justify-content: right;
+  margin: 0px 15px 0px !important;
+
+}
+
+
+.pesquisa input{
+  height: 28px;
+  width: 12.5vw;
+  border-radius: 10px;
+  border: 1px solid var(--cor03);
+  color: #ffedab;
+  background-color: var(--cor04);
+}
+
+.pesquisa input:focus{
+  border: none;
+}
+
+input[type="search"] ~ i{
+  right: auto !important;
+  margin-right: 5px;
+}
+
+input[type="search"]:focus ~ i{
+  display: none;
+}
+
+.btn {
+  font-size: 15px !important;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+  
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--cor05);
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--cor05);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.btn-cadastro{
+  height: 2.8em !important;
+  width: 2.8em !important;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid var(--cor02);
+  outline: none;
+  color: var(--cor02);
+  cursor: pointer;
+  font-size: 17px !important;
+  margin-right: 15px;
+}  
+}
 
 /* botao uiverse */
 
@@ -214,4 +361,3 @@ input[type="search"] ~ i{
     }
   
   }
-  
