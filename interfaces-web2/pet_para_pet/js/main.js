@@ -42,3 +42,9 @@ controls.forEach(control => {control.addEventListener('click', () => {
     items[currentItem].classList.add('current-item')
     });
 });
+
+const hamburguer = document.querySelector(".hamburguer")
+const nav        = document.querySelector("#hamburguer")
+
+hamburguer.addEventListener("click", ()=>
+nav.classList.toggle("active"))
