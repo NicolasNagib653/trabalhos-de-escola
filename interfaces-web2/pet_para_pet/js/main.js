@@ -2,13 +2,13 @@
 let width  = window.innerWidth
 var imagem = document.getElementsByClassName('imagem_carrossel')
 if(width < 900){
-    imagem[0].setAttribute('src', '../img/Banner_1_900-450.png')
-    imagem[1].setAttribute('src', '../img/Banner_2_900-450.png')
-    imagem[2].setAttribute('src', '../img/Banner_3_900-450.png')
+    imagem[0].setAttribute('src', 'img/Banner_1_900-450.png')
+    imagem[1].setAttribute('src', 'img/Banner_2_900-450.png')
+    imagem[2].setAttribute('src', 'img/Banner_3_900-450.png')
 } else if(width > 1600){
-    imagem[0].setAttribute('src', '../img/Banner_1_2000-450.png')
-    imagem[1].setAttribute('src', '../img/Banner_2_2000-450.png')
-    imagem[2].setAttribute('src', '../img/Banner_3_2000-450.png')
+    imagem[0].setAttribute('src', 'img/Banner_1_2000-450.png')
+    imagem[1].setAttribute('src', 'img/Banner_2_2000-450.png')
+    imagem[2].setAttribute('src', 'img/Banner_3_2000-450.png')
 }
 
 
