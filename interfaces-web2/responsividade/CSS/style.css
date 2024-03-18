@@ -57,6 +57,8 @@ i.bi-list{
   height: 3px;
   background: #ffedd3;
   margin-top: 5px;
+  position: relative;
+  transition: .5s ease-in-out all;
 }
 
 div#hamburguer{
@@ -65,6 +67,22 @@ div#hamburguer{
 
 .active{
   display: block !important;
+}
+
+.hamburguer.active{
+  position: fixed;
+  top: 26px;
+  right: 16px;
+  border-top-color: transparent;
+}
+
+.hamburguer.active::before{
+  transform: rotate(135deg);
+}
+
+.hamburguer.active::after{
+  transform: rotate(-135deg);
+  top: -7px;
 }
 
 .btn{
@@ -138,6 +156,51 @@ input[type="search"] ~ i{
   position: absolute;
   right: 0;
 }
+
+
+.slide{
+  position: relative;
+  height: 250px;
+}
+
+.arrow-left, .arrow-right{
+  background-color: transparent;
+  border: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+.arrow-right{
+  right: 0;
+  left: auto;
+}
+
+.item{
+  overflow: auto;
+  display: none;
+  height: 100%;
+  transition: ease-in-out .5s;
+}
+
+.current-item{
+  display: block;
+}
+
+.carrossel{
+  background-color: red;
+  height: 100%;
+  overflow: hidden;
+}
+
+.carrossel img{
+  width: 100%;
+  height: 100%;
+ 
+}
+
   
 
 /* medias queries */
@@ -219,16 +282,17 @@ input[type="search"]:focus ~ i{
 }
 
 .btn {
-  font-size: 15px !important;
+  font-size: 14px;
   background: transparent;
   border: none;
-  padding: 1em 1.5em;
+  padding: 0em .5em;
   color: #ffedd3;
   text-transform: uppercase;
   z-index: 2;
   position: relative;
   transition: 0.5s ease;
   cursor: pointer;
+  height: 60px;
 }
   
 .btn::before {
@@ -249,6 +313,151 @@ input[type="search"]:focus ~ i{
 
 .btn:hover::before {
   width: 100%;
+  height: 3px !important;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--cor05);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.btn:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.btn-cadastro{
+  height: 2.8em !important;
+  width: 2.8em !important;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid var(--cor02);
+  outline: none;
+  color: var(--cor02);
+  cursor: pointer;
+  font-size: 17px !important;
+  margin-right: 15px;
+}  
+}
+
+@media (min-width: 1201px) {
+.hamburguer{
+  display: none;
+}
+#hamburguer{
+  display: flex !important;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .flex{
+  width: auto !important;
+
+}
+
+div.pesquisa > i{
+  position: absolute;
+  padding: 2px 0 2px 5px;
+}
+
+
+i{
+  font-size: 30px;
+  color: #ffedd3;
+}
+
+
+div#navegacao{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pesquisa{
+  align-items: center;
+  justify-content: right;
+  margin: 0px 15px 0px !important;
+
+}
+
+
+.pesquisa input{
+  height: 28px;
+  width: 12.5vw;
+  border-radius: 10px;
+  border: 1px solid var(--cor03);
+  color: #ffedab;
+  background-color: var(--cor04);
+}
+
+.pesquisa input:focus{
+  border: none;
+}
+
+input[type="search"] ~ i{
+  right: auto !important;
+  margin-right: 5px;
+}
+
+input[type="search"]:focus ~ i{
+  display: none;
+}
+
+.btn {
+  font-size: 17px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  height: 70px;
+}
+  
+.btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--cor05);
+  transition: 0.5s ease;
+}
+
+.btn:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.btn:hover::before {
+  width: 100%;
+  height: 3px !important;
 }
 
 .btn::after {
