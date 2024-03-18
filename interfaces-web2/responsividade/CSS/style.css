@@ -347,6 +347,11 @@ input[type="search"]:focus ~ i{
   font-size: 17px !important;
   margin-right: 15px;
 }  
+
+.slide{
+  position: relative;
+  height: 300px;
+}
 }
 
 @media (min-width: 1201px) {
@@ -491,6 +496,11 @@ input[type="search"]:focus ~ i{
   font-size: 17px !important;
   margin-right: 15px;
 }  
+
+.slide{
+  position: relative;
+  height: 400px;
+}
 }
 
 /* botao uiverse */
