@@ -1,113 +1,382 @@
 @charset "UTF-8";
-  
+
 :root{
-  font-family: Arial, Helvetica, sans-serif;
-  --cor01: #384001;
-  --cor02: #618C03;
-  --cor03: #97BF04;
-  --cor04: #d9ca828f;
-  --cor05: #f2bb05;
+    font-family: Arial, Helvetica, sans-serif;
+    --cor01: #384001;
+    --cor02: #618C03;
+    --cor03: #97BF04;
+    --cor04: #d9ca828f;
+    --cor05: #f2bb05;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-
-html,body{
-  margin: 0;
-  padding: 0;
-  background-color: var(--cor04);
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-body{
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    height: 100vh;
+    background-color: #ffedd3;
 }
 
-main{
-    display: flex;
+.conteudo{
+    justify-content: space-between;
     align-items: center;
-    text-align: center;
+    position: relative;
+    background-color: white;
+    border-radius: 15px;
+    width: 960px;
+}
+
+.conteudo::before{
+    content: "";
+    position: absolute;
     background-color: var(--cor01);
-    color: white;
-    height: 400px;
-    width: 800px;
-}
-
-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background-color: #618c0394;
-    width: 50%;
+    width: 40%;
     height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    z-index: 1;
 }
 
-div.login{
-    margin: 5%;    
+
+
+
+.titulo{
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
 }
 
-div.login p{
-    text-align: justify;
-    margin: auto;
-    width: 282px;
+.titulo-primario{
+    color: white;
 }
 
-div.naocad a{
-    border: 1px solid;
-    border-radius: 16px;
-    padding: 10px;
-    color: #ffedd3;
-    text-decoration: none;
+.titulo-secundario{
+    color: var(--cor01);
+}
+
+.descricao{
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+}
+
+.descricao-primaria{
+    color: white;
+}
+
+.descricao-secundaria{
+    color: var(--cor01);
+}
+
+.botao{
+    border: 0;
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--cor01);
+    font-size: 10px;
+    padding: 10px 50px;
+    width: 150px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.botao-primario{
+    background-color: transparent;
+    border: 1px solid white;
     transition: .5s ease-in-out all;
 }
 
-div.naocad a:hover{
-    background-color: #ffedd3;
-    color: black;
+.botao-primario:hover{
+    background-color: white;
+    color: var(--cor01);
+}
+
+.botao-sucundario{
+    background-color: var(--cor01);
+    border: 1px  solid var(--cor01);
+    transition: .5s ease-in-out all;
+}
+
+.botao-sucundario:hover{
+    background-color: white;
+    border: 1px  solid var(--cor01);
+    color: var(--cor01);
+}
+
+.primeiro-conteudo{
+    display: flex;
+}
+
+.primeiro-conteudo .segunda-coluna{
+    z-index: 11;
+}
+
+.primeira-coluna{
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+
+.segunda-coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+
+.social-media{
+    margin: 1rem 0;
+}
+
+.link-social-media{
+    margin-left: 5px;
+}
+
+.link-social-media:first-child{
+    margin-left: 0;
+}
+
+.list-social-media{
+    display: flex;
+    list-style: none;
+}
+
+.item-social-media{
+    border: 1px solid var(--cor01);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--cor01);
+    transition: .5s ease-in-out all;
+}
+
+.item-social-media:hover{
+    color: white;
+    background-color: var(--cor01);
 }
 
 form{
     display: flex;
     flex-direction: column;
+    width: 55%;
+}
+
+.label-input{
+    background-color: var(--cor01);
+    display: flex;
     align-items: center;
-    text-align: center;
-    height: 400px;
-    width: 50%;
+    margin: 8px;
 }
 
-form div:nth-child(1){
-    width: 264px;
-}
-
-form .campo{
-    margin: 20px 0 ;
-    width: 264px;
-}
-
-input[type="text"], input[type="email"],input[type="password"]{
-    height: 28px;
-    width: 200px;
-    border-radius: 10px;
-    border: 1px solid var(--cor03);
-    color: #ffedab;
-    background-color: var(--cor04);
-}
-
-input[type="submit"], input[type="reset"]{
-    width: 80px;
-    height: 40px;
-    background-color: var(--cor04);
+form input{
+    width: 100%;
+    height: 45px;
     border: none;
-    color: #ffedd4;
-    margin: 5px 10px;
-    cursor: pointer;
-    transition: .5s ease-in-out all;
+    background-color: #f0f1f0;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
-    background-color: #d9cb82bb;
-    color: #ffffff;
-    transform: scale(1.1);
+input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 1000px white inset !important;
+    -webkit-text-fill-color: black !important;
+}
+
+.icon-modify{
+    color: #ffedd3;
+    padding: 0 5px;
+}
+
+.segundo-conteudo{
+    position: absolute;
+    display: flex;
+}
+
+.segundo-conteudo .primeira-coluna{
+    order: 2;
+    z-index: -1;
+}
+
+.segundo-conteudo .segunda-coluna{
+    order: 1;
+    z-index: -1;
+}
+
+.password{
+    color: var(--cor01);
+    font-size: 14px;
+    text-align: center;
+}
+
+.password::first-letter{
+    text-transform: capitalize;
+}
+
+.sign-in-js .primeiro-conteudo .primeira-coluna, 
+.sign-in-js .primeiro-conteudo .segunda-coluna{
+    z-index: -1;
+}
+
+.sign-in-js .segundo-conteudo .segunda-coluna{
+    z-index: 11;
+}
+
+.sign-in-js .segundo-conteudo .primeira-coluna{
+    z-index: 13;
+}
+
+
+.sign-in-js .conteudo::before{
+    z-index: 12;
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 2s;
+}
+
+.sign-up-js .conteudo::before{
+    animation: slideout 2s;
+    z-index: 12;
+}
+
+.sign-up-js .primeiro-conteudo .segunda-coluna{
+    z-index: 11;
+}
+.sign-up-js .primeiro-conteudo .primeira-coluna{
+    z-index: 13;
+}
+
+.sign-up-js .segundo-conteudo .primeira-coluna, 
+.sign-up-js .segundo-conteudo .segunda-coluna{
+    z-index: -1;
+}
+
+/* deslocamento atras do before */
+
+.sign-in-js .primeiro-conteudo .segunda-coluna{
+    position: relative;
+    animation: deslocamentoesq 2s;
+}
+
+.sign-up-js .segundo-conteudo .segunda-coluna{
+    position: relative;
+    animation: deslocamentodir 2s;
+}
+/* animacao conteudo */
+
+
+@keyframes deslocamentoesq {
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    
+    25%{
+        left: -80px;
+        opacity: .5;
+    }
+
+    50%{
+        left: -100px;
+        opacity: .2;
+    }
+
+    to{
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@keyframes deslocamentodir {
+    from {
+        left: 0px;
+        z-index: 12;
+    }
+
+    
+    25%{
+        left: 80px;
+    }
+
+    50%{
+        left: 100px;
+    }
+
+    to{
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+/* animação */
+
+@keyframes slidein {
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25%{
+        left: 15%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 45%;
+        width: 50%;
+    }
+
+    to{
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25%{
+        left: 45%;
+        width: 50%;
+    }
+
+    50%{
+        left: 25%;
+        width: 60%;
+    }
+
+    75%{
+        left: 5%;
+        width: 50%;
+    }
+
+    to{
+        left: 0%;
+        width: 40%;
+    }
 }
