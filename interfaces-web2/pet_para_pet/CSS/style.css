@@ -24,124 +24,143 @@ html,body{
   justify-content: space-between;
 }
 
-
 header{
-  background-color: var(--cor01);
+    background-color: var(--cor01);
 }
 
-
-header a{
-  color: black;
-  text-decoration: none;
-}
-
-
-header a:hover{
-  color: rgb(255, 255, 255);
-  text-decoration: underline;
-  transition: all ease-in-out .3s;
-}
-
-
-nav{
-  display: flex;
+nav > .flex{
+  width: 100%;
   align-items: center;
-  justify-content: space-between;
 }
-
-
-div.pesquisa > i{
-  position: absolute;
-  padding: 2px 0 2px 5px;
-}
-
-
-i{
-  font-size: 30px;
-  color: #ffedd3;
-}
-
 
 div#navegacao{
-  display: flex;
-  gap: 10px;
-  list-style: none;
+    list-style: none;
 }
 
+i.bi-list{
+  font-size: 45px;
+}
+
+.hamburguer{
+  border: none;
+  background: none;
+  border-top: 3px solid #ffedd3;
+  cursor: pointer;
+  padding: 0;
+  margin-right: 10px;
+}
+
+.hamburguer::before, .hamburguer::after{
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #ffedd3;
+  margin-top: 5px;
+  position: relative;
+  transition: .5s ease-in-out all;
+}
+
+div#hamburguer{
+  display: none;
+}
+
+.active{
+  display: block !important;
+}
+
+.hamburguer.active{
+  position: fixed;
+  top: 26px;
+  right: 16px;
+  border-top-color: transparent;
+}
+
+.hamburguer.active::before{
+  transform: rotate(135deg);
+}
+
+.hamburguer.active::after{
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+.botao{
+    background-color: transparent;
+    border: none;
+    color: #ffedd3;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    font-size: 17px;
+}
+  
+.botao::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0;
+    width: 5px;
+    background-color: var(--cor05);
+    transition: 0.5s ease-in-out;
+}
+
+.botao:hover {
+    color: #1e1e2b;
+    transition-delay: 0.5s;
+}
+
+.botao:hover::before {
+    height: 100%;
+}
+
+.botao::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0;
+    background-color: var(--cor05);
+    transition: 0.8s ease-in-out;
+    z-index: -1;
+}
+
+.botao:hover::after {
+    width: 100%;
+    transition-delay: 0.4s;
+    color: aliceblue;
+}
 
 .pesquisa{
   align-items: center;
+  margin: 5px 0 15px;
+
 }
 
-
-.pesquisa input{
-  height: 28px;
-  width: 12.5vw;
-  border-radius: 10px;
-  border: 1px solid var(--cor03);
-  color: #ffedab;
-  background-color: var(--cor04);
-}
-
-
-.pesquisa input:focus{
-  border: none;
-}
-
-.btn {
-  font-size: 17px;
-  background: transparent;
-  border: none;
-  padding: 1em 1.5em;
-  color: #ffedd3;
-  text-transform: uppercase;
-  z-index: 2;
+input[type="search"]{
+  width: 100%;
   position: relative;
-  transition: 0.5s ease;
-  cursor: pointer;
+  padding: 5px;
+  background-color: #ffedd3;
+  border: none;
 }
-  
-.btn::before {
-  content: "";
+
+input[type="search"] ~ i{
   position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 2px;
-  width: 0;
-  background-color: var(--cor05);
-  transition: 0.5s ease;
+  right: 0;
 }
 
-.btn:hover {
-  color: #1e1e2b;
-  transition-delay: 0.5s;
-}
-
-.btn:hover::before {
-  width: 100%;
-}
-
-.btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 0;
-  width: 100%;
-  background-color: var(--cor05);
-  transition: 0.4s ease;
-  z-index: -1;
-}
-
-.btn:hover::after {
-  height: 100%;
-  transition-delay: 0.4s;
-  color: aliceblue;
-}
 
 .slide{
   position: relative;
-  height: 50vh
+  height: 250px;
 }
 
 .arrow-left, .arrow-right{
@@ -179,18 +198,19 @@ div#navegacao{
 .carrossel img{
   width: 100%;
   height: 100%;
- 
 }
+
 
 main .caixa1{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   margin: 10px;
 }
 
 main .caixa2{
-  margin: 20px 10px;
+  margin: 20px 0;
   background: no-repeat url(../img/auau-triste.jpg) bottom right;
   background-size: cover;
   background-attachment: fixed;
@@ -210,7 +230,6 @@ main .caixa2{
 
 .card{
   margin: 0 40px;
-  width: 450px;
   color: white;
   z-index: 1;
   position: relative;
@@ -221,23 +240,19 @@ main .caixa2{
   text-indent: 1px;
 }
 
-.foto{
-  width: 40%;
-  height: 300px;
-  background-color: aliceblue;
-}
-
-
 
 footer{
   background-color: var(--cor01);
   color: #ffedab;
   margin-top: 20px;
-  width: 99vw;
+  width: 100vw;
   position: absolute;
 }
 
 footer ul{
+  width: 40%;
+  height: 30%;
+  padding: 10px;
   list-style: none;
 }
 
@@ -252,50 +267,159 @@ footer a{
 
 
 footer div.grid{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 10px;
-grid-row-gap: 10px;
+display: flex;
+flex-wrap: wrap;
 }
 
 footer ul.flex{
+  width: auto;
   justify-content: center;
-  gap: 20px
+  gap: 30px
 }
 
-footer ul.flex img{
+footer ul.flex i{
   height: 40px;
-  filter: invert(1);
 }
 
 
-/* Quem somos?*/
 
-/* section{
-  width: 60vw;
-  margin: auto;
+
+  
+
+/* medias queries */
+
+@media (min-width: 780px) and (max-width: 1300px){
+.hamburguer{
+  display: none;
+}
+#hamburguer{
+  display: flex !important;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .flex{
+  width: auto !important;
+
+}
+
+div.pesquisa > i{
+  position: absolute;
+  padding: 2px 0 2px 5px;
 }
 
 
-.quemsomos p{
-  text-align: justify;
+i{
+  font-size: 30px;
+  color: #ffedd3;
 }
- */
 
-/* Parcerias */
 
-/* .parcerias p{
-  text-align: justify;
-  text-indent: 10px;
+div#navegacao{
+  display: flex;
+  gap: 10px;
+  list-style: none;
 }
- */
 
-/* Botoes UIverse */
+a{
+  text-decoration: none;
+}
 
-.btn-cadastro{
-  height: 2.8em;
-  width: 2.8em;
+li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pesquisa{
+  align-items: center;
+  justify-content: right;
+  margin: 0px 15px 0px !important;
+
+}
+
+
+.pesquisa input{
+  height: 28px;
+  width: 12.5vw;
+  border-radius: 10px;
+  border: 1px solid var(--cor03);
+  color: #ffedab;
+  background-color: var(--cor04);
+}
+
+.pesquisa input:focus{
+  border: none;
+}
+
+input[type="search"] ~ i{
+  right: auto !important;
+  margin-right: 5px;
+}
+
+input[type="search"]:focus ~ i{
+  display: none;
+}
+
+.botao {
+  font-size: 14px;
+  background: transparent;
+  border: none;
+  padding: 0em .5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  height: 60px;
+}
+  
+.botao::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: var(--cor05);
+  transition: 0.5s ease;
+}
+
+.botao:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
+}
+
+.botao:hover::before {
+  width: 100%;
+  height: 3px !important;
+}
+
+.botao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--cor05);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.botao:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.botao-cadastro{
+  height: 2.8em !important;
+  width: 2.8em !important;
   background: transparent;
   -webkit-animation: jello-horizontal 0.9s both;
   animation: jello-horizontal 0.9s both;
@@ -303,69 +427,272 @@ footer ul.flex img{
   outline: none;
   color: var(--cor02);
   cursor: pointer;
-  font-size: 17px;
+  font-size: 17px !important;
+  margin-right: 15px;
+}  
+
+.slide{
+  position: relative;
+  height: 300px;
+}
+
+.caixa1 > .card{
+  width: 600px;
+}
+
+.imagem > .card{
+  width: 350px;
+}
+}
+
+@media (min-width: 1301px) {
+
+html{
+  font-size: 18px;
+}
+
+.hamburguer{
+  display: none;
+}
+#hamburguer{
+  display: flex !important;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > .flex{
+  width: auto !important;
+
+}
+
+#logo, #logo img{
+  height: 60px !important;
+  margin-left: 5px;
 }
 
 
-.btn-cadastro{
-  background: var(--cor02);
-  color: #ffffff;
-  transition: 600ms all ease-in-out;
+
+div.pesquisa > i{
+  position: absolute;
+  padding: 2px 0 2px 5px;
 }
 
 
-.btn-cadastro:hover{
-  border: var(--cor05);
+i{
+  font-size: 30px;
+  color: #ffedd3;
+}
+
+
+div#navegacao{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.pesquisa{
+  align-items: center;
+  justify-content: right;
+  margin: 0px 15px 0px !important;
+
+}
+
+
+.pesquisa input{
+  height: 36px;
+  width: 14.5vw;
+  font-size: 20px;
+  border-radius: 10px;
+  border: 1px solid var(--cor03);
+  color: #ffedab;
+  background-color: var(--cor04);
+}
+
+.pesquisa input:focus{
+  border: none;
+}
+
+input[type="search"] ~ i{
+  right: auto !important;
+  margin-right: 5px;
+}
+
+input[type="search"]:focus ~ i{
+  display: none;
+}
+
+.botao {
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  padding: 1em 1.5em;
+  color: #ffedd3;
+  text-transform: uppercase;
+  z-index: 2;
+  position: relative;
+  transition: 0.5s ease;
+  cursor: pointer;
+  height: 70px;
+}
+  
+.botao::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
   background-color: var(--cor05);
-  animation: squeeze3124 0.9s both;
+  transition: 0.5s ease;
 }
 
-
-.btn-cadastro:hover i{
-  color: black;
+.botao:hover {
+  color: #1e1e2b;
+  transition-delay: 0.5s;
 }
 
-
-@keyframes squeeze3124 {
-  0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
-
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-
-
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-
-
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-
-
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-
-
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
-  }
-
-
-  100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-
+.botao:hover::before {
+  width: 100%;
+  height: 3px !important;
 }
+
+.botao::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background-color: var(--cor05);
+  transition: 0.4s ease;
+  z-index: -1;
+}
+
+.botao:hover::after {
+  height: 100%;
+  transition-delay: 0.4s;
+  color: aliceblue;
+}
+
+.botao-cadastro{
+  height: 3.5em !important;
+  width: 3.5em !important;
+  background: transparent;
+  -webkit-animation: jello-horizontal 0.9s both;
+  animation: jello-horizontal 0.9s both;
+  border: 2px solid var(--cor02);
+  outline: none;
+  color: var(--cor02);
+  cursor: pointer;
+  font-size: 17px !important;
+  margin-right: 15px;
+}  
+
+.slide{
+  position: relative;
+  height: 400px;
+}
+
+.caixa1{
+  align-items: baseline !important;
+}
+
+.caixa1 > .card{
+  width: 600px;
+}
+
+.imagem > .card{
+  width: 450px;
+}
+}
+
+/* botao uiverse */
+
+.botao-cadastro{
+    width: 100%;
+    background: transparent;
+    -webkit-animation: jello-horizontal 0.9s both;
+    animation: jello-horizontal 0.9s both;
+    border: 2px solid var(--cor02);
+    outline: none;
+    color: var(--cor02);
+    cursor: pointer;
+    font-size: 26px;
+  }
+  
+  
+  .botao-cadastro{
+    background: var(--cor02);
+    color: #ffffff;
+    transition: 600ms all ease-in-out;
+  }
+  
+  
+  .botao-cadastro:hover{
+    border: var(--cor05);
+    background-color: var(--cor05);
+    animation: squeeze3124 0.9s both;
+  }
+  
+  
+  .botao-cadastro:hover i{
+    color: black;
+  }
+  
+  
+  @keyframes squeeze3124 {
+    0% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+  
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
+  
+    75% {
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+  
+    100% {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  
+  }

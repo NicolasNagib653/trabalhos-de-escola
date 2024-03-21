@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Cadastro</title>
 </head>
 <body>
+    <div class="container">
+        <div class="conteudo primeiro-conteudo">
+            <div class="primeira-coluna">
+                <h2 class="titulo titulo-primario">Bem vindo de volta!</h2>
+                <p class="descricao descricao-primaria">Ja possui um cadastro?</p>
+                <p class="descricao descricao-primaria">Acesse aqui em baixo</p>
+                <button id="signin" class="botao botao-primario">Login</button>
+            </div><!--primeira coluna-->
+            <div class="segunda-coluna">
+                <h2 class="titulo titulo-secundario">Crie sua conta!</h2>
+                <div class="social-media">
+                    <ul class="list-social-media">
+                        
+                        <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-facebook"></i></li></a>
+                        <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-google"></i></li></a>
+                        <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-linkedin"></i></li></a>
+                    </ul>
+                </div><!-- redes sociais -->
+                <p class="descricao descricao-secundaria">ou use um email para registro</p>
     
+                <form class="form">
+                    <label for="cad-nome" class="label-input">
+                        <input type="text" name="" id="cad-nome" placeholder="Nome">
+                    </label>
+                    
+                    <label for="cad-email" class="label-input">
+                        <input type="email" name="" id="cad-email" placeholder="Email">
+                    </label>
+    
+                    <label for="cad-senha" class="label-input">
+                        <input type="password" name="" id="cad-senha" placeholder="Senha" onen>
+                    </label>
+    
+                    <button class="botao botao-sucundario" disabled>Criar conta</button>
+                </form>
+            </div><!--segunda coluna-->
+        </div><!--primeiro conteudo-->
+
+
+    
+    
+    <div class="conteudo segundo-conteudo">
+        <div class="primeira-coluna">
+            <h2 class="titulo titulo-primario">Cadastre-se</h2>
+            <p class="descricao descricao-primaria">Não possui conta ainda?</p>
+            <p class="descricao descricao-primaria">crie uma conta já</p>
+            <button id="signup" class="botao botao-primario">Cadastro</button>
+         </div> <!--primeira coluna -->
+        <div class="segunda-coluna">
+            <h2 class="titulo titulo-secundario">Faça seu login</h2>
+            <div class="social-media">
+                <ul class="list-social-media">
+                        
+                    <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-facebook"></i></li></a>
+                    <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-google"></i></li></a>
+                    <a href="#" class="link-social-media"><li class="item-social-media"><i class="bi bi-linkedin"></i></li></a>
+                </ul>
+            </div><!-- redes sociais -->
+            <p class="descricao descricao-secundaria">ou use o email para login</p>
+
+            <form class="form">
+                
+                <label for="log-email" class="label-input">
+                    <input type="email" name="" id="log-email" placeholder="Email" required>
+                </label>
+
+                <label for="log-senha" class="label-input">
+                    <input type="password" name="" id="log-senha" placeholder="Senha" required>
+                </label>
+
+                <a href="#" class="password">Esqueceu a senha?</a>
+
+                <input type="submit" value="Login" class="botao botao-sucundario" onclick="login(); return false">
+            </form>
+         </div> <!--segunda coluna -->
+
+        </div><!-- segundo conteudo -->
+    </div><!--container-->
+
+    <script src="../js/login.js"></script>
+    <script>
+        var logEmail = document.getElementById("log-email")
+        var logSenha = document.getElementById("log-senha")
+        var cadEmail = document.getElementById("cad-email")
+        var cadSenha = document.getElementById("cad-senha")
+
+        function login(){
+            if(cadSenha.value == 0 || cadEmail.value == 0){
+                alert("Um dos valores não foi preenchido")
+            }else
+            if(cadSenha.value == logSenha.value && cadEmail.value == logEmail.value){
+                alert("Login realizado com sucesso!")
+                location.href = "../index.html"
+            } else{
+                alert("O email ou a senha estão incorretos")
+            }
+        }
+        
+    </script>
 </body>
 </html>
