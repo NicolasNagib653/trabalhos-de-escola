@@ -2,13 +2,53 @@ html{
     --cor01: white;
     --cor02: black;
     font-family: Arial, Helvetica, sans-serif;
-}
-
-body{
     background-color: var(--cor01);
     color: var(--cor02);
 }
 
+
+
 span{
     font-size: 50px;
+}
+
+@keyframes dark{
+    from{
+        background-color: white;
+        color: black;
+    }
+    15%{
+        
+    }
+    25%{
+        background-color: rgb(182, 182, 182);
+    }
+    50%{
+        background-color: rgb(117, 117, 117);
+    }
+    75%{
+        background-color: rgb(53, 53, 53);
+    }
+    100%{
+        background-color: black;
+    }
+}
+
+@keyframes white{
+    from{
+        background-color: black;
+        color: black;
+    }
+    25%{
+        background-color: rgb(53, 53, 53);
+    }
+    50%{
+        background-color: rgb(117, 117, 117);
+    }
+    75%{
+        background-color: rgb(182, 182, 182);
+    }
+    100%{
+        background-color: white;
+    }
 }

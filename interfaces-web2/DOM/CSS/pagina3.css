@@ -1,0 +1,16 @@
+@import url("normalize.css");
+
+#container{
+    display: grid;
+    justify-content: space-around;
+    grid-template-columns: 19% 19% 19% 19% 19%;
+    gap: 3px;
+}
+
+.errado button{
+    background-color: red;
+}
+
+.certo button{
+    background-color: green;
+}
