@@ -1,1 +1,24 @@
 @import url("normalize.css");
+
+body{
+    text-align: center;
+}
+
+main{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    padding: 10px;
+    padding-bottom: 25px;
+    margin-top: 25px;
+}
+
+h1{
+    margin: 25px 0;
+}
+
+p{
+    width: 70%;
+    text-align: justify;
+    margin: auto;
+
+}

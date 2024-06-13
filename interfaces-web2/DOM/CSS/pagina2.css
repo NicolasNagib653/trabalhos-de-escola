@@ -1,0 +1,37 @@
+@import url("normalize.css");
+
+html{
+    background-color: var(--cor03);
+}
+
+main{
+    text-align: center;
+    background-color: var(--cor03);
+    color: var(--cor01);
+}
+
+h1{
+    margin: 25px 0;
+}
+
+p{
+    padding: 0 20px;
+    text-align: justify;
+    margin: auto;
+
+}
+
+section{
+    margin: 25px 0;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#btn{
+    position: relative;
+}
+

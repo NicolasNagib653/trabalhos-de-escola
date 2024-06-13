@@ -1,6 +1,5 @@
 function verificar(){
     let inpt = document.querySelector("input")
-    let res  = document.querySelector(".res")
     
     if(inpt.value == "tiaguimb"){
         alert("Parábens, você acertou!!")

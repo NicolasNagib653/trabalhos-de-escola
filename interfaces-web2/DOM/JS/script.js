@@ -1,6 +1,6 @@
 var btn = document.getElementById("btn")
-var wtd = Math.floor(Math.random() * 100)
-var hgt = Math.floor(Math.random() * 100)
+var wtd = Math.floor(Math.random() * 100) - 10
+var hgt = Math.floor(Math.random() * 100) - 10
 
 function posicao(){
     btn.style.top = wtd+"%" 

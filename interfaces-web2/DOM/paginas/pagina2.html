@@ -4,25 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-         #btn{
-            opacity: 0;
-            position: absolute;
-            top: 50%;
-            left: 42%;
-        }
-
-        .aparecer{
-            opacity: 1 !important;
-        }
-    </style>
+    <link rel="stylesheet" href="../CSS/pagina2.css">
 </head>
 <body>
-    <p>Este botão que você usou foi uma demonstração de como mainupalar o DOM em javascript, utilizando a função <strong>onmouseenter / onmouseleave</strong>, a primeira função é acionada no momento que alguém passar o mouse por cima do objeto, já a segunda é sempre que o mouse sair do objeto.</p>
-    <p>Uma outra função utilizada foi o onclick que é acionado sempre que alguém clica no objeto</p>
-    <p>Esse botão não pode ser encontrado numa tela grande. Experimente reduzir pra uma tela menor. ༼ つ ◕_◕ ༽つ</p>
-
-    <button id="btn" onclick="location.href='pagina3.html'">Achou</button>
+    <main>
+        <section>
+            <h1>Entendendo funções</h1>
+            <p>Este botão que você usou foi uma demonstração de como manipular o DOM em javascript, utilizando a função <strong>onmouseenter / onmouseleave</strong>, a primeira função é acionada no momento que alguém passar o mouse por cima do objeto, já a segunda é sempre que o mouse sair do objeto.</p>
+            <p>Uma outra função utilizada foi o onclick que é acionado sempre que alguém clica no objeto</p>
+            <p id="paragrafo">Esse botão não pode ser encontrado numa tela grande. Experimente reduzir pra uma tela menor. ༼ つ ◕_◕ ༽つ</p>
+        </section>
+        <div class="container">
+            <button id="btn" onclick="location.href='pagina3.html'">Achou</button>
+        </div>
+    </main>
     <script src="../js/pagina2.js"></script>
 </body>
 </html>

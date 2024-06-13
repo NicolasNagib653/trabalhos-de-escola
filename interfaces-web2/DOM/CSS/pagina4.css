@@ -1,0 +1,39 @@
+@import url("normalize.css");
+
+h2{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    padding: 10px;
+    text-align: center;
+}
+
+abbr{
+    text-decoration: underline;
+}
+
+.container{
+    text-align: center;
+    width: 100vw;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid var(--cor05);
+    background-color: transparent;
+    margin: 25px 0 10px;
+}
+
+input:focus-visible{
+    outline: none;
+    border-bottom: 2px solid;
+}
+
+#btn{
+    opacity: 1;
+    position: relative;
+    background-color: var(--cor01);
+}
+
+.conteudo{
+    padding: 10px;
+}

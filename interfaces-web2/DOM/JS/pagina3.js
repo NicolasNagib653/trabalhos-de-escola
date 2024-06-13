@@ -3,11 +3,14 @@ let cont = document.querySelector("#container")
 let rand = Math.floor(Math.random() * 29)
 
 btn[rand].addEventListener('mouseenter', function(){
-    cont.classList = "certo"
+    btn[rand].classList = "certo"
+    cont.classList.toggle("errado")
 })
 
 btn[rand].addEventListener('mouseleave', function(){
-    cont.classList.toggle ("certo")
+    btn[rand].classList.toggle ("certo")
+    cont.classList.toggle("errado")
+
 })
 
 cont.addEventListener('mouseenter', function(){

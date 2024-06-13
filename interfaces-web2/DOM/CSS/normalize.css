@@ -1,10 +1,11 @@
 :root{
     font-family: Arial, Helvetica, sans-serif;
 
-    --cor01: #abc270;
-    --cor02: #fec868;
-    --cor03: #fda769;
-    --cor04: #473c33;
+    --cor01: #C3BB82;
+    --cor02: #39512e;
+    --cor03: #161C00;
+    --cor04: #481200;
+    --cor05: #19100B;
 }
 *{
     padding: 0;
@@ -13,16 +14,66 @@
 }
 
 html{
+    background-color: var(--cor01);
+    color: var(--cor05) ;
     position: relative;
     min-height: 100vh;
-    min-width: 100vw;
 }
+
 
 #btn{
     opacity: 0;
     position: absolute;
+    width: 100px;
+    height: 25px;
+    font-weight: bolder;
+    border: 2px solid var(--cor05);
 }
 
 .aparecer{
     opacity: 1 !important;
+    cursor: pointer;
+    transition: .5s ease-in-out all;
+    background-color: var(--cor01);
+}
+
+.aparecer:hover{
+    transform: scale(1.1);
+    background-color: #bbb26b;
+}
+
+/* Media queries */
+
+@media (min-width: 780px) {
+    html{
+        background-color: var(--cor01);
+    }
+    main{
+        margin-top: 25px;
+        padding: 25px;
+        background-color: var(--cor03);
+    }
+    p{
+        max-width: 750px;
+    }
+}
+
+/* Animações */
+
+@keyframes sair{
+    to{
+        opacity: 1;
+    }
+    25%{
+        opacity: 0.75;
+    }
+    50%{
+        opacity: 0.50;
+    }
+    75%{
+        opacity: 0.25;
+    }
+    100%{
+        opacity: 0;
+    }
 }
