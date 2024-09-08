@@ -1,0 +1,31 @@
+:root{
+    --cor01: #000020;
+    --cor02: #171a4a;
+    --cor03: #2f2c79;
+    --cor04: #ff9800;
+    --cor05: #ffcc50;
+    --cor06: #fcf2c9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background-color: #171a4a;
+    color: var(--cor06);
+    position: relative;
+}
+
+h1{
+    text-align: center;
+    margin: 55px 0;
+    font-size: 45px;
+    text-transform: capitalize;
+}
+
+p{
+    text-indent: 10px;
+    text-align: justify;
+}

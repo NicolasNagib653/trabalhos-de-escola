@@ -3,12 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Escolha a versão:</h1>
-    <a href="versao1.html">Versão 1</a>
-    <a href="versao2.html">Versão 2</a>
+    <title>StartUp</title>
+    <link rel="stylesheet" href="CSS/style.css">
 
+    <!-- Links externos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body onload="desativarHamburguer()"> 
+    <header>
+        <nav>
+            <div id="hamburguer" onclick="hamburguer()">
+                <span></span> <span></span> <span></span>
+            </div>
+            <div class="logo"></div>
+            <div class="nome">StartUp Creativity</div>
+        </nav>
+        <div id="links">
+            <a href="#"><div>Home</div></a>
+            <a href="paginas/sobre.html"><div>Sobre</div></a>
+            <a href="paginas/contato.html"><div>Contato</div></a>
+            <a href="produtos/login.html" class="user"><div><i class="bi bi-person-fill"></i></div></a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="img"></div>
+            <h1>Nosso projeto</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quaerat accusamus, deleniti unde et, optio ipsa eos explicabo ipsum delectus ut porro illo, suscipit quos tenetur minima pariatur perferendis cupiditate! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat veniam id quae reprehenderit libero minus mollitia corrupti nobis autem distinctio illo necessitatibus explicabo, eius illum tempore fugit reiciendis qui quas.</p>
+        </div>
+
+
+        <h1>Catálogo</h1>
+        <div class="produtos">
+            <div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div><div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div><div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div><div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div><div class="card">
+                <div class="img"><h1>Foto</h1></div>
+                <div class="texto">
+                    <h3>Teste</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi, qui unde cupiditate fuga    veritatis </p>
+                    <button>Acessar</button>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="JS/menu_hamburguer.js"></script>
 </body>
 </html>
