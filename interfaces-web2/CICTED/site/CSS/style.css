@@ -16,12 +16,17 @@ nav{
     gap: 0 80px;
 }
 
-.logo{
+nav > img{
     width: 50px;
-    height: 50px;
-    background-color: var(--cor04);
+    height: 53px;
+    border-radius: 0;
 }
 
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
 /* menu hamburguer */
 
 #hamburguer{
@@ -121,6 +126,7 @@ nav{
 
 .container{
     margin: 120px 5px;
+ 
 }
 
 .container p{
@@ -133,11 +139,13 @@ nav{
     background-color: var(--cor01);
 }
 
+
 /* Catálogo */
 
 .produtos{
-    display: grid;
-    justify-items: center;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 
@@ -160,7 +168,6 @@ nav{
 
 .produtos .img{
     height: 250px;
-    background-color: var(--cor04);
     z-index: 2;
     position: absolute;
     width: 100%;
@@ -172,6 +179,29 @@ nav{
 .card:hover .img{
     top: -100px;
     scale: 0.75;
+}
+
+.card:hover img{
+    filter: brightness(0.5) blur(0.5px);
+}
+
+.card .img h2{
+    position: absolute;
+    z-index: -1;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .2s all ease-in-out;    
+}
+.card:hover .img h2{
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    opacity: 1;
 }
 
 .card .texto{
@@ -200,7 +230,7 @@ nav{
     background-color: var(--cor02);
     border: none;
     color: #fcf2c9;
-    padding: 5px;
+    padding: 15px;
     border-radius: 5px;
     transition: .5s all ease-in-out;
 }
@@ -260,8 +290,73 @@ footer{
 
     /* catalogo */
 
+    .container p{
+        max-width: 700px;
+        margin: auto;
+        font-size: 20px;
+    }
+
     .produtos{
         grid-template-columns: 50% 50%;
+    }
+    
+}
+
+@media (min-width:1280px){
+    nav{
+        flex-direction: row;
+        box-shadow: 3px 1px 2px black;
+    }
+
+    nav a{
+        color: var(--cor06);
+        font-size: 18px;
+        text-decoration: none;
+        transition: .3s all ease-in-out;
+    }
+
+    nav a:hover{
+        color: #d3cbab;
+        font-size: 20px;
+    }
+
+    nav .user{
+        font-size: 30px;
+        background-color: var(--cor04);
+        padding: 5px 10px;
+    }
+
+    nav .user:hover{
+        font-size: 33px;
+    }
+
+    nav .nome{
+        display: none;
+    }
+
+    /* Container */
+
+    .container{
+        margin: 100px 0 120px;
+    }
+
+    .container .img{
+        height: calc(100vh - 100px);
+    }
+    /* catalogo */
+
+    .container p{
+        max-width: 700px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .produtos{
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .card:hover{
+        height: 350px;
     }
     
 }
@@ -269,8 +364,10 @@ footer{
 
 /* Scrollbar */
 
+
 ::-webkit-scrollbar{
     width: 15px;
+    cursor: pointer;
 }
 
 
@@ -279,5 +376,5 @@ footer{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: var(--cor04);
+    background-color: var(--cor05);
 }
