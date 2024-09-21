@@ -5,6 +5,9 @@ html,body{
     min-height: 100vh;
 }
 
+h1{
+    margin: 41px 0 ;
+}
 
 .logo{
     background-color: var(--cor06);
@@ -35,7 +38,6 @@ h1{
 }
 
 #login, #cadastro{
-    padding: 20px;
     position: absolute;
     z-index: 2;
     color: var(--cor06);
@@ -44,7 +46,7 @@ h1{
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    top: 140px;
+    top: 115px;
     left: 0;
     right: 0;
     transition: .5s all ease-in-out;
@@ -69,7 +71,7 @@ form{
 }
 
 #cadastro .campo{
-    height: 15%;
+    height: 13%;
 }
 
 input{
@@ -102,15 +104,20 @@ input{
 }
 label{
     position: absolute;
-    top: 64%;
+    top: 58%;
     transition: .2s all ease-in-out;
     font-size: 18px;
 }
 
 
 
-input:focus~label{
-    top: 33px !important;
+input:focus~label, .teste~label{
+    top: 46px !important;
+    font-size: 15px;
+}
+
+#cadastro input:focus~label, #cadastro .teste~label{
+    top: 20px !important;
     font-size: 15px;
 }
 
@@ -225,6 +232,7 @@ span{
 
     input{
         border-color: var(--cor01);
+        color: var(--cor01);
     }
 
     button[type="submit"]{
