@@ -134,7 +134,82 @@ main{
     margin-top: 120px;
     background-color: var(--cor06);
     color: var(--cor01);
-    width: 50%;
-    padding: 30px;
+    width: 100%;
+    padding: 30px 80px;
     height: fit-content;
+}
+
+@media (width > 580px) {
+    .container{ 
+        width: 50%;
+        padding: 30px;
+}
+}
+
+
+@media ((min-width:780px) and (max-width:1280px)){
+    nav{
+        flex-direction: row;
+    }
+
+    nav a{
+        color: var(--cor06);
+        font-size: 18px;
+        text-decoration: none;
+        transition: .3s all ease-in-out;
+    }
+
+    nav a:hover{
+        color: #d3cbab;
+        font-size: 20px;
+    }
+
+    nav .user{
+        font-size: 30px;
+        background-color: var(--cor04);
+        padding: 5px 10px;
+    }
+
+    nav .user:hover{
+        font-size: 33px;
+    }
+
+    nav .nome{
+        display: none;
+    }
+}
+
+@media (min-width:1280px){
+    nav{
+        flex-direction: row;
+        box-shadow: 3px 1px 2px black;
+    }
+
+    nav a{
+        color: var(--cor06);
+        font-size: 18px;
+        text-decoration: none;
+        transition: .3s all ease-in-out;
+    }
+
+    nav a:hover{
+        color: #d3cbab;
+        font-size: 20px;
+    }
+
+    nav .user{
+        font-size: 30px;
+        background-color: var(--cor04);
+        padding: 5px 10px;
+    }
+
+    nav .user:hover{
+        font-size: 33px;
+    }
+
+    nav .nome{
+        display: none;
+    }
+
+    
 }
