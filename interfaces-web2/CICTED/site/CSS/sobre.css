@@ -1,0 +1,140 @@
+@import url("normalize.css");
+
+
+header{
+    position: fixed;
+    z-index: 10;
+}
+
+nav{
+    width: 100vw;
+    height: 100px;
+    background-color: var(--cor01);
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 80px;
+}
+
+nav > img{
+    width: 50px;
+    height: 53px;
+    border-radius: 0;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+/* menu hamburguer */
+
+#hamburguer{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 32px;
+}
+
+#hamburguer span{
+    position: absolute;
+    height: 4px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--cor04);
+    transition: .25s ease-in-out all;
+}
+
+#hamburguer span:nth-child(1){
+    top: 0px;
+}
+#hamburguer span:nth-child(2){
+    top: 8px;
+}
+#hamburguer span:nth-child(3){
+    top: 16px;
+}
+
+.hamburguerActive span:nth-child(1){
+    transform: rotate(-45deg);
+    top: 8px !important;
+}
+
+.hamburguerActive span:nth-child(2){
+    background-color: transparent !important;
+}
+
+.hamburguerActive span:nth-child(3){
+    transform: rotate(45deg);
+    top: 8px !important;
+}
+
+#links{
+    position: absolute;
+    left: 5000px;
+    right: -5000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    background-color: var(--cor01);
+    text-align: center;
+    transition: .5s all ease-in-out;
+}
+
+.linksActive{
+    left: 0 !important;
+    right: 0 !important;
+}
+
+#links a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 40px;
+    border: 1px solid var(--cor02);
+    box-shadow: 2px 2px 3px rgba(2, 0, 151, 0.36);
+    text-decoration: none;
+    margin: 10px 0;
+    transition: .3s all ease-in-out;
+    color: var(--cor06);
+
+}
+#links a:hover{
+    color: #d3cbab;
+    font-size: 18px;
+    scale: 1.05;
+}
+
+#links a:nth-last-child(1){
+    color: #000020;
+    font-size: 30px;
+    background-color: var(--cor04);
+    box-shadow: 2px 2px 3px #7b5400a9;
+}
+#links a:nth-last-child(1):hover{
+    color: #171a4a;
+    font-size: 40px;
+    padding: 2px 0;
+}
+
+/* Corpo */
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    margin-top: 120px;
+    background-color: var(--cor06);
+    color: var(--cor01);
+    width: 50%;
+    padding: 30px;
+    height: fit-content;
+}
