@@ -1,0 +1,141 @@
+@import url("normalize.css");
+
+html,body{
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.logo{
+    background-color: var(--cor06);
+    color: var(--cor01);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: url("../img/fundo_c.png")  no-repeat fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+}
+
+#cadastro{
+    display: none;
+} 
+
+main{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 25px;
+}
+
+#login{
+    padding: 20px;
+    margin: auto;
+    position: absolute;
+    z-index: 2;
+    color: var(--cor06);
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#login form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: 450px;
+}
+
+.campo{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#login input{
+    background-color: transparent;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid var(--cor06);
+    box-shadow: 1px 1px 1px var(--cor06);
+    color: var(--cor06);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5px 0;
+}
+
+
+
+#login label{
+    position: absolute;
+    top: 77%;
+    transition: .2s all ease-in-out;
+}
+
+#login input:focus~ label{
+    top: 70px;
+    font-size: 15px;
+}
+
+#login button[type="submit"]{
+    border: 1px solid var(--cor06);
+    background: transparent;
+    width: 100%;
+    height: 120px;
+    margin: 20px auto;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .5s .3s all ease-in-out;
+    z-index: 2;
+}
+
+button .rotate-bg{
+    background-color: var(--cor06);
+    width: 850px;
+    height: 600px;
+    transform-origin: top left;
+    transform: rotate(10deg) skewY(40deg);
+    position: absolute;
+    bottom: -1000px;
+    left: -1000px;
+    overflow: hidden;
+    transition: .7s all ease-in-out;
+}
+
+#login button:hover{
+    border-color: var(--cor01);
+}
+
+button:hover .rotate-bg{  
+    bottom: -4px;
+    left: 0px;
+}
+
+button span{
+    color: var(--cor06);
+    position: relative;
+    z-index: 3;
+    transition: .3s .4s all ease-in-out;
+}
+
+button:hover span{
+    color: var(--cor01);
+}
+
+span{
+    color: var(--cor05);
+    cursor: pointer;
+}
+
+

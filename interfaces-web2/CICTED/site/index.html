@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,8 @@
     <link rel="stylesheet" href="CSS/style.css">
 
 </head>
-<body onload="desativarHamburguer()"> 
+
+<body>
     <header>
         <nav>
             <div id="hamburguer" onclick="hamburguer()">
@@ -19,88 +21,55 @@
             <div class="nome">StartUp Creativity</div>
         </nav>
         <div id="links">
-            <a href="#"><div>Home</div></a>
-            <a href="paginas/sobre.html"><div>Sobre</div></a>
-            <a href=""><div>Contato</div></a>
-            <a href="paginas/login.html" class="user"><div><i class="bi bi-person-fill"></i></div></a>
+            <a href="#">
+                <div>Home</div>
+            </a>
+            <a href="paginas/sobre.html">
+                <div>Sobre</div>
+            </a>
+            <a href="">
+                <div>Contato</div>
+            </a>
+            <a href="paginas/login.html" class="user">
+                <div>
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </a>
+            <!-- <div class="campo">
+
+                <div class="pesquisa">
+                    <input type="text" name="" id="barraPesquisa"></input>
+                    <label for="barraPesquisa"><i class="bi bi-search"></i></label>
+                </div>
+                <div class="modo">
+                        <label class="switch" for="checkbox">
+                            <input type="checkbox" id="checkbox" />
+                            <div class="slider round"></div>
+                        </label>
+                </div>
+            </div> -->
         </div>
     </header>
 
     <main>
-        <div class="container">>
-            <div class="img"></div>
-        </div>
-        
-        
-        <h1>Catálogo</h1>
-
-        <div class="produtos">
-            <div class="card">
-                <div class="img">
-                    <img src="img/maracuja.jpg" alt="">
-                    <h2>Brigadeiro</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium adipisci voluptatum non nam tempore natus repellendus molestias dicta dolores. Quis similique itaque labore unde ut, qui laudantium dolore voluptates repellat? </p>
-                    <button>Acessar</button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="img">
-                    <img src="img/maracuja5.webp" alt="">
-                    <h2>Pão</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum totam illo mollitia maiores suscipit sapiente. Ipsam facilis perferendis eveniet voluptates, nobis fugit, quae libero dignissimos accusamus, unde dolores laboriosam? Ab? </p>
-                    <button>Acessar</button>
-                </div>
-            </div><div class="card">
-                <div class="img">
-                    <img src="img/maracuja4.jpg" alt="">
-                    <h2>Mousse</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum totam illo mollitia maiores suscipit sapiente. Ipsam facilis perferendis eveniet voluptates, nobis fugit, quae libero dignissimos accusamus, unde dolores laboriosam? Ab? </p>
-                    <button>Acessar</button>
-                </div>
-            </div><div class="card">
-                <div class="img">
-                    <img src="img/maracuja1.jpg" alt="">
-                    <h2>Suco</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum totam illo mollitia maiores suscipit sapiente. Ipsam facilis perferendis eveniet voluptates, nobis fugit, quae libero dignissimos accusamus, unde dolores laboriosam? Ab? </p>
-                    <button>Acessar</button>
-                </div>
-            </div><div class="card">
-                <div class="img">
-                    <img src="img/maracuja.jpeg3.avif" alt="">
-                    <h2>Torta</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum totam illo mollitia maiores suscipit sapiente. Ipsam facilis perferendis eveniet voluptates, nobis fugit, quae libero dignissimos accusamus, unde dolores laboriosam? Ab? </p>
-                    <button>Acessar</button>
-                </div>
-            </div><div class="card">
-                <div class="img">
-                    <img src="img/maracuja6.jpg" alt="">
-                    <h2>Salmão</h2>
-                </div>
-                <div class="texto">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum totam illo mollitia maiores suscipit sapiente. Ipsam facilis perferendis eveniet voluptates, nobis fugit, quae libero dignissimos accusamus, unde dolores laboriosam? Ab? </p>
-                    <button>Acessar</button>
-                </div>
-            </div>
-
-        </div>
-
     </main>
 
     <footer>
-
+        <ul>
+            <li>Redes Sociais:</li>
+            <li><a href="#">instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+        <ul>
+            <li>Contato</li>
+            <li>Telefone: (12) 98836-4369</li>
+            <li>Email: startUpCreativity@gmail.com</li>
+        </ul>
     </footer>
 
-    <script src="JS/menu_hamburguer.js"></script>
+    <script src="JS/load.js"></script>
+    <script src="JS/script.js"></script>
 </body>
+
 </html>

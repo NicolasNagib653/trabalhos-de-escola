@@ -1,8 +1,10 @@
 const listaDeEscolas = [
-    {abbr: "Etec", name: "Etec Doutor Geraldo José Rodrigues Alckmin"},
+    {abbr: "Etec",   name: "Etec Doutor Geraldo José Rodrigues Alckmin"},
     {abbr: "Amácio", name: "EE Amácio Mazzaropi"},
     {abbr: "Amador", name: "EE Amador Bueno da Veiga"},
     {abbr: "Newton", name: "EE Newton Câmara L. Barros"},
+    {abbr: "Amador", name: "EE Amador Bueno da Veiga"},
+    {abbr: "Areão",  name: "EMIEF Padre Silvino Vicent Kunz"}
 ]
 
 

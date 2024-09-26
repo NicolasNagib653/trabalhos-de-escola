@@ -38,6 +38,5 @@ function teste(input){
 if (input.value == false){
     input.classList.remove("teste")
 } else{
-    console.log("teste")
     input.classList.add("teste")
 }}
