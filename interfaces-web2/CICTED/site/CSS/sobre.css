@@ -28,6 +28,10 @@ img {
     height: 100%;
 }
 
+.nome{
+    color: var(--cor01);
+}
+
 /* menu hamburguer */
 
 #hamburguer {
