@@ -19,10 +19,28 @@
             <div class="nome">StartUp Creativity</div>
         </nav>
         <div id="links">
-            <a href="../index.html"><div>Home</div></a>
-            <a href="#"><div>Sobre</div></a>
-            <a href="contato.html"><div>Contato</div></a>
-            <a href="login.html" class="user"><div><i class="bi bi-person-fill"></i></div></a>
+            <a href="../index.html">
+                <div>Home</div>
+            </a>
+            <a href="#">
+                <div>Sobre</div>
+            </a>
+            <a href="#contato" >
+                <div>Contato</div>
+            </a>
+            <a href="paginas/login.html" class="user">
+                <div>
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </a>
+            <div class="campo">
+
+                <div class="pesquisa">
+                    <input type="text" name="" id="barraPesquisa" style="display: none;">
+                    <label for="barraPesquisa"><i class="bi bi-search" onclick="barraPesquisa()"></i></label>
+                </div>
+                
+            </div>
         </div>
     </header>
 
@@ -30,22 +48,64 @@
         <div class="container">
             <section>
                 <h2>Quem somos?</h2>
-                <p>A evasão escolar é um desafio que muitas instituições de ensino enfrentam. Em busca de soluções criativas e práticas, apresentamos o projeto <em>"StartUp Creativity"</em>, que visa capacitar alunos a desenvolver suas habilidades empreendedoras e, ao mesmo tempo, promover a permanência na escola através da venda de produtos. 
-                </ol>
+                <p>A escola é onde confiamos a educação de crianças e adolescentes, também onde os jovens terminam sua fase de desenvolvimento, a partir disso são inseridos no mercado de trabalho e começam a exercer sua cidadania, infelizmente muitos dos adolescentes saem das suas instituições escolares. Os motivos são diversos, o principal é a necessidade de uma fonte de renda. Diante disso nós alunos do segundo ano do ensino médio da Etec Dr. Geraldo José Rodrigues Alckimin, ao longo do segundo semestre de 2024, desenvolvemos o projeto StarUp Criative, um projeto que visa instruir jovens empreendedores e gerar visibilidade a seus  pequenos negócios, evitando-os de abandonarem os estudos para entrar no mercado de trabalho.
+                Antes de desenvolvermos um site, organizamos uma feira de vendas em nosso escola com objetivo de incentivar o empreendedorismo entre os jovens, porém, percebemos que era possível aprofundar nossas ideias e usa-las como ferramenta para auxiliar a vida de outros jovens estudantes.
             </section>
             <section>
                 <h2>O que fazemos?</h2>
-                <p>O objetivo principal do projeto é fornecer aos alunos conhecimentos e ferramentas que os ajudem a criar e vender seus próprios produtos. Isso não apenas aumenta a confiança e a responsabilidade dos estudantes, mas também gera uma fonte de renda que pode ser vital para suas famílias. Ao envolver os alunos em um processo prático de empreendedorismo, esperamos reduzir a evasão escolar e fomentar um ambiente de aprendizagem mais dinâmico e atraente.</p> 
-                <h3>Estratégias de Implementação </h3>
-                <ol>
-                    <li><strong>Workshops de Capacitação</strong>: Serão realizados workshops sobre empreendedorismo, marketing, finanças e produção de produtos. Especialistas serão convidados para compartilhar experiências e conhecimentos.</li>
-                    <li><strong>Mentoria</strong>: Cada aluno terá acesso a um mentor, que pode ser um professor ou um empreendedor local, para orientação e suporte durante o desenvolvimento de seus projetos. </li>
-                    <li><strong>Feiras de Empreendedorismo</strong>: Organizar feiras trimestrais onde os alunos possam exportar e vender seus produtos. Isso cria um espaço de aprendizagem prático e interação com a comunidade.</li>
-                    <li><strong>Apoio na Produção</strong>: A escola disponibilizará espaço e materiais para a produção dos produtos, garantindo que todos tenham acesso às ferramentas necessárias.</li>
+                <p>Por meio da StarUp Criative pretendemos dar visibilidade aos produtos desenvolvidos por esses jovens e instrui-los nas vertentes do empreendedorismo, dessa forma ajudariamos eles a gerar uma renda extra e evitando a evasão escolar.</p>
             </section>
         </div>
     </main>
 
-    <script src="../JS/menu_hamburguer.js"></script>
+    <footer id="contato">
+        <div class="cont1">
+         <h3>Acesso Rápido</h3>
+         <ul>
+             <li><a href="../index.html">Home</a></li>
+             <li><a href="#">Sobre</a></li>
+             <li><a href="paginas/login.html">login</a></li>
+         </ul>
+        </div>
+        <div class="contato">
+         <h2>Formulário de contato</h2>
+         <form action="#">
+ 
+             <div class="campo">
+                 <input type="text" id="nomemsg" placeholder="Insira seu nome">
+             </div>
+ 
+             <div class="campo">
+                 <input type="Email" id="emailmsg" placeholder="Insira seu email">
+             </div>
+ 
+             <div class="campo">
+             </div>
+             <input type="submit" value="Enviar">
+         </form>
+        </div>
+
+     </footer>
+    <script src="../JS/script.js"></script>
+    <script>
+    function barraPesquisa() {
+        pesquisa.classList.toggle("active")
+        if(window.innerWidth >= 780){
+        if(pesquisa.className !=="active"){
+            setTimeout(() =>{
+                pesquisa.style.display = "none"
+                pesquisa.style.width = "auto"
+            },900)
+        }else{
+            if(window.innerWidth >= 1280){
+            pesquisa.style.width = "350px"
+            pesquisa.style.display ="block"
+        }else if(window.innerWidth < 1280){
+            pesquisa.style.width = "250px"
+            pesquisa.style.display ="block"
+        }
+    }}
+    }
+    </script>
 </body>
 </html>

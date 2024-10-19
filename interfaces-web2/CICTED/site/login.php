@@ -88,3 +88,36 @@
 </body>
 
 </html>
+
+<?php
+     include("conexao.php");
+
+
+     if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $nome = $_POST['nomcad'];
+        $telefone = $_POST['telcad'];
+        $email = $_POST['emacad'];
+        $instituicao_de_ensino = $_POST['esccad'];
+        $senha = $_POST['senhcad'];
+
+    //  $sql = "INSERT INTO usuario (nome, telefone, email, instituicao_de_ensino) VALUES";
+    //  $sql_query = $conn->query($sql) or die("ERRO ao pesquisar!" . $conn->error);
+
+        $sql = $conn->prepare("INSERT INTO usuario (nome, telefone, email, instituicao_de_ensino)VALUES (?, ?, ?, ?, ?)");
+
+        if ($sql === false) {
+            die("Erro na preparação da consulta: " . $conn->error);
+        }
+
+        // Bind dos parâmetros
+        $sql->bind_param("ssd", $nome, $telefone, $email, $instituicao_de_ensino, $senha);
+
+        if($sql->execute() === true){
+            echo"Cadastro realizado com sucesso!";
+        }else{
+            echo"ERRO! Erro ao cadastrar!". $conn->error;
+        }
+
+        $conn->close;
+    }
+?>

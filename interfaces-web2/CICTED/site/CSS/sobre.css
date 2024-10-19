@@ -6,31 +6,31 @@ header{
     z-index: 10;
 }
 
-nav{
+
+nav {
     width: 100vw;
     height: 100px;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-evenly;
-    gap: 0 80px;
 }
 
-nav > img{
+nav>img {
     width: 50px;
     height: 53px;
     border-radius: 0;
 }
 
-img{
+img {
     width: 100%;
     height: 100%;
-    border-radius: 15px;
 }
+
 /* menu hamburguer */
 
-#hamburguer{
+#hamburguer {
     cursor: pointer;
     position: relative;
     display: block;
@@ -38,40 +38,42 @@ img{
     width: 32px;
 }
 
-#hamburguer span{
+#hamburguer span {
     position: absolute;
     height: 4px;
     width: 100%;
     border-radius: 30px;
-    background-color: var(--cor04);
+    background-color: var(--cor03);
     transition: .25s ease-in-out all;
 }
 
-#hamburguer span:nth-child(1){
+#hamburguer span:nth-child(1) {
     top: 0px;
 }
-#hamburguer span:nth-child(2){
+
+#hamburguer span:nth-child(2) {
     top: 8px;
 }
-#hamburguer span:nth-child(3){
+
+#hamburguer span:nth-child(3) {
     top: 16px;
 }
 
-.hamburguerActive span:nth-child(1){
+.hamburguerActive span:nth-child(1) {
     transform: rotate(-45deg);
     top: 8px !important;
 }
 
-.hamburguerActive span:nth-child(2){
+.hamburguerActive span:nth-child(2) {
     background-color: transparent !important;
 }
 
-.hamburguerActive span:nth-child(3){
+.hamburguerActive span:nth-child(3) {
     transform: rotate(45deg);
     top: 8px !important;
 }
 
-#links{
+#links {
     position: absolute;
     left: 5000px;
     right: -5000px;
@@ -81,48 +83,88 @@ img{
     align-items: center;
     gap: 20px;
     padding: 20px 0;
-    background-color: var(--cor01);
+    background-color: var(--cor05);
     text-align: center;
     transition: .5s all ease-in-out;
 }
 
-.linksActive{
+.linksActive {
     left: 0 !important;
     right: 0 !important;
 }
 
-#links a{
+#links a {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 90%;
     height: 40px;
-    border: 1px solid var(--cor02);
+    border: 1px solid var(--cor03);
     box-shadow: 2px 2px 3px rgba(2, 0, 151, 0.36);
     text-decoration: none;
     margin: 10px 0;
     transition: .3s all ease-in-out;
-    color: var(--cor06);
+    color: var(--cor01);
 
 }
-#links a:hover{
-    color: #d3cbab;
+
+#links a:hover {
+    color: var(--cor02);
+    border-color: var(--cor02);
     font-size: 18px;
     scale: 1.05;
 }
 
-#links a:nth-last-child(1){
+#links a:nth-child(4) {
     color: #000020;
     font-size: 30px;
-    background-color: var(--cor04);
+    background-color: #ff9800;
     box-shadow: 2px 2px 3px #7b5400a9;
 }
-#links a:nth-last-child(1):hover{
+
+#links a:nth-child(4):hover {
+    border-color: var(--cor03);
     color: #171a4a;
     font-size: 40px;
     padding: 2px 0;
 }
 
+.campo{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.pesquisa {
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.pesquisa input {
+    width: 100%;
+    height: 30px;
+    background-color: #ff9800;
+    box-shadow: 3px 3px 1px 0px #ff98008c;
+    outline: 0;
+    border: none;
+    transition: .5s all ease-in-out;
+}
+
+.pesquisa input:focus {
+    box-shadow: 2px 3px 2px 1px #ff98008c;
+    scale: 1.01;
+}
+
+
+.pesquisa i {
+    position: absolute;
+    left: 95%;
+    top: 50%;
+    translate: 0 -50%;
+    color: var(--cor01);
+    cursor: pointer;
+}
 /* Corpo */
 
 main{
@@ -132,12 +174,95 @@ main{
 
 .container{
     margin-top: 120px;
-    background-color: var(--cor06);
+    background-color: var(--cor05);
     color: var(--cor01);
     width: 100%;
     padding: 30px 40px;
     height: fit-content;
 }
+
+footer{
+    background-color: var(--cor05);
+    color: var(--cor01);
+    display: flex;
+    
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+footer .cont1{
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul{
+    padding: 0 10px;
+}
+
+footer li, footer a{
+    color: var(--cor01);
+    text-decoration: none;
+    font-size: 17px;
+    list-style: none;
+    transition: .2s all ease-in-out;
+    padding: 10px;
+}
+
+footer a:hover{
+    color: var(--cor02);
+}
+
+footer .contato{
+    background-color: var(--cor06);
+    padding: 20px;
+}
+
+footer form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+footer .campo{
+    position: relative;
+    width: 80%;
+    height: 35px;
+}
+
+footer input:not([type="submit"]){
+    background-color: transparent;
+    outline: 0;
+    border: 1px solid var(--cor01);
+    color: var(--cor01);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+footer input::placeholder{
+    color: var(--cor01);
+}
+
+footer input[type="submit"]{
+    background-color: transparent;
+    border: 1px solid var(--cor01);
+    color: var(--cor01);
+    width: 80%;
+    height: 30px;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+}
+
+footer input[type="submit"]:hover{
+    background-color: var(--cor03);
+    color: var(--cor05);
+    border-color: var(--cor03);
+}
+
 
 @media (width > 580px) {
     .container{ 
@@ -148,77 +273,221 @@ main{
 
 
 @media ((min-width:780px) and (max-width:1280px)){
-    nav{
+    nav {
         flex-direction: row;
+        gap: 0;
     }
 
-    nav a{
-        color: var(--cor06);
+    nav a {
+        color: var(--cor01);
         font-size: 18px;
         text-decoration: none;
         transition: .3s all ease-in-out;
     }
 
-    nav a:hover{
-        color: #d3cbab;
+    nav a:hover {
+        color: var(--cor02);
         font-size: 20px;
     }
 
-    nav .user{
+    nav .user {
         font-size: 30px;
-        background-color: var(--cor04);
+        background-color: var(--cor03);
+        color: var(--cor05);
         padding: 5px 10px;
     }
 
-    nav .user:hover{
+    nav .user:hover {
+        color: #000020;
         font-size: 33px;
     }
 
-    nav .nome{
+    nav .nome {
         display: none;
+    }
+
+    .campo{
+        width: auto;
+    }
+
+    .pesquisa input{
+        animation: 1s barra-inversa;
+    }
+
+    .pesquisa label{
+        width: 30px;
+        height: 31px;
+        box-shadow: 3px 4px 1px 0px #ff98008c;
+        position: relative;
+        background-color: var(--cor03);
+    } 
+
+    .pesquisa i{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pesquisa .active{
+        display: block !important;
+        animation: 1s barra alternate;
+    }
+    
+    .pesquisa input:focus~ label {
+        box-shadow: 6px 4px 2px 1px #ff98008c;
+        scale: 1.01;
+    }
+
+    #links{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .cont1{
+        width: 45%;
+    }
+
+    footer .contato{
+        width: 40%;
+        padding: 50px;
+    }
+
+    @keyframes barra {
+        from{
+            display: block;
+            width: 0;
+        }
+        to{
+            width: 250px;
+        }
+    }
+    @keyframes barra-inversa {
+        from{
+            width: 250px;
+        }
+        to{
+            display: block;
+            width: 0;
+        }
     }
 }
 
 @media (min-width:1280px){
-    nav{
+    nav {
         flex-direction: row;
         box-shadow: 3px 1px 2px black;
     }
 
-    nav a{
-        color: var(--cor06);
+    nav a {
+        color: var(--cor01);
         font-size: 18px;
         text-decoration: none;
         transition: .3s all ease-in-out;
     }
 
-    nav a:hover{
-        color: #d3cbab;
+    nav a:hover {
+        color: var(--cor02);
         font-size: 20px;
     }
 
-    nav .user{
+    nav .user {
         font-size: 30px;
-        background-color: var(--cor04);
+        background-color: var(--cor03);
+        color: #171a4a;
         padding: 5px 10px;
     }
 
-    nav .user:hover{
+    nav .user:hover {
+        color: #000020;
         font-size: 33px;
     }
 
-    nav .nome{
+    nav .nome {
         display: none;
+    }
+
+    nav .campo{
+        width: auto;
+    }
+
+    .pesquisa input{
+        animation: 1s barra-inversa;
+    }
+
+    .pesquisa label{
+        width: 30px;
+        height: 31px;
+        box-shadow: 3px 4px 1px 0px #ff98008c;
+        position: relative;
+        background-color: var(--cor03);
+    } 
+
+    .pesquisa i{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .pesquisa .active{
+        display: block !important;
+        animation: 1s barra alternate;
+    }
+
+    .pesquisa input:focus~ label {
+        box-shadow: 6px 4px 2px 1px #ff98008c;
+        scale: 1.01;
     }
 
     main{
         align-items: center;
-        min-height: 100vh;
+        margin: 60px;
+        font-size: 18px;
     }
+
 
     .container{
-        margin-top: 0;
+        margin-top: 120px;
     }
 
-    
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .cont1{
+        width: 50%;
+    }
+
+    footer .contato{
+        width: 35%;
+        padding: 50px;
+    }
+
+    footer h3, footer h2{
+        font-size: 25px;
+    }
+
+    footer li, footer a{
+        font-size: 20px;
+        padding: 20px 0;
+    }
+    @keyframes barra {
+        from{
+            display: block;
+            width: 0;
+        }
+        to{
+            width: 350px;
+        }
+    }
+    @keyframes barra-inversa {
+        from{
+            width: 350px;
+        }
+        to{
+            display: block;
+            width: 0;
+        }
+    }
 }

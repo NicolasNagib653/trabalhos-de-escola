@@ -19,7 +19,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background: url("../img/fundo_c.png")  no-repeat fixed;
+    background: url("../img/funco_e.png")  no-repeat fixed;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -93,6 +93,13 @@ input{
     margin: 5px 0;
 }
 
+.sen{
+    position: absolute;
+    right: 0;
+    top: 58%;
+    cursor: pointer;
+}
+
 .active #login{
     visibility: hidden;
     right: 10000px;
@@ -113,24 +120,18 @@ input{
 }
 label{
     position: absolute;
-    top: 58%;
+    bottom: 10px;
     transition: .2s all ease-in-out;
     font-size: 18px;
 }
 
 
-
 input:focus~label, .teste~label{
-    top: 46px !important;
+    bottom: 20px !important;
     font-size: 15px;
 }
 
-#cadastro input:focus~label, #cadastro .teste~label{
-    top: 20px !important;
-    font-size: 15px;
-}
-
-button[type="submit"]{
+button{
     border: 1px solid var(--cor06);
     background: transparent;
     width: 100%;

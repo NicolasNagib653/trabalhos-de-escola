@@ -27,7 +27,7 @@
             <a href="paginas/sobre.html">
                 <div>Sobre</div>
             </a>
-            <a href="">
+            <a href="#contato">
                 <div>Contato</div>
             </a>
             <a href="paginas/login.html" class="user">
@@ -35,41 +35,52 @@
                     <i class="bi bi-person-fill"></i>
                 </div>
             </a>
-            <!-- <div class="campo">
+            <div class="campo">
 
                 <div class="pesquisa">
-                    <input type="text" name="" id="barraPesquisa"></input>
-                    <label for="barraPesquisa"><i class="bi bi-search"></i></label>
+                    <input type="text" name="" id="barraPesquisa" style="display: none;">
+                    <label for="barraPesquisa"><i class="bi bi-search" onclick="barraPesquisa()"></i></label>
                 </div>
-                <div class="modo">
-                        <label class="switch" for="checkbox">
-                            <input type="checkbox" id="checkbox" />
-                            <div class="slider round"></div>
-                        </label>
-                </div>
-            </div> -->
+                
+            </div>
         </div>
     </header>
 
     <main>
     </main>
 
-    <footer>
+    <footer id="contato">
+       <div class="cont1">
+        <h3>Acesso Rápido</h3>
         <ul>
-            <li>Redes Sociais:</li>
-            <li><a href="#">instagram</a></li>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="paginas/sobre.html">Sobre</a></li>
+            <li><a href="paginas/login.html">login</a></li>
         </ul>
-        <ul>
-            <li>Contato</li>
-            <li>Telefone: (12) 98836-4369</li>
-            <li>Email: startUpCreativity@gmail.com</li>
-        </ul>
+       </div>
+       <div class="contato">
+        <h2>Formulário de contato</h2>
+        <form action="#">
+
+            <div class="campo">
+                <input type="text" id="nomemsg" placeholder="Insira seu nome">
+            </div>
+
+            <div class="campo">
+                <input type="Email" id="emailmsg" placeholder="Insira seu email">
+            </div>
+
+            <div class="campo">
+            </div>
+            <input type="submit" value="Enviar">
+        </form>
+       </div>
+
     </footer>
 
     <script src="JS/load.js"></script>
     <script src="JS/script.js"></script>
+
 </body>
 
 </html>

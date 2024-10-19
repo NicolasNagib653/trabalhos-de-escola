@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceito</title>
+    <link rel="stylesheet" href="../CSS/perfilloja.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="hamburguer" onclick="hamburguer()">
+                <span></span> <span></span> <span></span>
+            </div>
+            <img src="../img/Imagem1.png" alt="">
+            <div class="logo">
+            </div>
+            <div class="nome">StartUp Creativity</div>
+        </nav>
+        <div id="links">
+            <a href="../index.html">
+                <div>Home</div>
+            </a>
+            <a href="sobre.html">
+                <div>Sobre</div>
+            </a>
+            <a href="#contato">
+                <div>Contato</div>
+            </a>
+            <a href="login.html" class="user">
+                <div>
+                    <i class="bi bi-person-fill"></i>
+                </div>
+            </a>
+            <div class="campo">
+
+                <div class="pesquisa">
+                    <input type="text" name="" id="barraPesquisa" style="display: none;">
+                    <label for="barraPesquisa"><i class="bi bi-search" onclick="barraPesquisa()"></i></label>
+                </div>
+                
+            </div>
+        </div>
+    </header>
+
+    <main>
+            <div class="banner"></div>
+            <div class="header-loja">
+                <div class="nome-loja">
+                    <img src="../img/Imagem1.png" alt="Logo da loja" style=" width: 50px;">
+                    <h2>Café Conceito</h2>
+                </div>
+                <!-- <div class="sobreloja"><span>Ver mais</span></div> -->
+            </div>
+        <div class="container">
+            <div class="card">
+                <img src="../img/lojas/l1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                    <a href="tel:+5512992578071">Pedir</a>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/lojas/ll1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/lojas/l1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/lojas/ll1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/lojas/l1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../img/lojas/ll1.jpg" alt="">
+                <div class="card-texto">
+                    <h4>Café</h4>
+                    <p>R$14,90</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contato">
+        <div class="cont1">
+         <h3>Acesso Rápido</h3>
+         <ul>
+             <li><a href="../index.html">Home</a></li>
+             <li><a href="sobre.html">Sobre</a></li>
+             <li><a href="login.html">login</a></li>
+         </ul>
+        </div>
+        <div class="contato">
+         <h2>Formulário de contato</h2>
+         <form action="#">
+ 
+             <div class="campo">
+                 <input type="text" id="nomemsg" placeholder="Insira seu nome">
+             </div>
+ 
+             <div class="campo">
+                 <input type="Email" id="emailmsg" placeholder="Insira seu email">
+             </div>
+ 
+             <div class="campo">
+             </div>
+             <input type="submit" value="Enviar">
+         </form>
+        </div>
+ 
+     </footer>
+
+     <script>
+        document.addEventListener("DOMContentLoaded", ()=>{
+            desativarHamburguer()
+        })
+     </script>
+     <script src="../JS/script.js"></script>
+</body>
+</html>

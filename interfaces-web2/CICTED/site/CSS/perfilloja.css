@@ -1,4 +1,5 @@
 @import url("normalize.css");
+@import url("normalize.css");
 
 header {
     position: fixed;
@@ -169,113 +170,64 @@ img {
     cursor: pointer;
 }
 
-.modo .switch {
-    display: inline-block;
-    height: 30px;
-    position: relative;
-    width: 80px;
-}
+/* Main */
 
-.modo .switch input {
-    display: none;
-}
-
-.modo .slider {
-    background-color: #ccc;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    transition: .4s;
-}
-
-.modo .slider:before {
-    background-color:
-        #fff;
-    bottom: 4px;
-    content: "";
-    height: 23px;
-    left: 4px;
-    position: absolute;
-    transition: .4s;
-    width: 26px;
-}
-
-.modo input:checked+.slider {
-    background-color: var(--cor02);
-}
-
-.modo input:checked+.slider:before {
-    transform: translateX(46px);
-}
-
-.modo .slider.round {
-    border-radius: 34px;
-    background-color: var(--cor04);
-}
-
-.modo .slider.round:before {
-    border-radius: 50%;
-}
-
-.loja {
-    width: 80%;
-    background-color: var(--cor02);
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.banner{
+    width: 100vw;
+    height: 200px;
+    background-color: #171a4a;
     margin-top: 120px;
 }
 
-.loja a, .loja abbr{
-    color: #000020;
-    text-decoration: none;
-    margin: 0;
+.header-loja{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0 20px;
+    margin: 10px;
+}
+
+.nome-loja{
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.header-loja span{
+    color: #ff9800;
+    cursor: pointer;
     transition: .5s;
 }
 
-.loja a:hover{
-    text-decoration: underline;
-    margin: 0;
+.header-loja span:hover{
+    color: #000020;
 }
 
-.header-loja {
+.container{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
 }
 
-.logo-loja {
-    width: 50px;
-    height: 50px;
-
+.card{
+    width: 150px;
+    margin: 10px;
+    background-color: var(--cor05);
+    color: white;
 }
 
-.nome-loja {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+
+
+.card img{
+    width: 150px;
+    height: 150px;
 }
 
-.nome-loja * {
-    margin: 0 10px;
+.card-texto{
+    padding: 10px;
+    text-transform: capitalize;
 }
-
-.container-loja {
-    display: flex;
-    justify-content: space-around;
-    margin: 10px 10px;
-    gap: 10px;
-}
-
-.card {
-    width: 45%;
-    height: 200px;
-    background-color: var(--cor06);
-}
-
 /* Footer */
 footer{
     background-color: var(--cor05);
