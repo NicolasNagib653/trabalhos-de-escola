@@ -172,11 +172,13 @@ img {
 
 /* Main */
 
+
 .banner{
     width: 100vw;
     height: 200px;
-    background-color: #171a4a;
-    margin-top: 120px;
+    background: url("../img/lojas/fundocafe.jpg") no-repeat center center / cover;
+    margin-top: 100px;
+    transform: rotateY(180deg);
 }
 
 .header-loja{
@@ -184,7 +186,8 @@ img {
     align-items: center;
     justify-content: space-between;
     gap: 0 20px;
-    margin: 10px;
+    padding: 10px;
+    box-shadow: 0px -3px 10px #00000099;
 }
 
 .nome-loja{
@@ -204,14 +207,13 @@ img {
 }
 
 .container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
     padding: 10px;
 }
 
 .card{
-    width: 150px;
     margin: 10px;
     background-color: var(--cor05);
     color: white;
@@ -415,6 +417,13 @@ footer input[type="submit"]:hover{
         display: none;
     }
 
+    /* Main */
+
+    .card img{
+        width: 200px;
+        height: 200px;
+    }
+
     footer{
         display: flex;
         flex-direction: row;
@@ -515,13 +524,19 @@ footer input[type="submit"]:hover{
         scale: 1.01;
     }
 
-    main{
-        display: grid;
-        grid-template-columns: 50% 50%;
-    }
-
     #links{
         display: none;
+    }
+
+    /* Main */
+
+    .container{
+        grid-template-columns: 33% 33% 33%;
+    }
+
+    .card img{
+        width: 250px;
+        height: 250px;
     }
 
     footer{
