@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    font-family: "Roboto", sans-serif;
+}
+
+nav{
+    background-color: #f7f7f7;
+    display: grid;
+    grid-template-columns: 40px 1fr 88px;
+    align-items: center;
+    column-gap: 16px;
+    padding: 20px 16px;
+}
+
+.nav__hamburguer{
+    width: 25px;
+    font-size: 29px;
+    color: #4c4c4cc4;
+    cursor: pointer;
+    grid-column: 1;
+
+}
+
+.nav__logo img{
+    width: 80px;
+    grid-column: 2;
+}
+
+.nav__login button{
+    background-color: #ea1d2c;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: #f7f7f7;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    grid-column: 3;
+
+}
+
+main{
+    background-color: #fff;
+}
+
+.main__flex{
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    gap: 10px;
+    width: 90%;
+}
+
+.main__container{
+    min-height: 30vh;
+    text-align: center;
+    background:url(https://static.ifood-static.com.br/image/upload/t_banner/webapp/landing/groceries-background-mobile.png) no-repeat center -15px;
+    background-color: white;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.main-container__title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(66, 66, 66);
+    margin-top: 90px;
+}
+
+.main-container__subtitle{
+    font-size: .875rem;
+    font-weight: 300;
+    color: rgb(65, 65, 65);
+    margin-bottom: 20px;
+}
+
+.main-container__search{
+    width: 90%;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 19px 18px;
+    text-align: start;
+}
+
+.main-container__search i{
+    font-size: 16px;
+    color: #ea1d2c;
+}
+
+.main-container__search input{
+    background-color: transparent;
+    border: none;
+    width: 80%;
+    font-size: 15px;
+}
+
+.main-container__search input:focus-visible{
+    outline: none;
+}
+
+.main-container__button-search{
+    width: calc(90% + 36px);
+    padding: 15px;
+    background-color: #ea1d2c;
+    color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.main__categorias{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding:  10px 40px;
+    margin-bottom: 100px;
+}
+
+.main__categorias span{
+    font-size: 14px;
+    border: 1px solid rgba(182, 182, 182, 0.253);
+    color: rgb(128, 128, 128);
+    border-radius: 100px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.main__categoria-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:5px;
+    padding: 80px 18px;
+    text-align: center;
+    position: relative;
+}
+
+.main__categoria-block > span{
+    height: 150px;
+    background-color: #f2f2f2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.main__categoria-block > a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.main__categoria-block h2{
+    color: white;
+    font-weight: 500;
+}
+
+.main__categoria-block h3{
+    color: black;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.main__categoria-block button{
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: start;
+}
+
+
+
+.main-block__restaurante{
+    width: 180px;
+    height: 130px;
+    background-color: #ea1d2c;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.main-block__restaurante img{
+    height: 75px;
+}
+
+.main-block__restaurante button{
+    background-color: #cc1825;
+}
+
+.main-block__mercado{
+    width: 180px;
+    height: 130px;
+    background-color: #b6d048;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.main-block__mercado img{
+    height: 75px;
+}
+
+.main-block__mercado button{
+    background-color: #9eb53e;
+}
+
+.main-block__bebidas{
+    position: relative;
+    width: 95px;
+}
+
+.main-block__bebidas img{
+    width: 74px;
+    z-index: 1;
+}
+
+.main-block__bebidas span{
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #f6d553;
+    position: absolute;
+    bottom: 25px;
+    z-index: 0;
+}
+
+.main-block__farmacia{
+    position: relative;
+    width: 95px;
+}
+
+.main-block__farmacia img{
+    width: 56px;
+    z-index: 1;
+}
+
+
+.main-block__farmacia span{
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #f9879c;
+    position: absolute;
+    bottom: 25px;
+    z-index: 0;
+}
+
+.main-block__pet-shop{
+    position: relative;
+    width: 95px;
+}
+
+.main-block__pet-shop img{
+    width: 70px;
+    z-index: 1;
+}
+
+.main-block__pet-shop span{
+    width: 100%;
+    height: 25px;
+    border-radius: 8px;
+    background-color: #8c60c5;
+    position: absolute;
+    bottom: 25px;
+    z-index: 0;
+}
+
+.main__melhores{
+    width: 90%;
+    margin: auto;
+}
+
+.main__melhores hr{
+    border-color: #ffffff75;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.main__melhores > h1{
+    font-size: 20px;
+    color: rgb(26, 26, 26);
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 20px;
+}
+
+.carrossel{
+    display: flex;
+    width: 100%;
+    overflow: auto;
+}
+
+.main__melhores .carrossel > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid rgba(182, 182, 182, 0.637);
+    min-width: 170px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin: 0 10px;
+}
+
+.main-melhores__text h3{
+    color: rgb(26, 26, 26);
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.main-melhores__text p{
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(113, 113, 113);
+}
+
+.main__melhores .carrossel  img{
+    border-radius: 50%;
+    width: 45px;
+}
+
+.main__banners{
+    display: flex;
+    gap: 10px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+.main__banners img{
+    width: 300px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+footer {
+    padding: 30px;
+}
+
+footer ul{
+    margin: 40px 0;
+}
+
+footer ul li{
+    margin: 20px 0;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+}
+
+footer ul li:first-child{
+    color: rgb(62, 62, 62);
+    font-weight: 500;
+}
+
+
+
+/* Remover scroll */
+
+.carrossel::-webkit-scrollbar, .main__banners::-webkit-scrollbar{
+    display: none;
+}

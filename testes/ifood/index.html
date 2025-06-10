@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="src/assets/img/icone-ifood.png" type="image/x-icon">
+    <title>Ifood</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <!-- CDNs -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dragscroll/0.0.8/dragscroll.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav__hamburguer">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="nav__logo">
+                <img src="src/assets/img/ifood-logo.svg" alt="Logo Ifood">
+            </div>
+            <div class="nav__login">
+                <button>Entrar</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__container">
+            <h1 class="main-container__title">Faça mercado no ifood</h1>
+            <p class="main-container__subtitle">Entregamos tudo o que precisa na porta da sua casa, de hortifruti a
+                itens de limpeza</p>
+
+            <div class="main__flex">
+                <div class="main-container__search">
+                    <i class="bi bi-search"></i>
+                    <input type="text" placeholder="Em qual endereço você está?">
+                </div>
+                <button class="main-container__button-search">Ver mercados próximos</button>
+
+            </div>
+            <div class="main__categorias">
+                <span>Frios</span>
+                <span>Laticínios</span>
+                <span>Feira</span>
+                <span>Bebidas</span>
+                <span>Doces</span>
+                <span>Massas frescas</span>
+                <span>Limpeza</span>
+                <span>Padaria</span>
+                <span>Higiene</span>
+                <span>Congelados</span>
+                <span>Carnes</span>
+                <span>Cerveja</span>
+            </div>
+        </div>
+
+        <div class="main__categoria-block">
+            <span></span>
+            <a href="" class="main-block__restaurante">
+                <h2>Restaurante</h2>
+                <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/restaurant.png"
+                    alt="Hamburguer">
+                <button>Ver opções</button>
+            </a>
+            <a href="" class="main-block__mercado">
+                <h2>Mercado</h2>
+                <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/market.png"
+                    alt="Carrinho de compras">
+                <button>Buscar lojas</button>
+            </a>
+            <a href="" class="main-block__bebidas">
+                <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/drinks.png"
+                    alt="Cerveja">
+                <h3>Bebidas</h3>
+                <span></span>
+            </a>
+            <a href="" class="main-block__farmacia">
+                <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/pharmacy.png"
+                    alt="Bolsa de remédios">
+                <h3>Farmácia</h3>
+                <span></span>
+            </a>
+            <a href="" class="main-block__pet-shop">
+                <img src="https://static.ifood-static.com.br/image/upload/f_auto/webapp/landingV2/petshop.png"
+                    alt="Pote de ração">
+                <h3>Pet shop</h3>
+                <span></span>
+            </a>
+        </div>
+
+        <div class="main__melhores ">
+            <hr>
+            <h1>Os melhores restaurantes</h1>
+            <div class="carrossel dragscroll">
+                <div class="main-melhores__block1">
+                    <img src="src/assets/img/Logo McDonald.jpg" alt="">
+                    <div class="main-melhores__text">
+                        <h3>MCdonald's</h3>
+                        <p>Lanches</p>
+                    </div>
+                </div>
+                <div class="main-melhores__block2">
+                    <img src="src/assets/img/coco-bambu.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Coco Bambu</h3>
+                        <p>Frutos do mar</p>
+                    </div>
+                </div>
+                <div class="main-melhores__block3">
+                    <img src="src/assets/img/china-in-box.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>China in Box</h3>
+                        <p>Chinesa</p>
+                    </div>
+                </div>
+                <div class="main-melhores__block4">
+                    <img src="src/assets/img/habibs.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Habib's</h3>
+                        <p>Lanches</p>
+                    </div>
+                </div>
+                <div class="main-melhores__block5">
+                    <img src="src/assets/img/outback.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Outback Steakhouse</h3>
+                        <p>lanches</p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+
+        <div class="main__banners dragscroll">
+            <img src="src/assets/img/banner1.png" alt="">
+            <img src="src/assets/img/banner2.png" alt="">
+            <img src="src/assets/img/banner3.png" alt="">
+        </div>
+
+        <div class="main__melhores ">
+            <hr>
+            <h1>Os melhores mercados</h1>
+            <div class="carrossel dragscroll">
+                <div class="main-melhores__block1">
+                    <img src="src/assets/img/dia.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Dia</h3>
+                        <p>Mercado</p>
+                    </div>
+                </div>
+                <div class="main-melhores__block2">
+                    <img src="src/assets/img/big.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Big</h3>
+                    </div>
+                </div>
+                <div class="main-melhores__block3">
+                    <img src="src/assets/img/eataly.png" alt="">
+                    <div class="main-melhores__text">
+                        <h3>Eataly</h3>
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>iFood</li>
+            <li>Site Institucional</li>
+            <li>Fale Conosco</li>
+            <li>Conta e segurança</li>
+            <li>Carreiras</li>
+            <li>Entregadores</li>
+        </ul>
+        <ul>
+            <li>Descubra</li>
+            <li>Cadastre seu Restaurante ou Mercado</li>
+            <li>Ifood shop</li>
+            <li>Ifood Empresas</li>
+            <li>Blog iFood Empresas</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioDiversa - Preservando a Vida no Planeta</title>
+    <meta name="description"
+        content="Conheça a importância da biodiversidade, suas ameaças e como podemos conservar o patrimônio natural da Terra">
+    <meta name="theme-color" content="#2E7D32">
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CDNs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Merriweather:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Link para pular navegação (acessibilidade) -->
+    <a href="#main-content" class="skip-link" data-ignore="true">Pular para conteúdo principal</a>
+
+    <!-- Progress indicator -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-icon" aria-hidden="true"><i class="bi bi-globe-americas"></i></span>
+                <span>BioDiversa</span>
+            </a>
+
+            <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="main-nav">
+                <span aria-hidden="true">☰</span>
+            </button>
+
+
+
+
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="#importancia">Importância</a></li>
+                    <li><a href="#ameacas">Ameaças</a></li>
+                    <li><a href="#conservacao">Conservação</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Menu de acessibilidade (inicialmente oculto) -->
+            <div id="bloco-acessibilidade" class="fechado">
+                <button id="abrir-menu" aria-controls="accessibility-menu" aria-expanded="false">
+                    <i class="bi bi-universal-access"></i>
+                </button>
+
+
+                <nav id="accessibility-menu" role="navigation" aria-label="Menu de Acessibilidade">
+                    <ul>
+
+                        <li><a href="#" id="aumentar-fonte" accesskey="1"><img src="img/mais.png"
+                                    alt="Aumentar fonte Alt+1"></a></li>
+
+                        <li><a href="#" id="diminuir-fonte" accesskey="2"><img src="img/menos.png"
+                                    alt="Diminuir fonte alt+2"></a></li>
+
+                        <li><a href="#" id="contraste-alto" accesskey="3"><img src="img/contraste.png"
+                                    alt="Contraste Alt+6"></a></li>
+
+                        <li><a href="#" id="ajuda" accesskey="4" onclick="lerSelecionado()"><img src="img/cursor.png"
+                                    alt="Ajuda Alt+7"></a></li>
+
+                        <li><a href="#" id="ajuda" accesskey="4" onclick="lerPagina()"><img src="img/computador.png"
+                                    alt="Ajuda Alt+7"></a></li>
+
+                        <li><a href="#" id="ajuda" accesskey="4" onclick="pararLeitura()"><img
+                                    src="img/palma-da-mao.png" alt="Ajuda Alt+7"></a></li>
+
+                        <li><a href="#" id="ajuda" accesskey="4"><img src="img/ajuda.png" alt="Ajuda Alt+7"></a></li>
+                        <li><a href="#" accesskey="4"><button id="botaoDaltonismo">Ativar Filtro de
+                                    Daltonismo</button></a></li>
+
+
+                        <li style="display: none;"><a href="#main-content" accesskey="5" style="display: none;">Ir para
+                                o conteúdo principal</a></li>
+
+                        <li style="display: none;"><a href="#main-nav" accesskey="6" style="display: none;">Ir para o
+                                menu</a></li>
+
+                        <li style="display: none;"><a href="#rodape" accesskey="7" style="display: none;">Ir para o
+                                rodapé</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <main id="main-content">
+        <section class="hero" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <h1 id="hero-heading">Protegendo a Trama da Vida</h1>
+                <p>Cada espécie é um fio essencial no tecido da biodiversidade. Conheça, valorize e ajude a preservar
+                    essa rede incrível que sustenta a vida na Terra.</p>
+                <div style="display: flex; gap: 1rem; justify-content: center;">
+                    <a href="#importancia" class="btn">
+                        <span class="btn-icon" aria-hidden="true">🔍</span>
+                        Explorar
+                    </a>
+                    <a href="#contato" class="btn btn-outline">
+                        <span class="btn-icon" aria-hidden="true">✉️</span>
+                        Envolva-se
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="importancia" aria-labelledby="importancia-heading">
+            <div class="section-header">
+                <h2 id="importancia-heading">Por Que a Biodiversidade Importa?</h2>
+                <p class="section-intro">A diversidade biológica é a base da vida no nosso planeta e essencial para o
+                    funcionamento dos ecossistemas que sustentam todas as formas de vida, incluindo os seres humanos.
+                </p>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Floresta tropical com diversidade de plantas e animais" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Serviços Ecossistêmicos</h3>
+                        <p>Os ecossistemas saudáveis fornecem ar puro, água limpa, polinização de culturas, controle de
+                            pragas, decomposição de resíduos e regulação do clima - serviços essenciais avaliados em
+                            trilhões de dólares anualmente.</p>
+                        <div class="card-footer">
+                            <a href="#conservacao" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Proteger
+                                ecossistemas</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="img/plantas.jpg" alt="Plantas medicinais em um jardim botânico" class="card-img"
+                        loading="lazy">
+                    <div class="card-content">
+                        <h3>Saúde e Medicina</h3>
+                        <p>Mais de 50% dos medicamentos modernos são derivados de produtos naturais. A biodiversidade é
+                            uma farmácia inexplorada - apenas 1% das espécies de plantas foram estudadas profundamente
+                            para potencial medicinal.</p>
+                        <div class="card-footer">
+                            <a href="#ameacas" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Entender
+                                riscos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Diversidade de alimentos em uma feira orgânica" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Segurança Alimentar</h3>
+                        <p>A diversidade genética em culturas e animais domésticos é nosso seguro contra pragas, doenças
+                            e mudanças climáticas. 75% dos alimentos globais vêm de apenas 12 plantas e 5 espécies
+                            animais, mostrando nossa vulnerabilidade.</p>
+                        <div class="card-footer">
+                            <a href="#conservacao" class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Apoiar
+                                diversidade</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stats-container">
+                <div class="stat-card">
+                    <div class="stat-number">8.7M</div>
+                    <div class="stat-label">Espécies estimadas na Terra</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">80%</div>
+                    <div class="stat-label">Da biodiversidade terrestre em florestas</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">1M</div>
+                    <div class="stat-label">Espécies ameaçadas de extinção</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">50%</div>
+                    <div class="stat-label">Perda de espécies desde 1970</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ameacas" aria-labelledby="ameacas-heading">
+            <div class="section-header">
+                <h2 id="ameacas-heading">Ameaças à Biodiversidade</h2>
+                <p class="section-intro">A atividade humana está acelerando a taxa de extinção de espécies em níveis sem
+                    precedentes na história da Terra. Conheça os principais fatores dessa crise.</p>
+            </div>
+
+            <h3>As 5 Grandes Ameaças</h3>
+            <ol>
+                <li><strong>Destruição de habitats:</strong> Conversão de terras para agricultura, urbanização e
+                    infraestrutura destrói 75% dos ambientes terrestres e 66% dos marinhos.</li>
+                <li><strong>Exploração insustentável:</strong> Caça, pesca e coleta excessivas ameaçam 37% das espécies
+                    em risco de extinção.</li>
+                <li><strong>Mudanças climáticas:</strong> Aumento de temperatura e eventos extremos afetam 47% dos
+                    mamíferos terrestres e 23% das aves.</li>
+                <li><strong>Poluição:</strong> Plásticos, químicos e resíduos contaminam ecossistemas terrestres e
+                    aquáticos.</li>
+                <li><strong>Espécies invasoras:</strong> Organismos introduzidos competem com nativos e são a segunda
+                    maior causa de extinção.</li>
+            </ol>
+        </section>
+
+        <section id="conservacao" aria-labelledby="conservacao-heading">
+            <div class="section-header">
+                <h2 id="conservacao-heading">Estratégias de Conservação</h2>
+                <p class="section-intro">Ainda há tempo para reverter a curva da perda de biodiversidade, mas isso
+                    requer ações urgentes em todas as escalas - global, nacional e individual.</p>
+            </div>
+
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Parque nacional com floresta preservada" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Proteção de Áreas-Chave</h3>
+                        <p>Ampliar e conectar áreas protegidas é essencial. Atualmente, apenas 15% das terras e 7% dos
+                            oceanos estão protegidos. A meta global é alcançar 30% até 2030 ("30x30").</p>
+                        <div class="card-footer">
+                            <a href="https://www.cbd.int/" target="_blank" rel="noopener noreferrer" class="btn"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">Convenção da Biodiversidade</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Voluntários plantando mudas de árvores" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Restauração Ecológica</h3>
+                        <p>Recuperar ecossistemas degradados pode trazer de volta até 30% das espécies perdidas.
+                            Projetos de reflorestamento, reintrodução de espécies e regeneração natural estão mostrando
+                            resultados promissores.</p>
+                        <div class="card-footer">
+                            <a href="https://www.decadeonrestoration.org/" target="_blank" rel="noopener noreferrer"
+                                class="btn" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Década da Restauração</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1526779259212-939e64788e3c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Agricultura sustentável com diversidade de cultivos" class="card-img" loading="lazy">
+                    <div class="card-content">
+                        <h3>Práticas Sustentáveis</h3>
+                        <p>Agricultura regenerativa, pesca com quotas científicas, turismo ecológico e cadeias de
+                            suprimento verdes são exemplos de como podemos atender necessidades humanas sem destruir a
+                            natureza.</p>
+                        <div class="card-footer"> <a href="https://www.rainforest-alliance.org/" target="_blank"
+                                rel="noopener noreferrer" class="btn"
+                                style="padding: 0.5rem 1rem; font-size: 0.9rem;">Certificação Sustentável</a> </div>
+                    </div>
+                </div>
+            </div>
+            <h3>Ações Individuais que Fazem Diferença</h3>
+            <div class="card-container" style="grid-template-columns: repeat(4, minmax(200px, 1fr));">
+                <div class="card" style="text-align: center;">
+                    <div class="card-content">
+                        <span style="font-size: 2rem; margin-bottom: 1rem; display: block;">🌱</span>
+                        <h3>Consumo Consciente</h3>
+                        <p>Escolha produtos sustentáveis, reduza carne, evite plástico descartável</p>
+                    </div>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-content">
+                        <span style="font-size: 2rem; margin-bottom: 1rem; display: block;">🏡</span>
+                        <h3>Espaços Verdes</h3>
+                        <p>Plante árvores nativas, crie jardins de polinizadores</p>
+                    </div>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-content">
+                        <span style="font-size: 2rem; margin-bottom: 1rem; display: block;">💡</span>
+                        <h3>Educação</h3>
+                        <p>Aprenda e ensine sobre biodiversidade</p>
+                    </div>
+                </div>
+                <div class="card" style="text-align: center;">
+                    <div class="card-content">
+                        <span style="font-size: 2rem; margin-bottom: 1rem; display: block;">✊</span>
+                        <h3>Ativismo</h3>
+                        <p>Apoie organizações, participe de ações locais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" aria-labelledby="galeria-heading">
+            <div class="section-header">
+                <h2 id="galeria-heading">Maravilhas da Biodiversidade</h2>
+                <p class="section-intro">Conheça algumas das espécies incríveis que compartilham nosso planeta e que
+                    precisamos proteger.</p>
+            </div>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img/arara.jpg" alt="Arara-vermelha voando sobre a copa das árvores na Amazônia"
+                        class="gallery-img" loading="lazy">
+                    <div class="gallery-caption">Arara-vermelha (Amazônia) - Ameaçada pelo tráfico e perda de habitat
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/tigre.jpg" alt="Tigre-de-bengala caminhando na floresta" class="gallery-img"
+                        loading="lazy">
+                    <div class="gallery-caption">Tigre-de-bengala (Ásia) - População reduzida em 95% no último século
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/coral.jpg" alt="Recife de coral colorido com peixes tropicais" class="gallery-img"
+                        loading="lazy">
+                    <div class="gallery-caption">Corais (Oceanos) - 50% já perdidos devido ao aquecimento e acidificação
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/orquidia.jpg" alt="Orquídea rara com pétalas coloridas" class="gallery-img"
+                        loading="lazy">
+                    <div class="gallery-caption">Orquídeas (Diversos habitats) - 1/4 das espécies ameaçadas</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/elefante.jpg" alt="Elefante-africano com filhote na savana" class="gallery-img"
+                        loading="lazy">
+                    <div class="gallery-caption">Elefante-africano (Savana) - População caiu 60% em 50 anos</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/borboleta.png" alt="Borboleta-monarca pousando em uma flor laranja"
+                        class="gallery-img" loading="lazy">
+                    <div class="gallery-caption">Borboleta-monarca (Américas) - Quase extinta na costa oeste</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
+                        alt="Panda-gigante comendo bambu na floresta" class="gallery-img" loading="lazy">
+                    <div class="gallery-caption">Panda-gigante (China) - Sucesso de conservação aumentou população</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/baleia.jpg" alt="Baleia-jubarte saltando no oceano" class="gallery-img"
+                        loading="lazy">
+                    <div class="gallery-caption">Baleia-jubarte (Oceanos) - Recuperação após moratória da caça</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" aria-labelledby="contato-heading">
+            <div class="section-header">
+                <h2 id="contato-heading">Junte-se a Nós</h2>
+                <p class="section-intro">Sua voz e ações são essenciais para proteger a biodiversidade. Entre em contato
+                    para saber como participar.</p>
+            </div>
+
+            <div class="contact-form">
+                <form id="formContato" novalidate>
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo*</label>
+                            <input type="text" id="nome" name="nome" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail*</label>
+                            <input type="email" id="email" name="email" required aria-required="true">
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="assunto">Como quer ajudar?*</label>
+                            <select id="assunto" name="assunto" required aria-required="true">
+                                <option value="">Selecione uma opção...</option>
+                                <option value="voluntariado">Ser voluntário</option>
+                                <option value="doacoes">Fazer doação</option>
+                                <option value="educacao">Receber material educativo</option>
+                                <option value="eventos">Participar de eventos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="mensagem">Sua Mensagem*</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" required aria-required="true"></textarea>
+                            <span class="error-message" aria-live="polite"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn" style="padding: 0.9rem 2.5rem;">
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer id="rodape">
+        <div class="footer-container">
+            <div class="footer-col">
+                <h3>Sobre a BioDiversa</h3>
+                <p>Iniciativa dedicada à educação, pesquisa e ação para conservação da biodiversidade global desde 2010.
+                </p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h3>Recursos Educativos</h3>
+                <ul>
+                    <li><a href="#">Guia de Espécies Ameaçadas</a></li>
+                    <li><a href="#">Cartilha de Conservação</a></li>
+                    <li><a href="#">Planos de Aula para Professores</a></li>
+                    <li><a href="#">Banco de Dados Científicos</a></li>
+                    <li><a href="#">Biblioteca Virtual</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Participe</h3>
+                <ul>
+                    <li><a href="#">Programa de Voluntariado</a></li>
+                    <li><a href="#">Observadores da Biodiversidade</a></li>
+                    <li><a href="#">Doações e Apoio</a></li>
+                    <li><a href="#">Eventos e Palestras</a></li>
+                    <li><a href="#">Programa de Estágios</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Links Úteis</h3>
+                <ul>
+                    <li><a href="https://www.cbd.int/" target="_blank" rel="noopener noreferrer">Convenção da
+                            Diversidade Biológica</a></li>
+                    <li><a href="https://www.iucn.org/" target="_blank" rel="noopener noreferrer">IUCN - Lista
+                            Vermelha</a></li>
+                    <li><a href="https://www.wwf.org.br/" target="_blank" rel="noopener noreferrer">WWF Brasil</a></li>
+                    <li><a href="https://ipbes.net/" target="_blank" rel="noopener noreferrer">IPBES - Plataforma
+                            Científica</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2023 BioDiversa. Todos os direitos reservados.</p>
+            <p>Este site segue as diretrizes de acessibilidade WCAG 2.1 AA. <a href="#contato">Reporte qualquer problema
+                    de acessibilidade</a>.</p>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Voltar ao topo da página">↑</button>
+
+    <script>
+        // Menu mobile toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('nav');
+
+        menuToggle.addEventListener('click', () => {
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('active');
+
+            // Fechar menu ao clicar em um link
+            if (nav.classList.contains('active')) {
+                document.querySelectorAll('nav a').forEach(link => {
+                    link.addEventListener('click', () => {
+                        nav.classList.remove('active');
+                        menuToggle.setAttribute('aria-expanded', 'false');
+                    });
+                });
+            }
+        });
+
+        // Suave scroll para links internos
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                
+                if (targetId && targetId !== '#') {
+                    const targetElement = document.querySelector(targetId);
+                    if (targetElement) {
+                        window.scrollTo({
+                            top: targetElement.offsetTop - 80,
+                            behavior: 'smooth'
+                        });
+    
+                        // Foco no elemento alvo para acessibilidade
+                        targetElement.setAttribute('tabindex', '-1');
+                        targetElement.focus();
+    
+                        // Atualizar URL sem recarregar a página
+                        history.pushState(null, null, targetId);
+                    }
+                    
+                }
+
+            });
+        });
+
+        // Progress indicator
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progressBar').style.width = scrolled + '%';
+
+            // Mostrar/ocultar botão "voltar ao topo"
+            const backToTopBtn = document.querySelector('.back-to-top');
+            if (winScroll > 300) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Botão "voltar ao topo"
+        document.querySelector('.back-to-top').addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Validação de formulário
+        const form = document.getElementById('formContato');
+        if (form) {
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                let isValid = true;
+
+                // Validar campos obrigatórios
+                const requiredFields = form.querySelectorAll('[required]');
+                requiredFields.forEach(field => {
+                    const errorMsg = field.nextElementSibling;
+                    if (!field.value.trim()) {
+                        field.style.borderColor = '#ff4444';
+                        errorMsg.textContent = 'Este campo é obrigatório';
+                        errorMsg.style.color = '#ff4444';
+                        isValid = false;
+                    } else {
+                        field.style.borderColor = '';
+                        errorMsg.textContent = '';
+
+                        // Validação específica para email
+                        if (field.type === 'email' && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(field.value)) {
+                            field.style.borderColor = '#ff4444';
+                            errorMsg.textContent = 'Por favor, insira um email válido';
+                            errorMsg.style.color = '#ff4444';
+                            isValid = false;
+                        }
+                    }
+                });
+
+                if (isValid) {
+                    // Simular envio do formulário
+                    form.reset();
+                    alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+                } else {
+                    // Rolar até o primeiro erro
+                    const firstError = form.querySelector('[style*="border-color: rgb(255, 68, 68)"]');
+                    if (firstError) {
+                        firstError.focus();
+                    }
+                }
+            });
+        }
+
+        // Carregamento lento de imagens para navegadores sem suporte nativo
+        if (!('loading' in HTMLImageElement.prototype)) {
+            const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        observer.unobserve(img);
+                    }
+                });
+            }, {
+                rootMargin: '200px 0px'
+            });
+
+            lazyImages.forEach(img => {
+                observer.observe(img);
+            });
+        }
+
+        // Melhorar acessibilidade do menu dropdown
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && nav.classList.contains('active')) {
+                nav.classList.remove('active');
+                menuToggle.setAttribute('aria-expanded', 'false');
+                menuToggle.focus();
+            }
+        });
+
+
+
+        // Funcionalidades de acessibilidade
+        document.getElementById('aumentar-fonte').addEventListener('click', () => {
+            const botao = document.getElementById('aumentar-fonte');
+            const body = document.body;
+
+            // Pega o tamanho inicial da fonte do body (ex: 16px)
+            let tamanhoAtual = parseFloat(window.getComputedStyle(body).fontSize);
+
+            tamanhoAtual += 1;
+            body.style.fontSize = `${tamanhoAtual}px`;
+        });
+
+
+        // Pega o tamanho inicial da fonte do body (ex: 16px)
+
+        document.getElementById('diminuir-fonte').addEventListener('click', () => {
+            const botao = document.getElementById('diminuir-fonte');
+            const body = document.body;
+            let tamanhoAtual = parseFloat(window.getComputedStyle(body).fontSize);
+            if (tamanhoAtual > 5) { // limite mínimo para não sumir o texto
+                tamanhoAtual -= 1;
+                body.style.fontSize = `${tamanhoAtual}px`;
+            }
+        });
+
+        document.getElementById('contraste-alto').addEventListener('click', () => {
+            document.body.classList.toggle('alto-contraste');
+        });
+
+        document.getElementById('ajuda').addEventListener('click', () => {
+            alert('Teclas de atalho disponíveis:\n1 - Aumentar fonte \n2 - Diminuir fonte \n3 - Contraste alto\n4 - Ajuda \n5 - Conteúdo principal\n6 - Menu \n7 - Rodapé \nA - Menu Acessibilidade');
+        });
+
+    </script>
+    <script>
+        document.addEventListener('keydown', function (e) {
+            // Verifica se ALT + A foi pressionado (tecla "a")
+            if (e.altKey && e.key.toLowerCase() === 'a') {
+                e.preventDefault(); // Evita comportamento padrão do navegador
+                document.getElementById('abrir-menu').click();
+            }
+        });
+    </script>
+
+    <script>
+        document.getElementById('abrir-menu').addEventListener('click', function () {
+            const bloco = document.getElementById('bloco-acessibilidade');
+            bloco.classList.toggle('ativo');
+        });
+        document.getElementById('abrir-menu').addEventListener('acessKey:8', function () {
+            const bloco = document.getElementById('bloco-acessibilidade');
+            bloco.classList.toggle('ativo');
+        });
+
+
+    </script>
+
+    <script>
+        let leitorAtivo = false;
+        let vozSelecionada = null;
+
+        // Espera vozes serem carregadas
+        function getTextoFiltrado() {
+            const elementos = document.body.querySelectorAll('body *:not(script):not(style)');
+            let texto = '';
+
+            elementos.forEach(el => {
+                const visivel = el.offsetParent !== null;
+                const ignorado = el.closest('[data-ignore="true"]');
+                const temTexto = el.innerText && el.innerText.trim() !== '';
+
+                if (visivel && !ignorado && temTexto) {
+                    texto += el.innerText.trim() + '\n\n'; // quebra entre blocos
+                }
+            });
+
+            return texto.trim();
+        }
+
+        function carregarVozes() {
+            const vozes = speechSynthesis.getVoices();
+            if (vozes.length > 0) {
+                // Pega uma voz em português, ou a primeira disponível
+                vozSelecionada = vozes.find(v => v.lang.includes('pt')) || vozes[0];
+            }
+        }
+
+        speechSynthesis.onvoiceschanged = carregarVozes;
+        carregarVozes();
+
+
+
+        function lerTexto(texto) {
+            leitorAtivo = !leitorAtivo;
+            if (!leitorAtivo || !texto) return;
+
+            pararLeitura(); // Para leitura anterior
+            const utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = vozSelecionada?.lang || 'pt-BR';
+            utterance.voice = vozSelecionada;
+            speechSynthesis.speak(utterance);
+        }
+
+        function lerSelecionado() {
+            const texto = window.getSelection().toString();
+            if (texto.trim().length === 0) {
+                alert("Selecione algum texto na página e clique aqui novamente para ler.");
+                return;
+            }
+            lerTexto(texto);
+        }
+
+        function lerPagina() {
+            const texto = getTextoFiltrado();
+            lerTexto(texto);
+        }
+
+        function pararLeitura() {
+            speechSynthesis.cancel();
+        }
+
+
+
+    </script>
+    <script>
+        const filtros = ['nenhum', 'protanopia', 'deuteranopia', 'tritanopia', 'achromatopsia'];
+        let indiceFiltro = 0;
+
+        function aplicarFiltroAtual() {
+            removerFiltroDaltonismo();
+
+            const tipo = filtros[indiceFiltro];
+            const botao = document.getElementById('botaoDaltonismo');
+
+            if (tipo === 'nenhum') {
+                botao.textContent = 'Ativar Filtro de Daltonismo';
+                return;
+            }
+
+            botao.textContent = `Filtro: ${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`;
+
+            if (tipo === 'achromatopsia') {
+                document.body.style.filter = 'grayscale(100%)';
+            } else {
+                const svgFilter = `
+            <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+            <filter id="${tipo}">
+              ${tipo === 'protanopia' ? `
+                  <feColorMatrix type="matrix" values="0.567,0.433,0,0,0 0.558,0.442,0,0,0 0,0.242,0.758,0,0 0,0,0,1,0"/>
+                ` : tipo === 'deuteranopia' ? `
+                  <feColorMatrix type="matrix" values="0.625,0.375,0,0,0 0.7,0.3,0,0,0 0,0.3,0.7,0,0 0,0,0,1,0"/>
+                ` : tipo === 'tritanopia' ? `
+                  <feColorMatrix type="matrix" values="0.95,0.05,0,0,0 0,0.433,0.567,0,0 0,0.475,0.525,0,0 0,0,0,1,0"/>
+                ` : ''
+                    }
+            </filter>
+          </svg>
+        `;
+
+                const div = document.createElement('div');
+                div.innerHTML = svgFilter;
+                div.id = 'filtro-daltonismo-svg';
+                document.body.appendChild(div);
+
+                document.body.style.filter = `url(#${tipo})`;
+            }
+        }
+
+        function removerFiltroDaltonismo() {
+            const svg = document.getElementById('filtro-daltonismo-svg');
+            if (svg) svg.remove();
+            document.body.style.filter = 'none';
+        }
+
+        document.getElementById('botaoDaltonismo').addEventListener('click', () => {
+            indiceFiltro = (indiceFiltro + 1) % filtros.length;
+            aplicarFiltroAtual();
+        });
+    </script>
+</body>
