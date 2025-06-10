@@ -64,37 +64,69 @@
                 <nav id="accessibility-menu" role="navigation" aria-label="Menu de Acessibilidade">
                     <ul>
 
-                        <li><a href="#" id="aumentar-fonte" accesskey="1"><img src="img/mais.png"
-                                    alt="Aumentar fonte Alt+1"></a></li>
+<li>
+  <a href="#" id="aumentar-fonte" accesskey="1">
+    <abbr title="Aumentar fonte"><img src="img/mais.png" alt="Aumentar fonte Alt+1"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="diminuir-fonte" accesskey="2"><img src="img/menos.png"
-                                    alt="Diminuir fonte alt+2"></a></li>
+<li>
+  <a href="#" id="diminuir-fonte" accesskey="2">
+    <abbr title="Diminuir fonte"><img src="img/menos.png" alt="Diminuir fonte Alt+2"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="contraste-alto" accesskey="3"><img src="img/contraste.png"
-                                    alt="Contraste Alt+6"></a></li>
+<li>
+  <a href="#" id="contraste-alto" accesskey="3">
+    <abbr title="Contraste"><img src="img/contraste.png" alt="Contraste Alt+3"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="ajuda" accesskey="4" onclick="lerSelecionado()"><img src="img/cursor.png"
-                                    alt="Ajuda Alt+7"></a></li>
+<li>
+  <a href="#" id="ler-selecionado" accesskey="4" onclick="lerSelecionado()">
+    <abbr title="Ler seleção"><img src="img/cursor.png" alt="Ler seleção Alt+4"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="ajuda" accesskey="4" onclick="lerPagina()"><img src="img/computador.png"
-                                    alt="Ajuda Alt+7"></a></li>
+<li>
+  <a href="#" id="ler-pagina" accesskey="5" onclick="lerPagina()">
+    <abbr title="Ler página"><img src="img/computador.png" alt="Ler página Alt+5"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="ajuda" accesskey="4" onclick="pararLeitura()"><img
-                                    src="img/palma-da-mao.png" alt="Ajuda Alt+7"></a></li>
+<li>
+  <a href="#" id="parar-leitura" accesskey="6" onclick="pararLeitura()">
+    <abbr title="Parar leitura"><img src="img/palma-da-mao.png" alt="Parar leitura Alt+6"></abbr>
+  </a>
+</li>
 
-                        <li><a href="#" id="ajuda" accesskey="4"><img src="img/ajuda.png" alt="Ajuda Alt+7"></a></li>
-                        <li><a href="#" accesskey="4"><button id="botaoDaltonismo">Ativar Filtro de
-                                    Daltonismo</button></a></li>
+<li>
+  <a href="#" id="ajuda" accesskey="7">
+    <abbr title="Ajuda"><img src="img/ajuda.png" alt="Ajuda Alt+7"></abbr>
+  </a>
+</li>
+
+<li>
+  <a href="#" id="botaoDaltonismo" accesskey="8">
+    <abbr title="Filtro de daltonismo"><img src="img/visualizar.png" alt="Filtro de daltonismo Alt+8"></abbr>
+    <span id="filtro" style="display: none;">Filtro de Daltonismo</span>
+  </a>
+</li>
 
 
-                        <li style="display: none;"><a href="#main-content" accesskey="5" style="display: none;">Ir para
-                                o conteúdo principal</a></li>
+<li style="display: none;">
+  <a href="#main-content" accesskey="9" style="display: none;">Ir para o conteúdo principal</a>
+</li>
 
-                        <li style="display: none;"><a href="#main-nav" accesskey="6" style="display: none;">Ir para o
-                                menu</a></li>
+<li style="display: none;">
+  <a href="#main-nav" accesskey="0" style="display: none;">Ir para o menu</a>
+</li>
 
-                        <li style="display: none;"><a href="#rodape" accesskey="7" style="display: none;">Ir para o
-                                rodapé</a></li>
+<li style="display: none;">
+  <a href="#rodape" accesskey="-" style="display: none;">Ir para o rodapé</a>
+</li>
+
+
                     </ul>
                 </nav>
             </div>
@@ -501,7 +533,7 @@
                 e.preventDefault();
 
                 const targetId = this.getAttribute('href');
-                
+
                 if (targetId && targetId !== '#') {
                     const targetElement = document.querySelector(targetId);
                     if (targetElement) {
@@ -509,15 +541,15 @@
                             top: targetElement.offsetTop - 80,
                             behavior: 'smooth'
                         });
-    
+
                         // Foco no elemento alvo para acessibilidade
                         targetElement.setAttribute('tabindex', '-1');
                         targetElement.focus();
-    
+
                         // Atualizar URL sem recarregar a página
                         history.pushState(null, null, targetId);
                     }
-                    
+
                 }
 
             });
@@ -756,13 +788,14 @@
 
             const tipo = filtros[indiceFiltro];
             const botao = document.getElementById('botaoDaltonismo');
+            const filtro = document.getElementById('filtro')
 
             if (tipo === 'nenhum') {
-                botao.textContent = 'Ativar Filtro de Daltonismo';
+                filtro.textContent = 'Ativar Filtro de Daltonismo';
                 return;
             }
 
-            botao.textContent = `Filtro: ${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`;
+            filtro.textContent = `Filtro: ${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`;
 
             if (tipo === 'achromatopsia') {
                 document.body.style.filter = 'grayscale(100%)';

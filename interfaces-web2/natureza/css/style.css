@@ -918,7 +918,7 @@
       color: #ff0;
   }
 
-  li a>img {
+  li a abbr img {
       width: 30px;
   }
 
