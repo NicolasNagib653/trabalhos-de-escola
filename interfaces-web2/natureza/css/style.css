@@ -858,7 +858,7 @@
   }
 
   #bloco-acessibilidade {
-      position: absolute;
+      position: fixed;
       top: 105px;
       right: -50vw;
       /* parcialmente escondido */
